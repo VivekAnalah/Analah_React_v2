@@ -1,0 +1,10 @@
+@media only screen and (min-width: 1671px) and (max-width: 3000px) {
+
+   .insurance-home-img {
+     height: 80px;
+   }
+   .insurance-home-text {
+     font-size: 80%;
+   }
+  
+ }
