@@ -2,4 +2,30 @@
 .insurance_value_button_container {
     position: relative;
   }
+
+  .textStyle{
+    color: #595959;
+text-align: center;
+
+font-size: 16px;
+
+font-weight: 400;
+line-height: normal;
+margin-top: 21px;
+}
+
+.titleStyle{
+  color: #4481E4;
+
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.title-border-bottom {
+ 
+  border-bottom: 2px solid #4481E4 ;
+  padding-bottom: 5px;
+}
   

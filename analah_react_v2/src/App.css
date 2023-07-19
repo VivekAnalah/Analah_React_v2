@@ -9,3 +9,32 @@ html {
 .nav-item h2 {
   margin-top: 7px;
 }
+
+.topic {
+  margin: auto;
+  text-align: center;
+  color: #4481e4;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.topic2 {
+  color: #000;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.textStyle{
+  color: #595959;
+text-align: center;
+font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

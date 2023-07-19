@@ -1,103 +1,154 @@
-/* 12 */
-.splide__arrow--prev {
-    left: -5em !important;
-  }
-/* 15 */
-.splide__arrow--next {
-    right: -5em !important;
-  }
-/* 18 */
-ul.whychoose {
-    padding-top: 15px;
-  }
-  /* 21 */
-  .whychoose li {
-    list-style-image: url("/bullet_3.png");
-    padding-bottom: 5px;
-    padding-inline-start: 8px;
-    padding-left: 10px;
-    margin-left: 6px;
-    color: #595959;
-  }
-  /* 332 */
-  .splide {
-    width: 100%;
-  }
-  /* 375 */
-  .splide {
-    position: relative;
-  }
-  /* 412 */
-  .splide__slide .space-y-2 {
-    height: 90%;
-    padding-bottom: 32px;
-  }
-  /* 568 */
-  .splide__pagination__page {
-    background: #ccc !important;
-  }
-  /* 572 */
-  .splide__pagination__page.is-active {
-    background: #2a44a9 !important;
-  }
+.container {
+  width: 100%;
 
-/* 1051 */
-@media only screen and (min-width: 1671px) and (max-width: 3000px) {
-    /* Choose-us css added */
-    .choose-us {
-      margin-top: 15%;
-    }
- }
+  padding-top: 50px;
+  
+  background: #f6fafe;
 
-  /* 1100 */
+}
 
-  @media only screen and (max-width: 1670px) and (min-width: 1536px) {
-   
-    .choose-us {
-      margin-top: 15%;
-    }
-   
-  }
-  /* 1216 */
-  @media only screen and (max-width: 1160px) and (min-width: 1024px) {
-   
-    .choose-us {
-      margin-top: 200px;
-    }
-   
-  }
-  /* 1239 */
-  @media only screen and (max-width: 1024px) and (min-width: 951px) {
-    
-    .choose-us {
-      margin-top: 200px;
-    }
-  }
-  /* 1376 */
-  @media (max-width: 640px) {
-   
-    .splide__track {
-      padding: 0 40px !important;
-    }
-    .splide::after,
-    .splide::before {
-      width: calc(40px - 16px);
-    }
-  }
-  /* 1403 */
-  @media only screen and (max-width: 560px) {
-    
-    .splide__arrow {
-      top: 41%;
-    }
-    .splide__arrow--next {
-      right: -2.4em !important;
-    }
-    .splide__arrow--prev {
-      left: -2.4em !important;
-    }
-    .splide__arrow {
-      font-size: 12px;
-    }
-    
-  }
+.topic {
+  margin: auto;
+  text-align: center;
+  color: #4481e4;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.topic2 {
+  color: #000;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.content input {
+  display: none;
+}
+
+.content {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+.content .list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  width: 25%;
+  margin-right: 50px;
+}
+
+.content .list label {
+  cursor: pointer;
+  height: 60px;
+
+  padding-left: 25px;
+  transition: all 0.5s ease;
+  z-index: 10;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#home:checked ~ .list label.home,
+#blog:checked ~ .list label.blog,
+#help:checked ~ .list label.help,
+#code:checked ~ .list label.code,
+#about:checked ~ .list label.about {
+  color: #57a4ff;
+  border: 0.5px solid white;
+
+  box-shadow: 2px 0px #57a4ff;
+}
+
+.content .slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+}
+
+#home:checked ~ .list .slider {
+  top: 0;
+}
+
+#blog:checked ~ .list .slider {
+  top: 60px;
+}
+
+#help:checked ~ .list .slider {
+  top: 120px;
+}
+
+#code:checked ~ .list .slider {
+  top: 180px;
+}
+
+#about:checked ~ .list .slider {
+  top: 240px;
+}
+
+.content .text-content {
+  padding-top: 20px;
+  color: #595959;
+  text-align: justify;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 493.505px;
+  height: 267.785px;
+  flex-shrink: 0;
+}
+
+.content .text {
+  display: none;
+}
+
+.content .text .title {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+
+
+#home:checked ~ .text-content .home,
+#blog:checked ~ .text-content .blog,
+#help:checked ~ .text-content .help,
+#code:checked ~ .text-content .code,
+#about:checked ~ .text-content .about {
+  display: block;
+}
+
+#blog:checked ~ .text-content .home,
+#help:checked ~ .text-content .home,
+#code:checked ~ .text-content .home,
+#about:checked ~ .text-content .home {
+  display: none;
+}
+
+.content .list label:hover {
+  color: #57a4ff;
+}

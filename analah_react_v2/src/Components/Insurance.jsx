@@ -14,6 +14,7 @@ function Insurance({ item, ins }) {
         className={
          " p-2 flex justify-center flex-col items-center "
           }
+          
       >
         {item.id === 7 ?<img
           src={require(`../Assets/Images/${item.img}`)}
