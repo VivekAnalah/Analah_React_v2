@@ -46,7 +46,7 @@
   flex-direction: column;
   position: relative;
 
-  width: 25%;
+  width: 35%;
   margin-right: 50px;
 }
 
@@ -54,7 +54,7 @@
   cursor: pointer;
   height: 60px;
 
-  padding-left: 25px;
+  /* padding-left: 25px; */
   transition: all 0.5s ease;
   z-index: 10;
 
@@ -63,7 +63,7 @@
   font-weight: 600;
   line-height: normal;
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -151,4 +151,14 @@
 
 .content .list label:hover {
   color: #57a4ff;
+}
+
+
+.whychoose li {
+
+  padding-bottom: 5px;
+  padding-inline-start: 8px;
+  padding-left: 10px;
+  margin-left: 6px;
+  color: #595959;
 }

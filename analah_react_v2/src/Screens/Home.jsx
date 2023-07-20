@@ -8,6 +8,7 @@ import OurPartner from '../Components/OurPartner';
 import { About } from '../Components/About';
 import { Value } from '../Components/Value';
 import { FoundingTeam } from '../Components/FoundingTeam';
+import Footer from '../Components/Footer';
 
 export  const Home = () => {
 
@@ -44,6 +45,8 @@ export  const Home = () => {
      <Value />
 
      <FoundingTeam />
+
+     <Footer />
     
 
 

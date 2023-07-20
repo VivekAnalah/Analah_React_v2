@@ -13,14 +13,14 @@ export const FoundingTeam = () => {
       </div>
 
       <div
-        className={`w-[70%] m-[auto] ${bg} grid grid-cols-[30%,70%] mt-[50px] foundingBg pr-[2%]`}
+        className={`w-[70%] m-[auto] ${bg} grid grid-cols-[30%,70%] mt-[50px] foundingBg pr-[2%] relative h-[200px]`}
       >
         <div>
           <img
             src={require("../Assets/Images/Vaishali_Dhankani2.png")}
             alt="Vaishali Dhankani"
-            className="w-[69%] mt-[-35px]"
-            style={{border:"1px solid red"}}
+            className="w-[24%] mt-[-35px] absolute left-[0px] bottom-[0px]"
+           
           />
         </div>
         <div className="mt-[35px]">
@@ -34,7 +34,7 @@ export const FoundingTeam = () => {
             million.
           </p>
 
-          <div className="flex mt-[35px] gap-[20px]">
+          <div className="flex mt-[35px] gap-[20px] absolute bottom-[5px]">
             <h3 className="name">Vaishali Dhankani</h3>
 
             <p className="font-[18px] mt-[4px]">CEO</p>
@@ -43,7 +43,7 @@ export const FoundingTeam = () => {
       </div>
 
       <div
-        className={`w-[70%] m-[auto] ${bg} grid grid-cols-[70%,30%] mt-[50px] foundingBg pl-[2%]`}
+        className={`w-[70%] m-[auto] ${bg} grid grid-cols-[70%,30%] mt-[50px] foundingBg pl-[2%] relative h-[192px]`}
       >
         <div className="mt-[35px]">
           <p className="textStyleFounding">
@@ -56,7 +56,7 @@ export const FoundingTeam = () => {
            
           </p>
 
-          <div className="flex mt-[35px] gap-[20px]">
+          <div className="flex mt-[35px] gap-[20px] absolute bottom-[5px]">
             <h3 className="name">Hitesh Dhankani</h3>
 
             <p className="font-[18px] mt-[4px]">Co-Founder</p>
@@ -67,8 +67,8 @@ export const FoundingTeam = () => {
           <img
             src={require("../Assets/Images/hitesh_dhankani4.png")}
             alt="Hitesh Dhankani"
-            className="w-[69%] mt-[-35px]"
-            style={{border:"1px solid red"}}
+            className="w-[23%] mt-[-35px] absolute bottom-[0px] right-[20px]"
+            
           />
         </div>
       </div>

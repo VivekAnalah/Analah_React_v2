@@ -2,6 +2,7 @@
 import './App.css';
 import {  Routes, Route  } from "react-router-dom";
 import { Home } from './Screens/Home';
+import TermLife from "./Screens/Insurances/TermLife";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
        <Route path="/" element={<Home />} />
       
         
-      {/* <Route path="/Term-Life" element={<TermLife />} /> */}
+      <Route path="/Term-Life" element={<TermLife />} />
       {/* <Route path="/Health" element={<HealthInsurance />} />
       <Route path="/Family" element={<FamilyHealth />} />
       <Route path="/2-Wheeler" element={<TwoWheeler />} />
