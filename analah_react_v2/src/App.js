@@ -3,6 +3,14 @@ import './App.css';
 import {  Routes, Route  } from "react-router-dom";
 import { Home } from './Screens/Home';
 import TermLife from "./Screens/Insurances/TermLife";
+import HealthInsurance from './Screens/Insurances/HealthInsurance';
+import FamilyHealth from './Screens/Insurances/FamilyHealth';
+import GroupInsurance from './Screens/Insurances/GroupInsurance';
+import CarInsurance from './Screens/Insurances/CarInsurance';
+import HomeInsurance from './Screens/Insurances/HomeInsurance';
+import Travel from './Screens/Insurances/TravelInsurance';
+import RetirementInsurance from './Screens/Insurances/Retirement';
+import TwoWheeler from './Screens/Insurances/TwoWheeler';
 
 function App() {
   return (
@@ -11,13 +19,15 @@ function App() {
       
         
       <Route path="/Term-Life" element={<TermLife />} />
-      {/* <Route path="/Health" element={<HealthInsurance />} />
+       <Route path="/Health" element={<HealthInsurance />} />
       <Route path="/Family" element={<FamilyHealth />} />
-      <Route path="/2-Wheeler" element={<TwoWheeler />} />
-      <Route path="/Car" element={<CarInsurance />} />
       <Route path="/Group" element={<GroupInsurance />} />
+      <Route path="/Car" element={<CarInsurance/>} />
       <Route path="/Home" element={<HomeInsurance />} />
+      <Route path="/Travel" element={<Travel />} />
       <Route path="/Retirement" element={<RetirementInsurance />} />
+      <Route path="/2-Wheeler" element={<TwoWheeler />} />
+      {/*
       <Route path="/Raiseaclaim" element={<Raiseaclaim />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/careers" element={<Careers />} />
@@ -26,7 +36,6 @@ function App() {
       <Route path="/sign-up" element={<Signup />} />
       <Route path="/Investment" element={<InvestmentPlans />} />
       <Route path="/Guaranteed" element={<GuaranteedReturns />} />
-      <Route path="/Travel" element={<Travel />} />
       <Route path="/disclaimer" element={<Disclaimer />} />
       <Route path="/term-condition" element={<TermCondition />} />
       */}

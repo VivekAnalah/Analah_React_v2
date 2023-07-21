@@ -9,53 +9,53 @@ export const HomeTopSection = () => {
         {
           id: 1,
           name: "Term-Life Insurance",
-          img: "Term_ins.png",
+          img: "Term_ins_logo.png",
         },
         {
           id: 2,
           name: "Health Insurance",
-          img: "Health_ins.png",
+          img: "Health_ins_logo.png",
         },
         {
           id: 3,
           name: "Family Health Insurance",
-          img: "Family_ins.png",
+          img: "Family_ins_logo.png",
         },
         {
           id: 4,
           name: "Group Health Insurance",
-          img: "Group_ins.png",
+          img: "Group_ins_logo.png",
         },
         {
           id: 5,
           name: "Car Insurance",
-          img: "Car_ins.png",
+          img: "Car_ins_logo.png",
         },
         {
           id: 6,
           name: "2-Wheeler Insurance",
-          img: "Two_ins.png",
+          img: "Bike_ins_logo.png",
         },
       
         {
           id: 7,
           name: "Travel Insurance",
-          img: "Travel_ins.png",
+          img: "Travel_ins_logo.png",
         },
         {
           id: 8,
           name: "Home Insurance",
-          img: "Home_ins.png",
+          img: "Home_ins_logo.png",
         },
         {
           id: 9,
           name: "Retirement Plans",
-          img: "ins9.png",
+          img: "Retirement_ins_logo.png",
         },
         {
           id: 10,
           name: "Investment Plans",
-          img: "ins10.png",
+          img: "Investment_ins_logo.png",
         },
         {
           id: 11,

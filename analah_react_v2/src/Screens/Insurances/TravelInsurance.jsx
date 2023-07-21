@@ -124,7 +124,7 @@ function Travel() {
         list2={"Instant policy issuance "}
         list3={"Free claims assistance "}
         list4={"Get plan recommendation in seconds"}
-        img={"Travel_ins"}
+        img={"Term_ins"}
         Ins_Text_1 ={"Secure your adventures, protect your peace of mind"}
         Ins_Text_2 ={"- Get travel insurance and let worries take a vacation!"}
         Ins_Text_3 = {""}

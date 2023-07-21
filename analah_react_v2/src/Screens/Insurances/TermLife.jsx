@@ -82,7 +82,7 @@ function TermLife() {
       <PolicyDetails
         head={"Term Life Insurance"}
         benefit_head = {"Benefits of Term Life Insurance"}
-        key_feature_head = {"Key Terms to consider while evaluating Term Life Insurance plans:"}
+        key_feature_head = {"Key Terms to consider while evaluating Term Life Insurance plans"}
         subhead={"Buy a Term Life Insurance Plan in a few simple steps."}
         list1={"Compare Term Life Insurance plans"}
         list2={"Instant policy issuance"}

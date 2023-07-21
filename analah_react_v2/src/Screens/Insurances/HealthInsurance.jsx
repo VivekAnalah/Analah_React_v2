@@ -90,7 +90,7 @@ function HealthInsurance() {
       <PolicyDetails
         head={"Health Insurance"}
         benefit_head = {"Benefits of Health Insurance"}
-        key_feature_head = {"Key Terms to consider while evaluating Health Insurance plans:"}
+        key_feature_head = {"Key Terms to consider while evaluating Health Insurance plans"}
         subhead={"Buying a Health Insurance Plan has never been easier."}
         list1={"Compare Health Insurance plans"}
         list2={"Instant policy issuance"}

@@ -210,7 +210,7 @@ function CarInsurance() {
         Ins_Text_1={"Don't be stuck in neutral"}
         Ins_Text_2={"- start your coverage today!"}
         Ins_Text_3={""}
-        img={"Car_ins"}
+        img={"Term_ins"}
         description_1={`A Car Insurance coverage protects against a variety of risks associated with driving. To obtain a Car Insurance coverage from an insurer, you need to pay an insurance premium. In case your car faces damages or you cause damage to others via the insured car, your insurer will provide financial help, as per the applicable terms and conditions. At Analah Insurance, we have curated different car insurance plans to suit your specific needs. Whether you are looking for a basic Third-party Insurance Policy or Bumper-to-Bumper Car Insurance, you can choose from different types of insurance plans for your car.`}
         description_2={
           "Additionally, if a comprehensive policy is in place, you can customise the Insured Declared Value (IDV) and select from a variety of eligible add-on covers to enhance the coverage. To continue receiving coverage, you must renew your Car Insurance policy within the expiry date. Through our simple and easy-to-use platform, you can easily renew your Car Insurance policy online."
