@@ -1,13 +1,17 @@
 import React from "react";
 import "../Styles/chooseUs.css";
+import { Icon } from "@mui/material";
 
 export const Choose = () => {
+
+  const IconsProps = "md:w-[40px] md:h-[40px] sm:w-[35px] sm:h-[35px] ";
+  const iconsProps = "lg:w-[50px] lg:h-[50px] md:w-[45px] md:h-[45px] sm:w-[40px] sm:h-[40px] "
   return (
    
-<div class=" w-[100%] pt-[50px] bg-[#f6fafe]" >
+<div class=" w-[100%] pt-[50px] bg-[#f6fafe]  ChooseContainer" >
       <div class="topic">Why <sapn class="topic2">Choose Us?</sapn></div>
 
-      <div class="content">
+      <div class="content xl:w-[1200px] lg:w-[900px] md:w-[600px] sm:w-[500px] w-[90%]">
         <input type="radio" name="slider" defaultChecked={true} id="home" />
         <input type="radio" name="slider" defaultChecked={false} id="blog" />
         <input type="radio" name="slider" defaultChecked={false} id="help" />
@@ -15,48 +19,48 @@ export const Choose = () => {
       
 
         <div class="list ">
-          <label for="home" class="home">
-            <div className="w-[30%]" >
-            <img src={require("../Assets/Images/calculator51.png")} alt="calculation" className="w-[50%] ml-[-6%]"/>
+          <label for="home" class="home  ">
+            <div className="iconsDiv" >
+            <img src={require("../Assets/Images/calculator51.png")} alt="calculation" className={`  w-[50%]  ${iconsProps} ml-[-6%]`}/>
             </div>
 
-            <div className="w-[70%]" >
+            <div className="w-[70%] headingsChooseUs" >
             <span>Calculate in Minutes</span>
 
             </div>
             
           </label>
           <label for="blog" class="blog">
-            <div  className="w-[30%]" >
-            <img src={require("../Assets/Images/partnership1.png")} alt="Partners" className="w-[50%]" />
+            <div  className="iconsDiv" >
+            <img src={require("../Assets/Images/partnership1.png")} alt="Partners" className={`w-[50%] ${iconsProps}`} />
 
             </div>
 
-            <div className="w-[70%]" >
+            <div className="w-[70%] headingsChooseUs" >
             <span>30+ Insurance Partners</span>
 
             </div>
             
           </label>
           <label for="help" class="help">
-            <div className="w-[30%]" >
-            <img src={require("../Assets/Images/insurance81.png")} alt="Get Insured" className="w-[45%]" />
+            <div className="iconsDiv" >
+            <img src={require("../Assets/Images/insurance81.png")} alt="Get Insured" className={`w-[45%] ${IconsProps}` } />
 
             </div>
 
-            <div className="w-[70%]" >
+            <div className="w-[70%] headingsChooseUs" >
             <span>Simplest Way to Get Insured</span>
 
             </div>
           </label>
          
           <label for="code" class="code">
-            <div className="w-[30%]" >
-          <img src={require("../Assets/Images/claim1.png")} alt="claim" className="w-[46%]" />
+            <div className="iconsDiv" >
+          <img src={require("../Assets/Images/claim1.png")} alt="claim" className={`w-[46%] ${IconsProps}`}  />
 
             </div>
 
-            <div className="w-[70%]" >
+            <div className="sm:w-[70%] headingsChooseUs" >
             <span> Claims Assistance</span>
 
             </div>
@@ -66,7 +70,7 @@ export const Choose = () => {
           <div class="slider"></div>
         </div>
 
-        <div class="text-content">
+        <div class="text-content lg:w-[493.505px] sm:w-[280px] ">
           <div class="home text">
 
      

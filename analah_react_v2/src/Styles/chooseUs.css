@@ -32,13 +32,12 @@
 
 .content {
   margin: auto;
-  width: 70%;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  padding-right: 70px;
-  padding-left: 70px;
+ 
 }
 
 .content .list {
@@ -117,7 +116,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 493.505px;
+ 
   height: 267.785px;
   flex-shrink: 0;
 }
@@ -161,4 +160,124 @@
   padding-left: 10px;
   margin-left: 6px;
   color: #595959;
+}
+
+.ChooseContainer{
+
+}
+
+@media only screen and (max-width: 3000px) and (min-width: 1671px) {
+   
+  .ChooseContainer{
+margin-top: 220px;
+  }
+  
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 0px) {
+   
+  .content {
+    margin: auto;
+   
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 50px;
+    
+  }
+
+  .content .list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  
+    width: 43%;
+    margin-right: 50px;
+  }
+  
+}
+
+@media only screen and (max-width: 767px) and (min-width: 0px) {
+   
+  .content .list label {
+    cursor: pointer;
+    height: 60px;
+  
+    /* padding-left: 25px; */
+    transition: all 0.5s ease;
+    z-index: 10;
+  
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  
+.content .text-content {
+  padding-top: 20px;
+  color: #595959;
+  text-align: justify;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+ 
+  height: 267.785px;
+  flex-shrink: 0;
+}
+  
+}
+
+@media only screen and (max-width: 639px) and (min-width: 0px) {
+   
+  .content {
+    margin: auto;
+   
+    display: block;
+    justify-content: start;
+    align-items: center;
+    margin-top: 50px;
+   
+  }
+
+  .content .list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  
+    width: 100%;
+    margin-right: 50px;
+  }
+
+ 
+  .iconsDiv{
+    width: 50%;
+  }
+  .headingsChooseUs{
+    display: none;
+  }
+
+
+  #home:checked ~ .list label.home,
+#blog:checked ~ .list label.blog,
+#help:checked ~ .list label.help,
+#code:checked ~ .list label.code,
+#about:checked ~ .list label.about {
+  color: #57a4ff;
+  border: 0.5px solid white;
+
+  box-shadow: 0px 2px #57a4ff;
+}
+
+.content .text-content {
+ 
+  height: auto;
+
+}
+  
 }

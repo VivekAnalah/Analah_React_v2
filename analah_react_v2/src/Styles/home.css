@@ -47,7 +47,7 @@
       font-size: 100%;
       column-gap: 4%;
       row-gap: 15%;
-      grid-template-columns: repeat(16%, 1fr) !important;
+      grid-template-columns: repeat(4, 16%) !important;
     }
     .hero {
       width: 33%;
@@ -161,7 +161,7 @@
   /* 1299 */
   @media only screen and (max-width: 950px) and (min-width: 700px) {
     .homeLeft {
-      margin-top: 54%;
+      
       width: 100%;
     }
     .homeLeft h1 {
@@ -207,8 +207,8 @@
       font-size: 85%;
     }
     .homeLeft {
-      padding-top: 0px;
-      margin-top: 80%;
+      
+      
       width: 100%;
     }
     .homeLeft h1 {
@@ -231,8 +231,7 @@
       font-size: 85%;
     }
     .homeLeft {
-      padding-top: 0px;
-      margin-top: 90%;
+      
       width: 100%;
     }
     .homeLeft h1 {

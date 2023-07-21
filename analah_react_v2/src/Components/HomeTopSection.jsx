@@ -67,9 +67,9 @@ export const HomeTopSection = () => {
 
   return (
     <div style={{ height: "auto"}}>
- <div className="main-hero" >
-        <div className="sm:pt-10  pt-[-20] homeLeft lg:pl-[6.5%] pl-[8.5%] sm:mt-[70%] mt-[80%] md:mt-[0%]" >
-          <div className="py-0 px-5 sm:mt-[0px] mt-[-25px]" >
+ <div className="main-hero pt-[50px]" >
+        <div className=" homeLeft lg:pl-[6.5%] pl-[8.5%]" >
+          <div className="py-0 px-5]" >
             <h1 className="text-[25px] sm:text-[30px] md:text-[40px] leading-[40px]  md:leading-[50px] lg:leading-[55px] font-normal font-500 text-[#FFFFFF]">
               Get the Best&nbsp;
               <span className="text-[#FFFFFF] font-500">Insurance</span>
