@@ -27,4 +27,28 @@ padding-right: 10px;
 border-right: 1px solid #000;
 }
 
+.foundingImagesWidth{
+
+  width: 209.006px;
+
+}
+
+.foundingImagesWidth2{
+  width: 209.006px;
+
+}
+
+
+/* @media (min-width: 1600px) and (max-width: 3000px) {
+  .foundingImagesWidth{
+    width: 12%;
+  }
+  .foundingImagesWidth2{
+    width: 12%;
+  }
+} */
+
+
+
+
 

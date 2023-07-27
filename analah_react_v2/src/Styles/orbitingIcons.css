@@ -1,136 +1,365 @@
-.container {
-    width: 20%;
-    height: 300px;
-    border-radius: 50%;
-    position: relative;
-    margin: 0 auto;
-    top: 250px;
-    border: 2px dotted blue;
-  }
+.containerOrbit {
+  position: relative;
+  top: 25px;
+}
 
-  .container2 {
-    width: 50%;
-    height: 500px;
-    border-radius: 50%;
-    position: relative;
-    top: -150px;
-    margin: 0 auto;
-    border: 2px dotted blue;
-  }
+.orbit .center-image {
+  width: 15rem;
+  position: relative;
+  z-index: 10;
+}
+.orbit .center-image img {
+  position: absolute;
+  top: 95px;
+  left: 33%;
+}
+.orbit ul {
+  border: 1px dashed #2a44a9;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+  list-style: none;
+  transform-origin: center;
+  animation: orbit 50s linear infinite;
+}
 
-  .orbit {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: orbit 6s linear infinite;
-    
+.orbit li {
+  position: absolute;
+  width: 4rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  font-weight: 500;
 
-  }
+  text-align: center;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+}
 
-  .orbit1 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: orbit1 6s linear infinite;
-    
-    
+.orbit li > * {
+  width: 80%;
+  height: 80%;
+  display: grid;
+  place-items: center;
+  border-radius: inherit;
+  position: absolute;
+  animation: orbit 50s linear reverse infinite;
+}
+.orbit li > div {
+  background-color: #fff;
+  border-radius: 50%;
+
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.orbit li > div img {
+  width: 30px;
+  height: 30px;
+}
+.orbit li:nth-child(1) {
+  transform: translate(7.5rem, 0rem);
+}
+.orbit li:nth-child(2) {
+  transform: translate(0rem, 7.5rem);
+}
+.orbit li:nth-child(3) {
+  transform: translate(0rem, -7.5rem);
+}
+.orbit li:nth-child(4) {
+  transform: translate(-7.5rem, 0rem);
+}
+@keyframes orbit {
+  100% {
+    rotate: 1turn;
   }
+}
+@keyframes hold-position {
+  100% {
+    rotate: -1turn;
+  }
+}
+@keyframes throb {
+  100% {
+    scale: 1.05;
+  }
+}
+.orbit2 {
+  position: absolute;
+  top: -34%;
+  left: -34%;
+}
+.orbit2 ul {
+  border: 1px dashed #2a44a9;
+
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  width: 25rem;
+  height: 25rem;
+  position: relative;
+  list-style: none;
+
+  transform-origin: center;
+  animation: orbit2 50s linear infinite;
+}
+/* .orbit2 ul:hover {
+  animation-play-state: paused;
+   --orbit2-play-state: paused; 
+} */
+.orbit2 li {
+  position: absolute;
+  width: 4rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  font-weight: 500;
+
+  text-align: center;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+}
+
+.orbit2 li > * {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  border-radius: inherit;
+  position: absolute;
+  animation: orbit2 50s linear reverse infinite;
+}
+
+.orbit2 li > div {
+  background-color: #fff;
+  border-radius: 50%;
+
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.orbit2 li:nth-child(1) {
+  transform: translate(12.5rem, 0rem);
+}
+.orbit2 li:nth-child(2) {
+  transform: translate(0rem, 12.5rem);
+}
+.orbit2 li:nth-child(3) {
+  transform: translate(0rem, -12.5rem);
+}
+.orbit2 li:nth-child(4) {
+  transform: translate(-12.5rem, 0rem);
+}
+@keyframes orbit2 {
+  100% {
+    rotate: -1turn;
+  }
+}
+#bike {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+}
+#heart {
+  position: absolute;
+  top: 23%;
+  left: 35%;
+}
+#investment {
+  position: absolute;
+  top: 23%;
+  left: 49%;
+}
+#guaranteed {
+  position: absolute;
+  top: 35%;
+  left: 60%;
+}
+.iconsSize {
+  width: 25px;
+  height: 25px;
+  padding: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
 
 
-  .icon1 {
-    width: 30px;
-    height: 30px;
-    background-color: #b44498a4; /* Replace with desired icon color */
-    border-radius: 50%;
-    position: absolute;
-    bottom: -10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .icon2 {
-    width: 30px;
-    height: 30px;
-    background-color: #c4e47b; /* Replace with desired icon color */
-    border-radius: 50%;
-    position: absolute;
-    top: 40%;
-    left: 0%;
-    transform: translate(-50%, -50%);
-  }
-  .icon3 {
-    width: 30px;
-    height: 30px;
-    background-color: #90e9ec; /* Replace with desired icon color */
-    border-radius: 50%;
-    position: absolute;
-    top: 40%;
-    right: -10%;
-    transform: translate(-50%, -50%);
-  }
 
-  .icon:nth-child(1) {
-    animation: orbit-1 4s linear infinite;
-  }
+@media (min-width: 1600px) and (max-width: 2560px) {
+  .orbit .center-image img {
+  position: absolute;
+  top: 174px;
+  left: 69%;
+}
+  .orbit ul {
+  width: 25rem;
+  height: 25rem;
+ }
+ .orbit li:nth-child(1) {
+  transform: translate(12.5rem, 0rem);
+}
+.orbit li:nth-child(2) {
+  transform: translate(0rem, 12.5rem);
+}
+.orbit li:nth-child(3) {
+  transform: translate(0rem, -12.5rem);
+}
+.orbit li:nth-child(4) {
+  transform: translate(-12.5rem, 0rem);
+}
 
-  .icon:nth-child(2) {
-    animation: orbit-2 6s linear infinite;
-  }
+.orbit2 ul {
+  width: 35rem;
+  height: 35rem;
+ }
 
-  .icon:nth-child(3) {
-    animation: orbit-3 8s linear infinite;
-  }
+ .orbit2 li:nth-child(1) {
+  transform: translate(17.5rem, 0rem);
+}
+.orbit2 li:nth-child(2) {
+  transform: translate(0rem, 17.5rem);
+}
+.orbit2 li:nth-child(3) {
+  transform: translate(0rem, -17.5rem);
+}
+.orbit2 li:nth-child(4) {
+  transform: translate(-17.5rem, 0rem);
+}
 
-  /* Add more animation rules for additional icons */
+.orbit2 {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+}
+#bike {
+  position: absolute;
+  top: 42%;
+  left: 32%;
+}
+#heart {
+  position: absolute;
+  top: 31%;
+  left: 42%;
+}
+#investment {
+  position: absolute;
+  top: 32%;
+  left: 56%;
+}
+#guaranteed {
+  position: absolute;
+  top: 42%;
+  left: 65%;
+}
 
-  @keyframes orbit {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes orbit1 {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(-360deg);
-    }
-  }
 
-  @keyframes orbit-1 {
-    0% {
-      transform: translateX(100px) rotate(0deg);
-    }
-    100% {
-      transform: translateX(100px) rotate(-360deg);
-    }
-  }
+}
 
-  @keyframes orbit-2 {
-    0% {
-      transform: translateX(150px) rotate(0deg);
-    }
-    100% {
-      transform: translateX(150px) rotate(-360deg);
-    }
-  }
+/* @media (min-width: 950px) and (max-width: 1365px) {
+  .orbit .center-image img {
+  position: absolute;
+  top: 75px;
+  left: 115%;
+}
+  .orbit ul {
+  width: 10rem;
+  height: 10rem;
+ }
+ .orbit li:nth-child(1) {
+  transform: translate(5rem, 0rem);
+}
+.orbit li:nth-child(2) {
+  transform: translate(0rem, 5rem);
+}
+.orbit li:nth-child(3) {
+  transform: translate(0rem, -5rem);
+}
+.orbit li:nth-child(4) {
+  transform: translate(-5rem, 0rem);
+}
 
-  @keyframes orbit-3 {
-    0% {
-      transform: translateX(200px) rotate(0deg);
-    }
-    100% {
-      transform: translateX(200px) rotate(-360deg);
-    }
-  }
+.orbit2 ul {
+  width: 20rem;
+  height: 20rem;
+ }
 
-  .imgage{
-    width: 25px;
-    height: 25px;
+ .orbit2 li:nth-child(1) {
+  transform: translate(10rem, 0rem);
+}
+.orbit2 li:nth-child(2) {
+  transform: translate(0rem, 10rem);
+}
+.orbit2 li:nth-child(3) {
+  transform: translate(0rem, -10rem);
+}
+.orbit2 li:nth-child(4) {
+  transform: translate(-10rem, 0rem);
+}
+.orbit{
+  margin-top: 40px;
+}
+
+.orbit2 {
+  position: absolute;
+  top: -48%;
+  left: -48%;
+}
+#bike {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+}
+#heart {
+  position: absolute;
+  top: 23%;
+  left: 35%;
+}
+#investment {
+  position: absolute;
+  top: 23%;
+  left: 49%;
+}
+#guaranteed {
+  position: absolute;
+  top: 35%;
+  left: 60%;
+}
+.orbit .center-image {
+  width: 3rem;
+  
+}
+.orbit li {
+ 
+  width: 2rem;
+
+}
+.orbit2 li {
+ 
+  width: 4rem;
+
+}
+.orbit li > div img {
+  width: 15px;
+  height: 15px;
+}
+.orbit2 li > div img {
+  width: 30px;
+  height: 30px;
+}
+
+.iconsSize {
+  width: 20px;
+  height: 20px;
+ 
+ 
+}
+} */
+
+@media (min-width: 0px) and (max-width: 950px) {
+  .containerOrbit {
+    display: none;
   }
+}

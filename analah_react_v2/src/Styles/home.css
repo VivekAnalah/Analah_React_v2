@@ -62,6 +62,15 @@
     .homeLeft {
       width: 60%;
       }
+
+      .main-hero {
+    
+
+      
+      background-size: 100% 400px;
+     
+    
+      }
     
   }
   /* 1100 */
@@ -92,12 +101,7 @@
    
     
   }
-  /* 1145 */
-  @media (min-width: 1500px) and (max-width: 1600px) {
-    .main-hero {
-      padding: 0 115px !important;
-    }
-  }
+
   /* 1176 */
   @media only screen and (max-width: 1365px) and (min-width: 1280px) {
    .cstm-grid {

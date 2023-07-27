@@ -11,6 +11,13 @@ import HomeInsurance from './Screens/Insurances/HomeInsurance';
 import Travel from './Screens/Insurances/TravelInsurance';
 import RetirementInsurance from './Screens/Insurances/Retirement';
 import TwoWheeler from './Screens/Insurances/TwoWheeler';
+import { RaiseClaim } from './Screens/RaiseClaim';
+import BecomePosp from './Screens/BecomePosp';
+import Disclaimer from './Screens/Disclaimer';
+import PrivacyPolicy from "./Screens/PrivacyPolicy"
+import TermCondition from './Screens/TermCondition';
+import PolicyCancel from './Components/Policy_Cancel';
+import Careers from './Screens/Careers';
 
 function App() {
   return (
@@ -27,17 +34,17 @@ function App() {
       <Route path="/Travel" element={<Travel />} />
       <Route path="/Retirement" element={<RetirementInsurance />} />
       <Route path="/2-Wheeler" element={<TwoWheeler />} />
-      {/*
-      <Route path="/Raiseaclaim" element={<Raiseaclaim />} />
-      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-      <Route path="/careers" element={<Careers />} />
+      <Route path="/Raiseaclaim" element={<RaiseClaim />} />
       <Route path="/become-posp" element={<BecomePosp />} />
+      <Route path="/disclaimer" element={<Disclaimer />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/term-condition" element={<TermCondition />} />
       <Route path="/policy-cancel" element={<PolicyCancel />} />
+      <Route path="/careers" element={<Careers />} />
+      {/*
       <Route path="/sign-up" element={<Signup />} />
       <Route path="/Investment" element={<InvestmentPlans />} />
       <Route path="/Guaranteed" element={<GuaranteedReturns />} />
-      <Route path="/disclaimer" element={<Disclaimer />} />
-      <Route path="/term-condition" element={<TermCondition />} />
       */}
 
 

@@ -30,19 +30,114 @@ html {
   line-height: normal;
 }
 
-.textStyle{
+.textStyle {
+  color: #595959;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title-border-bottom {
+  border-bottom: 2px solid #4481e4;
+  padding-bottom: 5px;
+}
+
+.divStyles {
+  background: linear-gradient(176deg, #4582e4 0%, #6dbdf7 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  border-radius: 11px;
+  width: fit-content;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 35px;
+}
+
+.divStyles:hover {
+  background: white;
+  box-shadow: 5px 10px;
+  color: #4582e4;
+}
+
+.textHeader1{
+  color: #4C8CE7;
+ 
+  /* font-family: Work Sans; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.textHeader1Lite{
+  color: #000;
+  /* font-family: Work Sans; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.textHeader2{
+  color: #010101;
+  /* font-family: Work Sans; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.buttonText{
+  color: #FFF;
+text-align: center;
+/* font-family: Work Sans; */
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
+.textSubHead{
+
+}
+
+.textNormal{
+  color: #595959;
+  /* font-family: Roboto; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.CancelPolicy{
+  color: #4C8CE7;
+/* font-family: Roboto; */
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.CancelPolicyText{
   color: #595959;
 text-align: center;
-font-family: Open Sans;
+/* font-family: Roboto; */
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
 
-.title-border-bottom {
- 
-  border-bottom: 2px solid #4481E4 ;
-  padding-bottom: 5px;
+.CurrentOpenings{
+  color: #595959;
+text-align: justify;
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
 }
-

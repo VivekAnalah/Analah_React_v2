@@ -1,5 +1,5 @@
 import { useMediaQuery } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Header } from "../Components/Header";
 import Footer from "../Components/Footer";
 import "../Styles/policyDetails.css";
@@ -54,31 +54,9 @@ function PolicyDetails({
   const title = head;
   const myArr = title.split(" ");
 
-  const [isHovered, setIsHovered] = useState(false);
+  
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
 
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
-  const divStyles = {
-    background: isHovered
-      ? "white"
-      : "linear-gradient(176deg, #4582E4 0%, #4582E4 100%)",
-    boxShadow: isHovered ? "5px 10px" : "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
-    color: isHovered ? "#4582E4" : "#ffffff",
-    borderRadius: 11,
-    width: "fit-content",
-    paddingLeft : "25px",
-    paddingRight : "25px",
-    
-
-    height: "35px",
-    // boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
-  };
 
 
   return (
@@ -98,14 +76,14 @@ function PolicyDetails({
             <div className=" ">
               <div className="flex items-center sm:mt-[0px] mt-[20px]">
                 {/* Done */}
-                <h2 className="policyHeader pb-[2%]">
+                <h2 className="textHeader1 pb-[2%]">
                   <span className="title-border-bottom">{myArr[0]}</span>{" "}
                   {myArr[1] === "Insurance" || myArr[1] === "Plans" ? (
-                    <span className="policyHeader2">{myArr[1]}</span>
+                    <span className="textHeader2">{myArr[1]}</span>
                   ) : (
                     <span>{myArr[1]} </span>
                   )}
-                  <span className="policyHeader2">{myArr[2]}</span>
+                  <span className="textHeader2">{myArr[2]}</span>
                 </h2>
                 {/* ---- */}
               </div>
@@ -185,7 +163,7 @@ function PolicyDetails({
                 <img
                   src={require(`../Assets/Images/${img}.png`)}
                   alt={head}
-                  className=" w-[300.073px] z-[2] relative top-0"
+                  className=" w-[300.073px] z-[2] relative top-0 rounded-[27px]"
                 />
               ) : img === "Group_ins" ? (
                 <>
@@ -193,14 +171,14 @@ function PolicyDetails({
                   <img
                     src={require(`../Assets/Images/${img}.png`)}
                     alt={head}
-                    className=" w-[300.073px]  z-2 relative top-0"
+                    className=" w-[300.073px]  z-2 relative top-0 rounded-[27px]"
                   />{" "}
                 </>
               ) : (
                 <img
                   src={require(`../Assets/Images/${img}.png`)}
                   alt={head}
-                  className=" w-[300.073px]  z-2 relative top-0"
+                  className=" w-[300.073px]  z-2 relative top-0 rounded-[27px]"
                 />
               )}
             </div>
@@ -241,10 +219,9 @@ function PolicyDetails({
                   <div className="text-center items-center h-[20px] mt-[20px]">
                     <a href={quotes_link} target="blank">
                       <button
-                        className="justify-center items-center font-700 text-[#FFFFFF] sm:text-[16px] text-[15px]"
-                        style={divStyles}
-                        onMouseEnter={handleMouseEnter}
-                        onMouseLeave={handleMouseLeave}
+                        className="justify-center items-center font-700 text-[#FFFFFF] sm:text-[16px] text-[15px] divStyles"
+                       
+                      
                       >
                         {quotes}
                       </button>
@@ -256,10 +233,9 @@ function PolicyDetails({
                   <div className="text-center items-center h-[20px] mt-[20px]">
                     <a href={quotes_link} target="blank">
                       <button
-                        className="justify-center items-center font-700 text-[#FFFFFF] sm:text-[16px] text-[15px]"
-                        style={divStyles}
-                        onMouseEnter={handleMouseEnter}
-                        onMouseLeave={handleMouseLeave}
+                        className="justify-center items-center font-700 text-[#FFFFFF] sm:text-[16px] text-[15px] divStyles"
+                     
+                      
                       >
                         {quotes}
                       </button>
@@ -272,6 +248,8 @@ function PolicyDetails({
         </div>
       </div>
       {/* -------------------- */}
+
+      {/*  */}
 
       <div className="my-0 ">
         <div className="relative ">

@@ -60,3 +60,83 @@
     margin-top: 10px;
     }
 }
+
+.PospHeader{
+  color: #2F2F2F;
+  /* font-family: Work Sans; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pospSubhead{
+  color: #4C8CE7;
+  /* font-family: Work Sans; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.containerStyle{
+  background: linear-gradient(170deg, #F6FAFE 0%, rgba(255, 255, 255, 0.06) 59.90%);
+}
+
+.pospSubText{
+  color: #595959;
+/* font-family: Work Sans; */
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.pospSubBoldText{
+  color: #4F4F4F;
+/* font-family: Work Sans; */
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.pospsubheadingtext{
+  color: #595959;
+  /* font-family: Work Sans; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.posptext{
+  color: #595959;
+  /* font-family: Work Sans; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+}
+
+.eligibleHead{
+  color: #4C8CE7;
+text-align: justify;
+/* font-family: Work Sans; */
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+}
+
+.eligibleText{
+  color: #595959;
+text-align: justify;
+/* font-family: Work Sans; */
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+

@@ -115,7 +115,7 @@ function TwoWheeler() {
         list2={"Instant policy issuance"}
         list3={"Free claims assistance"}
         list4={"Get plan recommendation in seconds"}
-        img={"Term_ins"}
+        img={"Bike_ins"}
         Ins_Text_1 ={"Rev up your protection and"}
         Ins_Text_2 ={"get insured now!"}
         Ins_Text_3 = {""}

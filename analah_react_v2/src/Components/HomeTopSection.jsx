@@ -60,7 +60,7 @@ export const HomeTopSection = () => {
         {
           id: 11,
           name: "Guaranteed Return Plans",
-          img: "ins11.png",
+          img: "Guaranteed_ins.png",
         },
       ];
     
@@ -100,10 +100,10 @@ export const HomeTopSection = () => {
           </div>
         </div>
       </div>
-      <div className="hero absolute right-[0px] block sm:mt-[20px]  lg:mt-[100px] " >
+      <div className="absolute top-[120px] lg:right-[20%] md:right-[10%] block   mt-[100px] " >
       
         <div className="">
-          {/* <OrbitingIcons /> */}
+          <OrbitingIcons />
         </div>
    
             </div>

@@ -21,7 +21,7 @@ export const Choose = () => {
         <div class="list ">
           <label for="home" class="home  ">
             <div className="iconsDiv" >
-            <img src={require("../Assets/Images/calculator51.png")} alt="calculation" className={`  w-[50%]  ${iconsProps} ml-[-6%]`}/>
+            <img src={require("../Assets/Images/calculator51.png")} alt="calculation" className={`w-[50%]  ${iconsProps} ml-[-6%]`}/>
             </div>
 
             <div className="w-[70%] headingsChooseUs" >

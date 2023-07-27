@@ -1,9 +1,9 @@
 .input-text {
     width: 100%;
     padding: 12px 15px;
-    border: 1px solid #a7a7a7;
+    
     /* border: 1px solid #2A44A9; */
-    margin-bottom: 10px;
+ 
     border-radius: 11px;
     color: #595959;
   }
@@ -11,39 +11,12 @@
   .raiseform-wrap {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-    padding: 40px;
+    /* padding: 40px; */
+    padding-top: 15px;
   }
   /* 122 */
-  label {
-    font-weight: 700;
-    font-size: 18px;
-    display: block;
-    float: left;
-    width: 25%;
-    padding: 0.5em;
-    color: #2a44a9;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
+ 
   
-    border-bottom: 2px solid #2a44a9;
-  
-    border-right: 2px solid #2a44a9;
-    background: #fff;
-  }
-  /* 435 */
-  .checkbox label {
-    width: 100%;
-    border: none;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    color: #595959;
-    padding: 0;
-    text-align: left;
-    background-color: transparent;
-  }
   /* 548 */
 .mycontainer_form {
     padding: 0 50px !important;
@@ -94,7 +67,7 @@
   margin-right: 5px;
   margin-bottom: 10px;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 11px;
   overflow: hidden;
   cursor: pointer;
   text-transform: uppercase;
@@ -105,13 +78,16 @@
 /* 772 */
 .checkbox-tools:not(:checked) + label {
   background-color: var(--dark-light);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); */
 }
 /* 776 */
 .checkbox-tools:checked + label {
-  background: linear-gradient(rgb(42, 68, 169) 0%, rgb(48, 82, 211) 100%);
+  border-radius: 11px;
+  background: linear-gradient(176deg, #4582E4 0%, #6DBDF7 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  
   color: #fff;
-  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.2);
+  
 }
 /* 781 */
 .checkbox-tools:not(:checked) + label:hover {
@@ -216,6 +192,11 @@
           padding: 0 10px !important;
         }
       
+    }
+
+
+    .RaiseClaimFormContainer{
+      background: linear-gradient(0deg, rgba(241, 246, 253, 0.00) 13.52%, rgba(241, 246, 253, 0.63) 30.11%, rgba(241, 246, 253, 0.63) 63.58%, rgba(255, 255, 255, 0.63) 100%);
     }
 
     

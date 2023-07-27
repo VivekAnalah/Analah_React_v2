@@ -90,28 +90,28 @@ export const Header = () => {
                   </h2>
                 </Link>
               </li>
-              <li className="nav-item">
-                {policyDetails ? null : (
+              <li className="nav-item w-[120px]">
+               
                   <div
-                    className={ "my-2 flex space-x-2 sm:my-0"}
+                    className={ "mt-[4px] flex gap-[5px] "}
                   >
                 
                     <button
                       className={
-                         "text-[#4c8ce7] text-[14px] font-weight-600"
+                         "text-[#4c8ce7] text-[14px] font-600"
                       }
                     >
-                       <a href="https://dashboard.analahinsurance.com/customer/login" target="blank"></a>
+                       <a href="https://dashboard.analahinsurance.com/customer/login" target="blank">Login</a>
                       
                     </button>
                    
                    
-                    <button>
-                      <Link to="text-[#4c8ce7] text-[14px] font-weight-600" ></Link>
+                    <button className='w-[60%]' style={{borderRadius: "12.482px",background: "#4C8CE7"}}>
+                      <Link to="" className='text-[#FFF] text-[14px] font-600   '>Register</Link>
                       
                     </button>
                   </div>
-                )}
+              
               </li>
             </ul>
           </div>

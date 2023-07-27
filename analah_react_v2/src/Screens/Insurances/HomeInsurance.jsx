@@ -44,7 +44,7 @@ function HomeInsurance() {
         list2={"Instant policy issuance"}
         list3={"Free claims assistance"}
         list4={"Avail plan recommendation in seconds"}
-        img={"Term_ins"}
+        img={"Home_ins"}
         Ins_Text_1={"Insure your"}
         Ins_Text_2={"Home Sweet Home"}
         Ins_Text_3={""}

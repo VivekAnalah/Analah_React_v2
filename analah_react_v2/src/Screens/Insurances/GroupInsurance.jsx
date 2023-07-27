@@ -83,7 +83,7 @@ desc: "Under Section 80D of the Income Tax Act, employers are eligible to avail 
         list2={"Instant policy issuance"}
         list3={"Free claims assistance"}
         list4={"Get plan recommendation in seconds"}
-        img={"Term_ins"}
+        img={"Group_ins"}
         Ins_Text_1 ={"Get your team's health on lock -"}
         Ins_Text_2 ={"we've got your group health insurance needs covered."}
         Ins_Text_3 = {""}

@@ -19,7 +19,7 @@ export const FoundingTeam = () => {
           <img
             src={require("../Assets/Images/Vaishali_Dhankani2.png")}
             alt="Vaishali Dhankani"
-            className="w-[24%] mt-[-35px] absolute left-[0px] bottom-[0px]"
+            className=" mt-[-35px] absolute left-[0px] bottom-[0px] foundingImagesWidth"
            
           />
         </div>
@@ -67,7 +67,7 @@ export const FoundingTeam = () => {
           <img
             src={require("../Assets/Images/hitesh_dhankani4.png")}
             alt="Hitesh Dhankani"
-            className="w-[23%] mt-[-35px] absolute bottom-[0px] right-[20px]"
+            className="mt-[-35px] absolute bottom-[0px] right-[20px] foundingImagesWidth2"
             
           />
         </div>
