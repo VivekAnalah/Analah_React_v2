@@ -103,7 +103,7 @@ export const HomeTopSection = () => {
       <div className="absolute top-[120px] lg:right-[20%] md:right-[10%] block   mt-[100px] " >
       
         <div className="">
-          <OrbitingIcons />
+          {/* <OrbitingIcons /> */}
         </div>
    
             </div>

@@ -43,11 +43,11 @@ export const About = () => {
   return (
     <div className='w-[100%] aboutContainer'>
         <div className='m-[auto]'>
-        <div class="topic ">About <sapn class="topic2">Us</sapn></div>
-        <p className='textStyle'>Analah Insurance is an IRDAI regulated Insurance Broking Firm, with headquarters in Mumbai's prestigious BKC area.</p>
+        <div class="topicAbout ">About <sapn class="topic2About">Us</sapn></div>
+        <p className='textStyleAbout'>Analah Insurance is an IRDAI regulated Insurance Broking Firm, with headquarters in Mumbai's prestigious BKC area.</p>
         </div>
 
-        <div class="grid grid-cols-2 gap-4 m-[auto] w-[64%] mt-[60px]">
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-4 m-[auto] w-[64%] mt-[50px]">
 
             {
                 aboutUs_detials && aboutUs_detials.map((ele,i) =>
@@ -55,7 +55,7 @@ export const About = () => {
                     <div className='p-[6%] grid grid-cols-[20%,80%]  gridStyle' key={i}>
 
                     <div className=''>
-                        <img src={require(`../Assets/Images/${ele.icons}`)} className='w-[55px] h-[55px]' alt="Icons"/>
+                        <img src={require(`../Assets/Images/${ele.icons}`)} className='aboutIcons' alt="Icons"/>
                     </div>
                     <div>
                         <h5 className='textHeadings'>{ele.heading}</h5>
