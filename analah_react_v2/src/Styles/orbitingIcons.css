@@ -193,7 +193,7 @@
     width: 142px;
     height: 142px;
   position: absolute;
-  top: 174px;
+  top: 162px;
   left: 60%;
 }
   .orbit ul {
@@ -241,28 +241,28 @@
   width: 40px;
   height: 40px;
   top: 40%;
-  left: 32%;
+  left: 25%;
 }
 #heart {
   position: absolute;
   width: 40px;
   height: 40px;
-  top: 29%;
-  left: 42%;
+  top: 27%;
+  left: 39%;
 }
 #investment {
   position: absolute;
   width: 40px;
   height: 40px;
-  top: 30%;
-  left: 56%;
+  top: 28%;
+  left: 57%;
 }
 #guaranteed {
   position: absolute;
   width: 40px;
   height: 40px;
   top: 40%;
-  left: 65%;
+  left: 71%;
 }
 
 
