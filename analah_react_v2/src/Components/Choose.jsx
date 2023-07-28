@@ -11,7 +11,7 @@ export const Choose = () => {
 <div class=" w-[100%] pt-[50px] bg-[#f6fafe]  ChooseContainer" >
       <div class="topic">Why <sapn class="topic2">Choose Us?</sapn></div>
 
-      <div class="content xl:w-[1200px] lg:w-[900px] md:w-[600px] sm:w-[500px] w-[90%]">
+      <div class="content xl:w-[80%] lg:w-[900px] md:w-[600px] sm:w-[500px] w-[90%]">
         <input type="radio" name="slider" defaultChecked={true} id="home" />
         <input type="radio" name="slider" defaultChecked={false} id="blog" />
         <input type="radio" name="slider" defaultChecked={false} id="help" />
@@ -21,7 +21,7 @@ export const Choose = () => {
         <div class="list ">
           <label for="home" class="home  ">
             <div className="iconsDiv" >
-            <img src={require("../Assets/Images/calculator51.png")} alt="calculation" className={`w-[50%]  ${iconsProps} ml-[-6%]`}/>
+            <img src={require("../Assets/Images/calculator51.png")} alt="calculation" className={`w-[40px] ${iconsProps} ml-[-6%]`}/>
             </div>
 
             <div className="w-[70%] headingsChooseUs" >
@@ -32,7 +32,7 @@ export const Choose = () => {
           </label>
           <label for="blog" class="blog">
             <div  className="iconsDiv" >
-            <img src={require("../Assets/Images/partnership1.png")} alt="Partners" className={`w-[50%] ${iconsProps}`} />
+            <img src={require("../Assets/Images/partnership1.png")} alt="Partners" className={`w-[40px] ${iconsProps}`} />
 
             </div>
 
@@ -44,7 +44,7 @@ export const Choose = () => {
           </label>
           <label for="help" class="help">
             <div className="iconsDiv" >
-            <img src={require("../Assets/Images/insurance81.png")} alt="Get Insured" className={`w-[45%] ${IconsProps}` } />
+            <img src={require("../Assets/Images/insurance81.png")} alt="Get Insured" className={`w-[35px] ${IconsProps}` } />
 
             </div>
 
@@ -56,7 +56,7 @@ export const Choose = () => {
          
           <label for="code" class="code">
             <div className="iconsDiv" >
-          <img src={require("../Assets/Images/claim1.png")} alt="claim" className={`w-[46%] ${IconsProps}`}  />
+          <img src={require("../Assets/Images/claim1.png")} alt="claim" className={`w-[35px] ${IconsProps}`}  />
 
             </div>
 
@@ -70,7 +70,7 @@ export const Choose = () => {
           <div class="slider"></div>
         </div>
 
-        <div class="text-content lg:w-[493.505px] sm:w-[280px] ">
+        <div class="text-content lg:w-[493.505px] sm:w-[280px] mb-[30px]">
           <div class="home text">
 
      

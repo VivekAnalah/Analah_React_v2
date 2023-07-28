@@ -246,18 +246,18 @@ margin-top: 220px;
   }
 
   .content .list {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+   
     position: relative;
+
   
     width: 100%;
     margin-right: 50px;
   }
 
  
-  .iconsDiv{
-    width: 50%;
-  }
+ 
   .headingsChooseUs{
     display: none;
   }
@@ -278,6 +278,9 @@ margin-top: 220px;
  
   height: auto;
 
+}
+.text-content{
+  margin-bottom: 30px;
 }
   
 }

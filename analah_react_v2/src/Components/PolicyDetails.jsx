@@ -53,6 +53,7 @@ function PolicyDetails({
 
   const title = head;
   const myArr = title.split(" ");
+  const subhadText = "lg:text-[16px] md:text-[12px] text-[14px]";
 
   
 
@@ -71,8 +72,8 @@ function PolicyDetails({
             "linear-gradient(5deg, rgb(188 207 227) 0%, rgba(255, 255, 255, 0.06) 59.90%)",
         }}
       >
-        <div className="flex flex-col sm:flex-row   termLife items-center pt-[50px] pb-[20px] w-[90%] m-auto">
-          <div className="lg:w-[45%] sm:w-[50%] w-[90%] order-2 sm:order-1 flex flex-col  pl-[8.5%] sm:pr-[0%] pr-[8.5%]">
+        <div className="flex flex-col md:flex-row md:gap-[0px] gap-[60px]  termLife items-center pt-[50px] pb-[20px] w-[90%] m-auto">
+          <div className="lg:w-[45%]  w-[100%] order-2 md:order-1 flex flex-col  md:pl-[8.5%]  md:pr-[8.5%] justify-center items-center ">
             <div className=" ">
               <div className="flex items-center sm:mt-[0px] mt-[20px]">
                 {/* Done */}
@@ -88,12 +89,12 @@ function PolicyDetails({
                 {/* ---- */}
               </div>
               {/* done */}
-              <h3 className="  text-[16px] font-[400] lg:pt-[25px] pt-[1rem] text-[#000] pb-[2%]">
+              <h3 className={` ${subhadText} lg:text-[16px] md:text-[12px] font-[400] lg:pt-[25px] pt-[1rem] text-[#000] pb-[2%]`}>
                 {subhead}
               </h3>
 
               <div className="listBox h-[50px]">
-                <ul className="  text-[16px] font-400 ">
+                <ul className={`${subhadText}  font-400 `}>
                   <li className="p-[7px] flex">
                     <img
                       src={require("../Assets/Images/point.png")}
@@ -108,7 +109,7 @@ function PolicyDetails({
               </div>
 
               <div className="listBox mt-[12px] h-[50px]">
-                <ul className="  text-[16px]  text-[#217BF4] font-400 ml-[25px]  ">
+                <ul className={  `${subhadText} text-[#217BF4] font-400 ml-[25px]`}>
                   <li className="p-[7px] ">
                     <img
                       src={require("../Assets/Images/point.png")}
@@ -123,7 +124,7 @@ function PolicyDetails({
               </div>
 
               <div className="listBox mt-[12px] h-[50px]">
-                <ul className="  text-[16px]  text-[#217BF4] font-400 ml-[25px]  ">
+                <ul className={` ${subhadText}  text-[#217BF4] font-400 ml-[25px]  `}>
                   <li className="p-[7px] ">
                     <img
                       src={require("../Assets/Images/point.png")}
@@ -138,7 +139,7 @@ function PolicyDetails({
               </div>
 
               <div className={RetirementInsurance ? "listBox h-[65px] mt-[12px]" : "listBox mt-[12px] h-[50px]"}   >
-                <ul className="  text-[16px]  text-[#217BF4] font-400 ml-[25px]">
+                <ul className={` ${subhadText}  text-[#217BF4] font-400 ml-[25px]  `}>
                   <li className="p-[7px] ">
                     <img
                       src={require("../Assets/Images/point.png")}
@@ -156,37 +157,22 @@ function PolicyDetails({
           {/* -------- */}
 
           {/* Top Vector Section */}
-          <div className="order-1 sm:order-2  items-center xl:ml-[10%] lg:ml-[5%] w-[50%]">
-            <div className="relative left-[20%] w-[fit-content]">
+          <div className="order-1 md:order-2  items-center xl:ml-[10%] lg:ml-[5%] md:w-[50%] w-[80%] ">
+            <div className="relative m-auto w-[fit-content]">
               <div className="w-[50px] h-[50px] bg-[#F2F2F2] absolute top-[-14px] left-[-18px]"></div>
-              {img === "Travel_ins" ? (
+             
                 <img
                   src={require(`../Assets/Images/${img}.png`)}
                   alt={head}
-                  className=" w-[300.073px] z-[2] relative top-0 rounded-[27px]"
+                  className=" lg:w-[300.073px] md:w-[200.073px] z-2 relative top-0 rounded-[27px]"
                 />
-              ) : img === "Group_ins" ? (
-                <>
-                  {" "}
-                  <img
-                    src={require(`../Assets/Images/${img}.png`)}
-                    alt={head}
-                    className=" w-[300.073px]  z-2 relative top-0 rounded-[27px]"
-                  />{" "}
-                </>
-              ) : (
-                <img
-                  src={require(`../Assets/Images/${img}.png`)}
-                  alt={head}
-                  className=" w-[300.073px]  z-2 relative top-0 rounded-[27px]"
-                />
-              )}
+           
             </div>
 
             <div className="">
-              <div className="mt-[20px] ml-[-1%]" style={{ textAlign: "center" }}>
+              <div className="mt-[20px] w-[80%] m-auto" style={{ textAlign: "center" }}>
                 {myArr[0] === "Term" ? (
-                  <h2 className=" text-[24px] items-center ">
+                  <h2 className=" lg:text-[24px] md:text-[20px] items-center ">
                     <span className="text-[#4C8CE7] font-600">
                       {Ins_Text_1}
                     </span>{" "}
@@ -194,7 +180,7 @@ function PolicyDetails({
                     <span className="text-[#000] ">{Ins_Text_3}</span>
                   </h2>
                 ) : (
-                  <h2 className="text-[24px] text-center">  
+                  <h2 className="lg:text-[24px] md:text-[20px] text-center">  
                     <span className="text-[#4C8CE7] font-600">
                       {Ins_Text_1}
                     </span>{" "}
@@ -249,7 +235,7 @@ function PolicyDetails({
       </div>
       {/* -------------------- */}
 
-      {/*  */}
+      {/*------------------------ Know More Section ----------------------------------  */}
 
       <div className="my-0 ">
         <div className="relative ">
@@ -262,20 +248,20 @@ function PolicyDetails({
           <div
             className={
               gridText
-                ? " pt-10 ml-[8.5%] mr-[8.5%] mx-auto pb-20"
-                : " pt-10 ml-[8.5%] mr-[8.5%] mx-auto pb-10 lg:pb-20"
+                ? " pt-10 sm:ml-[8.5%] sm:mr-[8.5%] ml-[5%] mr-[5%] mx-auto pb-20"
+                : " pt-10 sm:ml-[8.5%] sm:mr-[8.5%] ml-[5%] mr-[5%] mx-auto pb-10 lg:pb-20"
             }
           >
             <div>
-              <h2 className=" pb-8 lg:pb-11 text-center font-1000 text-[32px] text-[#000]">
-                Know more about <span className="text-[#4C8CE7]">{head}</span>
+              <h2 className=" pb-8 lg:pb-11 text-center textHeader2">
+                Know more about <span className="textHeader1">{head}</span>
               </h2>
             </div>
 
             {/* Flex Table of Conent  */}
 
-            <div className="flex w-[90%] ml-[50px] gap-[5%]">
-              <div className="w-[25%] h-[fit-content] ml-[5%] rounded-[19px] bg-[#eceff3] pb-[20px] sticky top-[80px]">
+            <div className="flex sm:w-[90%] w-[100%] sm:ml-[50px] ml-[0%] gap-[5%]">
+              <div className="lg:w-[285px] w-[250px] sm:block hidden h-[fit-content] sm:ml-[5%] ml-[0%] rounded-[19px] bg-[#eceff3] pb-[20px] sticky top-[80px]">
                 <div>
                   <a href="#top">
                     <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
@@ -466,11 +452,11 @@ function PolicyDetails({
 
               </div>
 
-              <div className="w-[70%]">
+              <div className=" w-[80%] m-auto">
                 <div>
                   <section id="top" className="scroll-mt-[100px]">
                     {RetirementInsurance ? (
-                      <h2 className="text-[#4C8CE7] text-[18px] lg:text-[20px] font-semibold mb-[20px] font-600">
+                      <h2 className="text-[#4C8CE7] md:text-[18px] text-[16px] lg:text-[20px] font-semibold mb-[20px] font-600">
                         Retirement or Pension Plans
                       </h2>
                     ) : (
@@ -765,10 +751,10 @@ function PolicyDetails({
                         </h2>
 
                         <div className="flex gap-[5px] mt-[5px]">
-                          <div className="w-[30%]   font-[600] text-[#595959] text-[16px] bg-[#FFFFFF] p-[2%] flex  items-center">
+                          <div className="w-[30%]   font-[600] text-[#595959] sm:text-[16px] text-[14px] bg-[#FFFFFF] p-[2%] flex  items-center">
                             {gridTopLeft}
                           </div>
-                          <div className=" p-[2%] w-[70%] text-justify text-[#595959] text-[16px]  bg-[#FFFFFF] font-[600]">
+                          <div className=" p-[2%] w-[70%] text-justify text-[#595959] sm:text-[16px] text-[14px] bg-[#FFFFFF] font-[600]">
                             {gridTopRight}
                           </div>
                         </div>
@@ -778,7 +764,7 @@ function PolicyDetails({
                               className="flex gap-[5px] mt-[5px]"
                               key={index}
                             >
-                              <div className="w-[30%]  font-[600] text-[#595959] text-[16px] bg-[#FFFFFF] p-[2%] flex  items-center">
+                              <div className="w-[30%]  font-[600] text-[#595959] sm:text-[16px] text-[14px] bg-[#FFFFFF] p-[2%] flex  items-center">
                                 {text.title}
                               </div>
                               <div className="text_font p-[2%] w-[70%] text-justify  bg-[#FFFFFF]">

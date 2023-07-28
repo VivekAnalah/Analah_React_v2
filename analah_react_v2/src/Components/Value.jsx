@@ -58,8 +58,8 @@ export const Value = () => {
       <div className="flex md:space-y-5 flex-col justify-center items-center ">
 
       <div className='m-[auto] mt-[114px] '>
-        <div class="topic "> <sapn class="topic2 title-border-bottom mb-[10px]">Values</sapn></div>
-        <p className='textStyle w-[80%] m-[auto] mt-[20px]'>    At Analah Insurance, we believe our values shape and define the
+        <div class="topicValue "> <sapn class="topic2Value title-border-bottom mb-[10px]">Values</sapn></div>
+        <p className='textStyleValue w-[80%] m-[auto] mt-[20px]'>    At Analah Insurance, we believe our values shape and define the
           culture of our company. Our values serve the foundation on how we work
           and make our business decisions.</p>
         </div>
@@ -67,7 +67,7 @@ export const Value = () => {
       
 
 {/* ------- Value Image & Button Container -------------- */}
-        <div className="flex justify-center items-center relative w-[120%] sm:w-[80%]"  >
+        <div className="flex justify-center items-center relative w-[100%] sm:w-[80%]"  >
           <img
             alt="values"
             src={require("../Assets/Images/values.png")}
@@ -117,7 +117,7 @@ export const Value = () => {
             {title}
           </span>
         </h3>
-        <h5 className="textStyle w-[60%]">
+        <h5 className="textStyleValue w-[60%]">
           {value}
         </h5>
       </div>

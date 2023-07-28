@@ -35,11 +35,7 @@ position: relative;
   left: 5%;
 }
 
-.text_font {
-  color: #595959;
-  font-size: 16px;
-  font-weight: 400;
-}
+
 
 .sideDot{
   background-color: #a3a7a9;
@@ -62,6 +58,21 @@ position: relative;
  a:focus {
 	color: #882727;
 }
+
+@media (min-width:769px) and (max-width:1024px){
+  .listBox{
+  width: 300px;
+ }
+}
+
+
+@media (min-width:68px) and (max-width:768px){
+  .listBox{
+  width: 100%;
+ }
+}
+
+
 
 
 

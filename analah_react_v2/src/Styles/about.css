@@ -37,24 +37,24 @@
   line-height: 26px;
 }
 
-.topicAbout{
-    margin: auto;
-    text-align: center;
-    color: #4481e4;
-  
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  .topic2About {
-    color: #000;
-  
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
+.topicAbout {
+  margin: auto;
+  text-align: center;
+  color: #4481e4;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.topic2About {
+  color: #000;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 
 .contentTextStyle {
   color: #8f8f8f;
@@ -71,9 +71,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .textStyleAbout {
-        font-size: 14px;
-      }
+  .textStyleAbout {
+    font-size: 14px;
+  }
   .textHeadings {
     font-size: 16px;
     line-height: 26px;
@@ -89,29 +89,21 @@
     width: 30px;
     height: 30px;
   }
-  .topicAbout{
-    
+  .topicAbout {
     font-size: 28px;
-    
   }
   .topic2About {
-   
     font-size: 28px;
-    
   }
 }
 
 @media (min-width: 601px) and (max-width: 769px) {
-    .topicAbout{
-    
-        font-size: 28px;
-        
-      }
-      .topic2About {
-       
-        font-size: 28px;
-        
-      }
+  .topicAbout {
+    font-size: 28px;
+  }
+  .topic2About {
+    font-size: 28px;
+  }
 }
 
 @media (min-width: 441px) and (max-width: 600px) {
@@ -134,15 +126,11 @@
     font-size: 14px;
   }
 
-  .topicAbout{
-    
+  .topicAbout {
     font-size: 28px;
-    
   }
   .topic2About {
-   
     font-size: 28px;
-    
   }
 }
 
@@ -163,21 +151,13 @@
     height: 20px;
   }
   .textStyleAbout {
-
-
-
-    
     font-size: 12px;
   }
 
-  .topicAbout{
-    
+  .topicAbout {
     font-size: 26px;
-    
   }
   .topic2About {
-   
     font-size: 26px;
-    
   }
 }

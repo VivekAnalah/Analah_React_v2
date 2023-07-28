@@ -13,7 +13,7 @@ export const FoundingTeam = () => {
       </div>
 
       <div
-        className={`w-[70%] m-[auto] ${bg} grid grid-cols-[30%,70%] mt-[50px] foundingBg pr-[2%] relative h-[200px]`}
+        className={`FoundingTeamGrid 2xl:w-[60%] w-[70%] m-[auto] ${bg} grid grid-cols-[25%,70%] md:grid-cols-[25%,65%] gap-[5%] mt-[50px] foundingBg pr-[2%] relative lg:h-[200px] md:h-[170px]`}
       >
         <div>
           <img
@@ -23,7 +23,7 @@ export const FoundingTeam = () => {
            
           />
         </div>
-        <div className="mt-[35px]">
+        <div className="mt-[35px] ContentContainer">
           <p className="textStyleFounding">
             Vaishali holds over two decades of expertise in the Finance, Banking
             and Insurance sector.
@@ -34,18 +34,18 @@ export const FoundingTeam = () => {
             million.
           </p>
 
-          <div className="flex mt-[35px] gap-[20px] absolute bottom-[5px]">
+          <div className="flex mt-[35px] gap-[20px] absolute bottom-[5px] NameDIv">
             <h3 className="name">Vaishali Dhankani</h3>
 
-            <p className="font-[18px] mt-[4px]">CEO</p>
+            <p className="text-[16px] md:text-[14px] mt-[4px] designation">CEO</p>
           </div>
         </div>
       </div>
 
       <div
-        className={`w-[70%] m-[auto] ${bg} grid grid-cols-[70%,30%] mt-[50px] foundingBg pl-[2%] relative h-[192px]`}
+        className={`FoundingTeamGrid 2xl:w-[60%] w-[70%] m-[auto] ${bg} grid grid-cols-[65%] md:grid-cols-[60%] gap-[5%] mt-[50px] foundingBg pl-[2%] relative lg:h-[192px] md:h-[165px]`}
       >
-        <div className="mt-[35px]">
+        <div className="mt-[35px] ContentContainer2">
           <p className="textStyleFounding">
             Hitesh is reckoned as a reputable, thoughtful & an action oriented
             leader with proven success in Asset Management, Fundraising,
@@ -59,7 +59,7 @@ export const FoundingTeam = () => {
           <div className="flex mt-[35px] gap-[20px] absolute bottom-[5px]">
             <h3 className="name">Hitesh Dhankani</h3>
 
-            <p className="font-[18px] mt-[4px]">Co-Founder</p>
+            <p className="text-[16px] md:text-[14px] mt-[4px] designation">Co-Founder</p>
           </div>
         </div>
 

@@ -190,9 +190,11 @@
 
 @media (min-width: 1600px) and (max-width: 2560px) {
   .orbit .center-image img {
+    width: 142px;
+    height: 142px;
   position: absolute;
   top: 174px;
-  left: 69%;
+  left: 60%;
 }
   .orbit ul {
   width: 25rem;
@@ -236,22 +238,30 @@
 }
 #bike {
   position: absolute;
-  top: 42%;
+  width: 40px;
+  height: 40px;
+  top: 40%;
   left: 32%;
 }
 #heart {
   position: absolute;
-  top: 31%;
+  width: 40px;
+  height: 40px;
+  top: 29%;
   left: 42%;
 }
 #investment {
   position: absolute;
-  top: 32%;
+  width: 40px;
+  height: 40px;
+  top: 30%;
   left: 56%;
 }
 #guaranteed {
   position: absolute;
-  top: 42%;
+  width: 40px;
+  height: 40px;
+  top: 40%;
   left: 65%;
 }
 
