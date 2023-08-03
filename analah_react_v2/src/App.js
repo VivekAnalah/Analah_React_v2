@@ -18,6 +18,7 @@ import PrivacyPolicy from "./Screens/PrivacyPolicy"
 import TermCondition from './Screens/TermCondition';
 import PolicyCancel from './Components/Policy_Cancel';
 import Careers from './Screens/Careers';
+import { Register } from './Components/Register';
 
 function App() {
   return (
@@ -41,8 +42,9 @@ function App() {
       <Route path="/term-condition" element={<TermCondition />} />
       <Route path="/policy-cancel" element={<PolicyCancel />} />
       <Route path="/careers" element={<Careers />} />
+      
+
       {/*
-      <Route path="/sign-up" element={<Signup />} />
       <Route path="/Investment" element={<InvestmentPlans />} />
       <Route path="/Guaranteed" element={<GuaranteedReturns />} />
       */}

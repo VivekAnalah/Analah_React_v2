@@ -54,10 +54,10 @@ position: relative;
     width: 2px;
 }
 
- a:hover,
+ /* a:hover,
  a:focus {
 	color: #882727;
-}
+} */
 
 @media (min-width:769px) and (max-width:1024px){
   .listBox{
@@ -71,6 +71,20 @@ position: relative;
   width: 100%;
  }
 }
+.actives>button .sideDot{
+  
+  background-color: #4481e4;
+}
+.actives>button>div{
+  color: #4481e4;
+}
+
+
+
+
+
+
+
 
 
 

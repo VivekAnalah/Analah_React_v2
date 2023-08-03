@@ -1,20 +1,36 @@
 import { Grid, useMediaQuery } from "@mui/material";
-import React from "react";
-import { Link} from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-export let sectionRef 
+export let sectionRef;
 function Footer() {
   const matches = useMediaQuery("(max-width:900px)");
- 
-  
+  const [phoneImage, setPhoneImage] = useState("phone1");
+  const [emailImage, setEmailImage] = useState("email1");
+  const handleMouseEnterEmail = () =>{
+   setEmailImage("email")
 
- 
- 
- 
+  }
+
+  const handleMouseEnterPhone = () =>{
+    setPhoneImage("phone")
+  }
+
+  const handleMouseLeavePhone = () =>{
+    setPhoneImage("phone1")
+  }
+
+  const handleMouseLeaveEmail = () =>{
+    setEmailImage("email1")
+  }
+
   return (
     <div className="mt-[60px]">
-      
-      <Grid container spacing={2} className="bg-[#2A44A9] px-[6%] py-10 mt-[10px]">
+      <Grid
+        container
+        spacing={2}
+        className="px-[6%] py-10 mt-[10px] bg-gradient-to-b from-blue-500 to-blue-300 bg-gradient-to-r via-blue-500"
+      >
         {matches ? (
           <>
             <div className="w-[100%] px-5">
@@ -23,117 +39,124 @@ function Footer() {
                   <h1 className="font-[600] text-[18px] text-white">
                     Get Insured
                   </h1>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to="/Term-Life">Term Life Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to="/Health">Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to="/Family">Family Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to="/Group">Group Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to="/Car">Car Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to="/2-Wheeler">Two-Wheeler Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
-                  <Link to="/Travel"> Travel Insurance </Link>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to="/Travel"> Travel Insurance </Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
-                  <Link to="/Home">Home Insurance</Link>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to="/Home">Home Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
-                  <Link to="/Retirement">Retirement Plans</Link>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to="/Retirement">Retirement Plans</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
-                  <Link to="/Investment">Investment Plans</Link>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to="/Investment">Investment Plans</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
-                  <Link to="/Guaranteed">Guaranteed Returns Plans</Link>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to="/Guaranteed">Guaranteed Returns Plans</Link>
                   </h5>
-                  
-                  <div className="bg-[#ffffff] w-[120px] h-auto flex flex-row rounded-[20px] p-2 space-x-2 items-center justify-center">
-                    <a href="https://twitter.com/analahinsurance" target="_blank">
-                    <img
-                      src={require("../Assets/Images/twitter.png")}
-                      alt="twitter"
-                      className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0 "
-                    />
-                    </a>
-                    <a href="https://www.instagram.com/analahinsurance/?igshid=ZDdkNTZiNTM%3D" target="_blank">
-                    <img
-                      src={require("../Assets/Images/instagram.png")}
-                      alt="instagram"
-                      className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0 "
-                    />
-                    </a>
-                    <a href="https://www.facebook.com/analahinsurance" target="_blank">
-                    <img
-                      src={require("../Assets/Images/facebook.png")}
-                      alt="facebook"
-                      className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0 "
-                    />
-                    </a>
-                    
-                    <a href="https://www.linkedin.com/company/analahinsurance/" target="_blank">
-                    <img
-                      src={require("../Assets/Images/linkedin.png")}
-                      alt="linkedin"
-                      className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0 "
-                    />
 
+                  <div className="bg-[#ffffff] w-[120px] h-auto flex flex-row rounded-[20px] p-2 space-x-2 items-center justify-center">
+                    <a
+                      href="https://twitter.com/analahinsurance"
+                      target="_blank"
+                    >
+                      <img
+                        src={require("../Assets/Images/twitter.png")}
+                        alt="twitter"
+                        className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0 "
+                      />
                     </a>
-                   
-                   {/* <a  >
+                    <a
+                      href="https://www.instagram.com/analahinsurance/?igshid=ZDdkNTZiNTM%3D"
+                      target="_blank"
+                    >
+                      <img
+                        src={require("../Assets/Images/instagram.png")}
+                        alt="instagram"
+                        className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0 "
+                      />
+                    </a>
+                    <a
+                      href="https://www.facebook.com/analahinsurance"
+                      target="_blank"
+                    >
+                      <img
+                        src={require("../Assets/Images/facebook.png")}
+                        alt="facebook"
+                        className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0 "
+                      />
+                    </a>
+
+                    <a
+                      href="https://www.linkedin.com/company/analahinsurance/"
+                      target="_blank"
+                    >
+                      <img
+                        src={require("../Assets/Images/linkedin.png")}
+                        alt="linkedin"
+                        className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0 "
+                      />
+                    </a>
+
+                    {/* <a  >
                    <img
                       src={require("../Assets/Images/youtube.png")}
                       alt="youtube"
                       className="object-contain w-[15px] h-[15px]"
                     />
                    </a> */}
-                    
                   </div>
                 </div>
                 <div className="space-y-2 w-[50%]">
                   <h1 className="font-[600] text-[18px] text-white">
                     Quick Links
                   </h1>
-                  
-                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]" >
+
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to={"/"}>Home</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white scroll-mt-[-20px] hover:text-[#9ad3f5]" >
-                    <Link to={"/#about"} >About us </Link>
+                  <h5 className="font-[300] text-[16px] text-white scroll-mt-[-20px] hover:text-[#9ad3f5]">
+                    <Link to={"/#about"}>About us </Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]" >
-                       <Link to={"/Raiseaclaim"}>Claim</Link>
-                    </h5>
-                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to={"/Raiseaclaim"}>Claim</Link>
+                  </h5>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to={"/policy-cancel"}>Policy Cancellation</Link>
-                    
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to={"/become-posp"}>Become a PoSP</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to={"/careers"}>Careers</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]" >
-                    <Link to={"/privacy-policy"} >Privacy Policy</Link>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to={"/privacy-policy"}>Privacy Policy</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]"  >
-                  <Link to={"/disclaimer"} > Disclaimer </Link>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to={"/disclaimer"}> Disclaimer </Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]"  >
-                    
-                    <Link to={"/term-condition"} >Terms & Conditions </Link>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to={"/term-condition"}>Terms & Conditions </Link>
                   </h5>
-                  
                 </div>
               </div>
             </div>
@@ -147,47 +170,47 @@ function Footer() {
                       Registered & Corporate Office:{" "}
                     </span>
                     <br />
-                    1407, B-Wing Parinee Crescenzo, G Block BKC, Mumbai,
-                    Maharashtra 400051
+                    14th Floor B wing, 1407, Parinee Crescenzo, BKC, Mumbai,
+                    Mumbai City, Maharashtra, 400051
                   </h5>
                   <br />
 
                   <h5 className="font-[600] text-[12px] sm:text-[16px] flex gap-2 text-white hover:text-[#9ad3f5]">
                     {/* <img src={require("../Assets/Images/phone.png")}  className="w-[16px] h-[16px]" alt="Phone"/> */}
-                    <a href="tel:+91 99208 78181" className="flex gap-[6px]">
-                    <img
-                        src={require("../Assets/Images/phone.png")}
+                    <a href="tel:+91 99208 78181" className="flex gap-[6px] phoneImageAnchor" onMouseEnter={handleMouseEnterPhone} onMouseLeave={handleMouseLeavePhone}>
+                      <img
+                        src={require(`../Assets/Images/${phoneImage}.png`)}
                         alt="phone"
-                        className="object-contain w-[15px] h-[15px] mt-[2px]"
+                        className="object-contain w-[15px] h-[15px] mt-[2px] phoneImage"
                       />
 
-<span>
-                      +91 99208 78181
-                      </span>
-                      
-                      </a>
-                    
+                      <span>+91 99208 78181</span>
+                    </a>
                   </h5>
                   <h5 className="font-[600] text-[12px] sm:text-[16px] flex gap-2 text-justify text-white hover:text-[#9ad3f5]">
-                  {/* <img src={require("../Assets/Images/mail.png")}  className="sm:w-[24px] sm:h-[24px] mt-[4px] ml-[-4px] " alt="mail"/> */}
-                    <a href="mailto:contactus@analahinsurance.com" className="flex gap-[6px]">
-                    <img
-                       src={require("../Assets/Images/email.png")}
+                    {/* <img src={require("../Assets/Images/mail.png")}  className="sm:w-[24px] sm:h-[24px] mt-[4px] ml-[-4px] " alt="mail"/> */}
+                    <a
+                      href="mailto:contactus@analahinsurance.com"
+                      className="flex gap-[6px] mailImageAnchor"
+                      onMouseEnter={handleMouseEnterEmail}
+                      onMouseLeave={handleMouseLeaveEmail}
+                    >
+                      <img
+                        src={require(`../Assets/Images/${emailImage}.png`)}
                         alt="email"
-                        className="object-contain w-[15px] h-[15px] mt-[2px]"
+                        className="object-contain w-[15px] h-[15px] mt-[2px] mailImage"
                       />
 
-<span> contactus@analahinsurance.com</span>
-                      </a>
-                    
+                      <span> contactus@analahinsurance.com</span>
+                    </a>
+
                     <br />
-                    
                   </h5>
                 </div>
 
                 <div className="space-y-2  w-[50%]">
                   <h5 className="font-[400] text-[12px] sm:text-[16px] text-white">
-                    Analah Insurance Broking Pvt Ltd
+                    ANALAH INSURANCE BROKING PRIVATE LIMITED
                   </h5>
                   <h5 className="font-[400] text-[12px] sm:text-[16px] text-white">
                     IRDAI License No. 744 <br />
@@ -210,75 +233,69 @@ function Footer() {
                   <h1 className="font-[600] text-[28px] text-white">
                     Get Insured
                   </h1>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
-                    <Link to="/Term-Life" >Term Life Insurance</Link>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to="/Term-Life">Term Life Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to="/Health">Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to="/Family">Family Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to="/Group">Group Health Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to="/Car">Car Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to="/2-Wheeler">Two-Wheeler Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
-                   <Link to="/Travel"> Travel Insurance </Link>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to="/Travel"> Travel Insurance </Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
-                  <Link to="/Home">Home Insurance</Link>
-                     
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to="/Home">Home Insurance</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
-                  <Link to="/Retirement">Retirement Plans</Link>
-                    
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to="/Retirement">Retirement Plans</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
-                   <Link to="/Investment">Investment Plans</Link>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to="/Investment">Investment Plans</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to="/Guaranteed">Guaranteed Returns Plans</Link>
                   </h5>
-                  
-
                 </div>
                 <div className="space-y-5">
-                  <h1 className="font-[600] text-[28px] text-white" >Explore</h1>
-                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h1 className="font-[600] text-[28px] text-white">Explore</h1>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to={"/"}>Home</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white scroll-mt-[-20px] hover:text-[#9ad3f5]" >
-                  <Link to={"/#about"} >About us </Link>
+                  <h5 className="font-[300] text-[16px] text-white scroll-mt-[-20px] hover:text-[#9ad3f5]">
+                    <Link to={"/#about"}>About us </Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]" >
-                       <Link to={"/Raiseaclaim"}>Claim</Link>
-                    </h5>
-                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to={"/Raiseaclaim"}>Claim</Link>
+                  </h5>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to={"/policy-cancel"}>Policy Cancellation</Link>
-                    
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to={"/become-posp"}>Become a PoSP</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]" >
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to={"/careers"}>Careers</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]" >
-                    <Link to={"/privacy-policy"} >Privacy Policy</Link>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to={"/privacy-policy"}>Privacy Policy</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]"  >
-                   <Link to={"/disclaimer"} > Disclaimer </Link>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to={"/disclaimer"}> Disclaimer </Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]"  >
-                    <Link to={"/term-condition"} >Terms & Conditions </Link>
+                  <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
+                    <Link to={"/term-condition"}>Terms & Conditions </Link>
                   </h5>
-                  
                 </div>
               </div>
             </Grid>
@@ -295,38 +312,43 @@ function Footer() {
                       Registered & Corporate Office:{" "}
                     </span>
                     <br />
-                    1407, B-Wing Parinee Crescenzo, G Block BKC, Mumbai,
-                    Maharashtra 400051
+                    14th Floor B wing, 1407, Parinee Crescenzo, BKC, Mumbai,
+                    Mumbai City, Maharashtra, 400051
                   </h5>
                   <br />
 
                   <h5 className="font-[600] text-[16px] text-white mt-[112px]">
-                  {/* <img src={require("../Assets/Images/phone.png")} className="w-[32px] h-[32px]" alt="Phone"/> */}
-                  <a href="tel:+91 99208 78181" className="flex gap-[6px] hover:text-[#9ad3f5]">
-                    
-                  <img
-                        src={require("../Assets/Images/phone.png")}
+                    {/* <img src={require("../Assets/Images/phone.png")} className="w-[32px] h-[32px]" alt="Phone"/> */}
+                    <a
+                      href="tel:+91 99208 78181"
+                      className="flex gap-[6px] hover:text-[#9ad3f5] phoneImageAnchor"
+                      onMouseEnter={handleMouseEnterPhone}
+                      onMouseLeave={handleMouseLeavePhone}
+                    >
+                      <img
+                        src={require(`../Assets/Images/${phoneImage}.png`)}
                         alt="phone"
-                        className="object-contain w-[20px] h-[20px] mt-[2px]"
+                        className="object-contain w-[20px] h-[20px] mt-[2px] phoneImage"
                       />
 
-<span>
-                      +91 99208 78181
-                      </span>
-                   </a>
+                      <span>+91 99208 78181</span>
+                    </a>
                     <br />
                     {/* <img src={require("../Assets/Images/mail.png")}  className="w-[32px] h-[32px]" alt="mail"/> */}
-                    <a href="mailto:contactus@analahinsurance.com" className="flex gap-[6px] hover:text-[#9ad3f5]">
-                      
-                    <img
-                      src={require("../Assets/Images/email.png")}
+                    <a
+                      href="mailto:contactus@analahinsurance.com"
+                      className="flex gap-[6px] hover:text-[#9ad3f5] mailImageAnchor"
+                      onMouseEnter={handleMouseEnterEmail}
+                      onMouseLeave={handleMouseLeaveEmail}
+                    >
+                      <img
+                        src={require(`../Assets/Images/${emailImage}.png`)}
                         alt="email"
-                        className="object-contain w-[20px] h-[20px] mt-[2px]"
+                        className="object-contain w-[20px] h-[20px] mt-[2px] mailImage"
                       />
 
-<span> contactus@analahinsurance.com</span>
+                      <span> contactus@analahinsurance.com</span>
                     </a>
-                    
                   </h5>
 
                   <div className="bg-[#ffffff] w-auto h-[100]"></div>
@@ -334,7 +356,7 @@ function Footer() {
 
                 <div className="space-y-5 mt-16 w-[100%]">
                   <h5 className="font-[400] text-[16px] text-white">
-                    Analah Insurance Broking Pvt Ltd
+                    ANALAH INSURANCE BROKING PRIVATE LIMITED
                   </h5>
                   <h5 className="font-[400] text-[16px] text-white">
                     IRDAI License No. 744 <br />
@@ -358,28 +380,40 @@ function Footer() {
                   </div>
 
                   <div className="w-[170px] h-[90] flex p-2 space-x-3 items-center justify-center bg-[#ffffff] rounded-[20px]">
-                    <a href="https://twitter.com/analahinsurance" target="_blank">
+                    <a
+                      href="https://twitter.com/analahinsurance"
+                      target="_blank"
+                    >
                       <img
                         src={require("../Assets/Images/twitter.png")}
                         alt="twitter"
                         className="object-contain w-[25px] h-[25px] grayscale hover:grayscale-0 "
                       />
                     </a>
-                    <a href="https://www.instagram.com/analahinsurance/?igshid=ZDdkNTZiNTM%3D" target="_blank">
+                    <a
+                      href="https://www.instagram.com/analahinsurance/?igshid=ZDdkNTZiNTM%3D"
+                      target="_blank"
+                    >
                       <img
                         src={require("../Assets/Images/instagram.png")}
                         alt="instagram"
                         className="object-contain w-[25px] h-[25px] grayscale hover:grayscale-0 "
                       />
                     </a>
-                    <a href="https://www.facebook.com/analahinsurance" target="_blank">
+                    <a
+                      href="https://www.facebook.com/analahinsurance"
+                      target="_blank"
+                    >
                       <img
                         src={require("../Assets/Images/facebook.png")}
                         alt="facebook"
                         className="object-contain w-[25px] h-[25px] grayscale hover:grayscale-0 "
                       />
                     </a>
-                    <a href="https://www.linkedin.com/company/analahinsurance/" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/company/analahinsurance/"
+                      target="_blank"
+                    >
                       <img
                         src={require("../Assets/Images/linkedin.png")}
                         alt="linkedin"
@@ -405,10 +439,8 @@ function Footer() {
           </>
         )}
       </Grid>
-
     </div>
   );
 }
 
 export default Footer;
-

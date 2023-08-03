@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../Components/Footer";
 import { Header } from "../Components/Header";
 import "../Styles/becomeAPosp.css";
@@ -6,6 +6,36 @@ import "../Styles/becomeAPosp.css";
 import "../App.css";
 
 function BecomePosp() {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.getAttribute("id");
+
+        if (entry.intersectionRatio > 0) {
+          document
+            .querySelector(` .anchorParent a[href="#${id}"]`)
+            .classList.add("activesB");
+        } else {
+          document
+            .querySelector(` .anchorParent a[href="#${id}"]`)
+            .classList.remove("activesB");
+        }
+      });
+    });
+
+    // Track all sections that have an `id` applied
+
+    const whyBecome = document.getElementById("whyBecome");
+    const Eligibility = document.getElementById("Eligibility");
+    const steps = document.getElementById("steps");
+    observer.observe(whyBecome);
+    observer.observe(Eligibility);
+    observer.observe(steps);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
   return (
     <>
       <div className="pb-4">
@@ -23,21 +53,22 @@ function BecomePosp() {
                   <span className=" pospSubhead">(Point of Salesperson) </span>
                 </h2>
                 <div className="  w-[70%] text-justify mt-[29.47px]">
-                  <h4 className="   pospSubText">
+                  <h4 className="pospSubText">
                     Join our growing network of Insurance Partners{" "}
-                    <span>...</span>
-                    <span className="hidden">
+                    <span className="dots-text">...</span>
+                    <span className="hidden hiddenText">
                       and work with the most respected names and companies in
                       the insurance industry. Our extensive product range
                       consists of both Life & Non-life Insurance products.
+                      <br />
+                      <br />
+                      <span>
+                        We value your referrals and offer excellent commissions
+                        on all our plans. So what are you waiting for? Join our
+                        team today, sell insurance online as a PoSP and start
+                        earning passive income!
+                      </span>
                     </span>
-                  </h4>
-
-                  <h4 className="pospSubText mt-[11.7px] hidden">
-                    We value your referrals and offer excellent commissions on
-                    all our plans. So what are you waiting for? Join our team
-                    today, sell insurance online as a PoSP and start earning
-                    passive income!
                   </h4>
 
                   <h4 className="pospSubBoldText mt-[11.7px] text-justify">
@@ -112,7 +143,7 @@ function BecomePosp() {
             </h2>
             <div className="flex w-[85%]  gap-[5%] text-justify mt-[50px]">
               <div className="w-[18%] h-[fit-content] ml-[5%] rounded-[19px] bg-[#eceff3] pb-[20px] sticky top-[80px]">
-                <div>
+                <div className="anchorParent">
                   <a href="#whyBecome">
                     <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[8%] relative">
                       <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
@@ -124,7 +155,7 @@ function BecomePosp() {
                   </a>
                 </div>
 
-                <div>
+                <div className="anchorParent">
                   <a href="#Eligibility">
                     <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[8%] relative">
                       <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
@@ -136,7 +167,7 @@ function BecomePosp() {
                   </a>
                 </div>
 
-                <div>
+                <div className="anchorParent">
                   <a href="#steps">
                     <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[8%] relative">
                       <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
@@ -226,18 +257,10 @@ function BecomePosp() {
                     </h5>
 
                     <ul className="posp-content posp-content2 eligibleText text-left mr-[auto]  lg:pt-3 gap_issue">
-                      <li>
-                        Registration and Complete your KYC
-                      </li>
-                      <li>
-                        Training
-                      </li>
-                      <li>
-                        Examination
-                      </li>
-                      <li>
-                  IRDAI Approved Certification
-                      </li>
+                      <li>Registration and Complete your KYC</li>
+                      <li>Training</li>
+                      <li>Examination</li>
+                      <li>IRDAI Approved Certification</li>
                     </ul>
                   </section>
                 </div>

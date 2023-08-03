@@ -7,11 +7,27 @@ function Howitworks() {
   return (
     
     <div className="  mx-auto w-[100%] max-w-[100%]">
-      <div className="lg:pt-[4rem] md:pt-[3rem] sm:pt-[2rem] pt-[2rem] pb-[5rem] ">
+      <div className="lg:pt-[4rem] md:pt-[3rem] sm:pt-[2rem] pt-[2rem] pb-[5rem] relative" >
       <h2 className="text-[32px] text-700 mb-9 lg:mb-[60px] text-center" >
         <span className="text-[#4C8CE7] text-center mb-[35px]">How </span>
         it works ?
       </h2>
+
+      <div className="absolute left-0 top-20 lg:block hidden ">
+          <img
+            src={require("../Assets/Images/partnerBg.png")}
+            className="w-full "
+            alt=""
+          />
+        </div>
+
+        <div className="absolute right-0 top-20 lg:block hidden ">
+          <img
+            src={require("../Assets/Images/partnerBg.png")}
+            className="w-full "
+            alt=""
+          />
+        </div>
 
       <Grid container  style={{ width: "73%", margin: "auto"}}>
          

@@ -58,3 +58,22 @@
   + label::after {
   background-color: var(--light);
 }
+
+.backGroundColor{
+background: linear-gradient(180deg, #3970DE 0%, #6BB9F6 100%);
+}
+
+.phoneImage:hover {
+ 
+  background-image: url("../Assets//Images/phone.png");
+
+
+}
+
+.phoneImageAnchor:hover img{
+  opacity: 0;
+}
+.phoneImageAnchor:hover {
+  background-image: url("../Assets//Images/phone.png");
+
+}

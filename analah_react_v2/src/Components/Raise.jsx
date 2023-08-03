@@ -12,8 +12,8 @@ function Raise() {
   };
   return (
     <>
-      <div style={backgroundStyle}>
-        <div className="flex flex-col sm:flex-row gap-[6%]  pt-[50px] relative">
+      <div style={backgroundStyle} className="relative">
+        <div className="flex flex-col sm:flex-row gap-[6%]  pt-[50px] relative w-[80%] m-[auto]">
           <div className="sm:w-[36.6%] w-[70%] order-2 sm:order-1 flex flex-col  ml-[8.5%]  xl:pl-0 sm:ml-[9.5%] sm:mt-[0px] mt-[15px]">
             <div className="mt-[30px]">
               <h2 className="textHeader1">
@@ -41,20 +41,20 @@ function Raise() {
                 <img
                   alt="insurance"
                   src={require("../Assets/Images/Raise_claim.png")}
-                  className="mt-[30px]"
+                  className="m-auto mt-[30px] "
                 />
               </div>
             </div>
           </div>
         </div>
 
-        <div className="absolute bottom-[30%] ">
+        <div className="absolute bottom-[0%] ">
           <img
             src={require("../Assets/Images/background_left.png")}
             alt="left"
           />
         </div>
-        <div className="absolute bottom-[30%] right-[0px]">
+        <div className="absolute bottom-[0%] right-[0px]">
           <img
             src={require("../Assets/Images/background_right.png")}
             alt="right"

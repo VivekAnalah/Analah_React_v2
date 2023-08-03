@@ -259,7 +259,14 @@ background: "#FFF"
             </div>
           </div>
         </div>
-        <div className="absolute left-7 bottom-[0] lg:block hidden ">
+        <div className="absolute left-0 bottom-[0] lg:block hidden ">
+          <img
+            src={require("../Assets/Images/partnerBg.png")}
+            className="w-full "
+            alt=""
+          />
+        </div>
+        <div className="absolute right-0 top-30 lg:block hidden ">
           <img
             src={require("../Assets/Images/partnerBg.png")}
             className="w-full "

@@ -1,5 +1,5 @@
 import { useMediaQuery } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import { Header } from "../Components/Header";
 import Footer from "../Components/Footer";
 import "../Styles/policyDetails.css";
@@ -55,10 +55,97 @@ function PolicyDetails({
   const myArr = title.split(" ");
   const subhadText = "lg:text-[16px] md:text-[12px] text-[14px]";
 
-  
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.getAttribute("id");
+       
+
+        if (entry.intersectionRatio > 0) {
+          document
+          .querySelector(` .anchorParent a[href="#${id}"]`)
+          .classList.add("actives");
+          
+        } else {
+         
+          
+          
+        
+          document
+          .querySelector(` .anchorParent a[href="#${id}"]`)
+          .classList.remove("actives");
+      
+            
+    
+          
+        }
+
+       
+      });
+    });
+
+    // Track all sections that have an `id` applied
+    if (img === "Term_ins"|| img === "Health_ins" || img === "Family_ins"||img === "Group_ins" ) {
+      const top = document.getElementById("top");
+      const no_benefit = document.getElementById("no_benefit");
+      const key_terms = document.getElementById("key_terms");
+      observer.observe(top);
+      observer.observe(no_benefit);
+      observer.observe(key_terms);
+     
+    }else if(img==="Car_ins"){
+      const top = document.getElementById("top");
+      const no_benefit = document.getElementById("no_benefit");
+      const key_terms = document.getElementById("key_terms");
+      const isRequired = document.getElementById("isRequired");
+      const extra = document.getElementById("extra");
+
+      observer.observe(top);
+      observer.observe(no_benefit);
+      observer.observe(key_terms);
+      observer.observe(isRequired);
+      observer.observe(extra);
+     } else if(img==="Bike_ins"){
+      const top = document.getElementById("top");
+      const twoWheel = document.getElementById("twoWheel");
+      const key_terms = document.getElementById("key_terms");
+      const gridHeader = document.getElementById("gridHeader");
+
+      observer.observe(top);
+      observer.observe(twoWheel);
+      observer.observe(key_terms);
+      observer.observe(gridHeader);
 
 
+     } else if(img==="Travel_ins"){
+      const top = document.getElementById("top");
+      const what = document.getElementById("what");
+      const gridHeader = document.getElementById("gridHeader");
 
+      observer.observe(top);
+      observer.observe(what);
+      observer.observe(gridHeader);
+     } else if(img==="Home_ins"){
+      const top = document.getElementById("top");
+      const why = document.getElementById("why");
+
+      observer.observe(top);
+      observer.observe(why);
+     }else if(img==="Retirement_ins"){
+      const top = document.getElementById("top");
+      const why = document.getElementById("why");
+      const no_benefit = document.getElementById("no_benefit");
+
+      observer.observe(top);
+      observer.observe(why);
+      observer.observe(no_benefit);
+     }
+
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <div>
@@ -89,7 +176,9 @@ function PolicyDetails({
                 {/* ---- */}
               </div>
               {/* done */}
-              <h3 className={` ${subhadText} lg:text-[16px] md:text-[12px] font-[400] lg:pt-[25px] pt-[1rem] text-[#000] pb-[2%]`}>
+              <h3
+                className={` ${subhadText} lg:text-[16px] md:text-[12px] font-[400] lg:pt-[25px] pt-[1rem] text-[#000] pb-[2%]`}
+              >
                 {subhead}
               </h3>
 
@@ -109,7 +198,9 @@ function PolicyDetails({
               </div>
 
               <div className="listBox mt-[12px] h-[50px]">
-                <ul className={  `${subhadText} text-[#217BF4] font-400 ml-[25px]`}>
+                <ul
+                  className={`${subhadText} text-[#217BF4] font-400 ml-[25px]`}
+                >
                   <li className="p-[7px] ">
                     <img
                       src={require("../Assets/Images/point.png")}
@@ -124,7 +215,9 @@ function PolicyDetails({
               </div>
 
               <div className="listBox mt-[12px] h-[50px]">
-                <ul className={` ${subhadText}  text-[#217BF4] font-400 ml-[25px]  `}>
+                <ul
+                  className={` ${subhadText}  text-[#217BF4] font-400 ml-[25px]  `}
+                >
                   <li className="p-[7px] ">
                     <img
                       src={require("../Assets/Images/point.png")}
@@ -138,8 +231,16 @@ function PolicyDetails({
                 </ul>
               </div>
 
-              <div className={RetirementInsurance ? "listBox h-[65px] mt-[12px]" : "listBox mt-[12px] h-[50px]"}   >
-                <ul className={` ${subhadText}  text-[#217BF4] font-400 ml-[25px]  `}>
+              <div
+                className={
+                  RetirementInsurance
+                    ? "listBox h-[65px] mt-[12px]"
+                    : "listBox mt-[12px] h-[50px]"
+                }
+              >
+                <ul
+                  className={` ${subhadText}  text-[#217BF4] font-400 ml-[25px]  `}
+                >
                   <li className="p-[7px] ">
                     <img
                       src={require("../Assets/Images/point.png")}
@@ -160,17 +261,19 @@ function PolicyDetails({
           <div className="order-1 md:order-2  items-center xl:ml-[10%] lg:ml-[5%] md:w-[50%] w-[80%] ">
             <div className="relative m-auto w-[fit-content]">
               <div className="w-[50px] h-[50px] bg-[#F2F2F2] absolute top-[-14px] left-[-18px]"></div>
-             
-                <img
-                  src={require(`../Assets/Images/${img}.png`)}
-                  alt={head}
-                  className=" lg:w-[300.073px] md:w-[200.073px] z-2 relative top-0 rounded-[27px]"
-                />
-           
+
+              <img
+                src={require(`../Assets/Images/${img}.png`)}
+                alt={head}
+                className=" lg:w-[300.073px] md:w-[200.073px] z-2 relative top-0 rounded-[27px]"
+              />
             </div>
 
             <div className="">
-              <div className="mt-[20px] w-[80%] m-auto" style={{ textAlign: "center" }}>
+              <div
+                className="mt-[20px] w-[80%] m-auto"
+                style={{ textAlign: "center" }}
+              >
                 {myArr[0] === "Term" ? (
                   <h2 className=" lg:text-[24px] md:text-[20px] items-center ">
                     <span className="text-[#4C8CE7] font-600">
@@ -180,7 +283,7 @@ function PolicyDetails({
                     <span className="text-[#000] ">{Ins_Text_3}</span>
                   </h2>
                 ) : (
-                  <h2 className="lg:text-[24px] md:text-[20px] text-center">  
+                  <h2 className="lg:text-[24px] md:text-[20px] text-center">
                     <span className="text-[#4C8CE7] font-600">
                       {Ins_Text_1}
                     </span>{" "}
@@ -204,11 +307,7 @@ function PolicyDetails({
                 <>
                   <div className="text-center items-center h-[20px] mt-[20px]">
                     <a href={quotes_link} target="blank">
-                      <button
-                        className="justify-center items-center font-700 text-[#FFFFFF] sm:text-[16px] text-[15px] divStyles"
-                       
-                      
-                      >
+                      <button className="justify-center items-center font-700 text-[#FFFFFF] sm:text-[16px] text-[15px] divStyles">
                         {quotes}
                       </button>
                     </a>
@@ -218,11 +317,7 @@ function PolicyDetails({
                 <>
                   <div className="text-center items-center h-[20px] mt-[20px]">
                     <a href={quotes_link} target="blank">
-                      <button
-                        className="justify-center items-center font-700 text-[#FFFFFF] sm:text-[16px] text-[15px] divStyles"
-                     
-                      
-                      >
+                      <button className="justify-center items-center font-700 text-[#FFFFFF] sm:text-[16px] text-[15px] divStyles">
                         {quotes}
                       </button>
                     </a>
@@ -262,194 +357,184 @@ function PolicyDetails({
 
             <div className="flex sm:w-[90%] w-[100%] sm:ml-[50px] ml-[0%] gap-[5%]">
               <div className="lg:w-[285px] w-[250px] sm:block hidden h-[fit-content] sm:ml-[5%] ml-[0%] rounded-[19px] bg-[#eceff3] pb-[20px] sticky top-[80px]">
-                <div>
+                <div className="anchorParent">
                   <a href="#top">
                     <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
                       <div className="sideDot mt-[4px]"></div>
-                       {RetirementInsurance ? (
-                      <div className="text-[#595959] text-[12px] font-400 text-start">
-                        Retirement or Pension Plans
-                      </div>
-                    ) : (
-                       <div className="text-[#595959] text-[12px] font-400 text-start">
-                        {head}
-                      </div>
-                    )}
-                    
+                      {RetirementInsurance ? (
+                        <div
+                          className="text-[#595959] text-[12px] font-400 text-start"
+                          id="retirementText"
+                        >
+                          Retirement or Pension Plans
+                        </div>
+                      ) : (
+                        <div className="text-[#595959] text-[12px] font-400 text-start">
+                          {head}
+                        </div>
+                      )}
+
                       <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
                     </button>
                   </a>
                 </div>
 
-   {why ? (
-                    <div>
-                  <a href="#why">
-                  <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
-                    <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
-                    <div className="text-[#595959] text-[12px] font-400 text-start">
-                     Why {helping_verb} {head} essential?
+                {why ? (
+                  <div className="anchorParent">
+                    <a href="#why">
+                      <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
+                        <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
+                        <div className="text-[#595959] text-[12px] font-400 text-start">
+                          Why {helping_verb} {head} essential?
+                        </div>
+                        <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
+                      </button>
+                    </a>
+                  </div>
+                ) : (
+                  ""
+                )}
+
+                {what ? (
+                  <>
+                    <div className="anchorParent">
+                      <a href="#what">
+                        <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
+                          <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
+                          <div className="text-[#595959] text-[12px] font-400 text-start">
+                            What is Travel Insurance?
+                          </div>
+                          <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
+                        </button>
+                      </a>
                     </div>
-                    <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
-                  </button>
-                  </a>
-                  
-                </div>
-
-                    ) : (
-                      ""
-                    )}
-
-
-{what ? (
-  <>
-  <div>
-                  <a href="#what">
-                  <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
-                    <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
-                    <div className="text-[#595959] text-[12px] font-400 text-start">
-                    What is Travel Insurance?
-                    </div>
-                    <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
-                  </button>
-                  </a>
-                  
-                </div>
-  </>
-) : (<></>)}
+                  </>
+                ) : (
+                  <></>
+                )}
 
                 {no_benefit ? (
-                  <></>) :(
+                  <></>
+                ) : (
                   <>
- <div>
-                  <a href="#no_benefit">
-                  <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
-                    <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
-                    <div className="text-[#595959] text-[12px] font-400 text-start">
-                    {benefit_head}
+                    <div className="anchorParent">
+                      <a href="#no_benefit">
+                        <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
+                          <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
+                          <div className="text-[#595959] text-[12px] font-400 text-start">
+                            {benefit_head}
+                          </div>
+                          <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
+                        </button>
+                      </a>
                     </div>
-                    <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
-                  </button>
-                  </a>
-                  
-                </div>
                   </>
-                )}   
+                )}
 
-                {twoWheel ? (<>
-                  <div>
-                  <a href="#twoWheel">
-                  <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
-                    <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
-                    <div className="text-[#595959] text-[12px] font-400 text-start">
-                    {benefit_head}
+                {twoWheel ? (
+                  <>
+                    <div className="anchorParent">
+                      <a href="#twoWheel">
+                        <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
+                          <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
+                          <div className="text-[#595959] text-[12px] font-400 text-start">
+                            {benefit_head}
+                          </div>
+                          <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
+                        </button>
+                      </a>
                     </div>
-                    <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
-                  </button>
-                  </a>
-                  
-                </div>
-                </>) : (<></>)}
-               
-               {twoWheel ? (
-                      <>
-                         <div>
-                  <a href="#key_terms">
-                  <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
-                    <div className="sideDot mt-[4px]"></div>
-                    <div className="text-[#595959] text-[12px] font-400 text-start">
-                    How to choose a Two-wheeler Insurance Policy?
-                   
-                   
-                    </div>
-                    <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
-                  </button>
-                  </a>
-                  
-                </div>
-                          
-                        
-                       </>
-                    ) : homeInsurance ? (
-                      <></>
-                    ) : (
-                      < >
-                       <div>
-                  <a href="#key_terms">
-                  <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
-                    <div className="sideDot mt-[4px]"></div>
-                    <div className="text-[#595959] text-[12px] font-400 text-start">
+                  </>
+                ) : (
+                  <></>
+                )}
 
-                    {key_feature_head}
-                   
+                {twoWheel ? (
+                  <>
+                    <div className="anchorParent">
+                      <a href="#key_terms">
+                        <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
+                          <div className="sideDot mt-[4px]"></div>
+                          <div className="text-[#595959] text-[12px] font-400 text-start">
+                            How to choose a Two-wheeler Insurance Policy?
+                          </div>
+                          <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
+                        </button>
+                      </a>
                     </div>
-                    <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
-                  </button>
-                  </a>
-                  
-                </div>
-                        
-                      </>
-                    )}
-                    {homeInsurance ? (
-                      <></>
-                    ) : (<></>)}
-               
+                  </>
+                ) : homeInsurance ? (
+                  <></>
+                ) : (
+                  <>
+                    <div className="anchorParent">
+                      <a href="#key_terms">
+                        <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
+                          <div className="sideDot mt-[4px]"></div>
+                          <div className="text-[#595959] text-[12px] font-400 text-start">
+                            {key_feature_head}
+                          </div>
+                          <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
+                        </button>
+                      </a>
+                    </div>
+                  </>
+                )}
+                {homeInsurance ? <></> : <></>}
 
                 {gridHeader ? (
                   <>
-                   <div>
-                  <a href="#gridHeader">
-                  <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
-                    <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
-                    <div className="text-[#595959] text-[12px] font-400 text-start">
-                    {gridHeader}
+                    <div className="anchorParent">
+                      <a href="#gridHeader">
+                        <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
+                          <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
+                          <div className="text-[#595959] text-[12px] font-400 text-start">
+                            {gridHeader}
+                          </div>
+                          <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
+                        </button>
+                      </a>
                     </div>
-                    <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
-                  </button>
-                  </a>
-                  
-                </div>
-                
                   </>
-                ) : (<></>)}
+                ) : (
+                  <></>
+                )}
 
                 {isRequired ? (
                   <>
-                   <div>
-                  <a href="#isRequired">
-                  <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
-                    <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
-                    <div className="text-[#595959] text-[12px] font-400 text-start">
-                    {whyRequired_head}
+                    <div className="anchorParent">
+                      <a href="#isRequired">
+                        <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
+                          <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
+                          <div className="text-[#595959] text-[12px] font-400 text-start">
+                            {whyRequired_head}
+                          </div>
+                          <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
+                        </button>
+                      </a>
                     </div>
-                    <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
-                  </button>
-                  </a>
-                  
-                </div>
-                
                   </>
-                ) : (<></>)}
+                ) : (
+                  <></>
+                )}
 
                 {extra_data ? (
                   <>
-                   <div>
-                  <a href="#extra">
-                  <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
-                    <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
-                    <div className="text-[#595959] text-[12px] font-400 text-start">
-                    Add-ons in a Car Insurance Policy
+                    <div className="anchorParent">
+                      <a href="#extra">
+                        <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
+                          <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
+                          <div className="text-[#595959] text-[12px] font-400 text-start">
+                            Add-ons in a Car Insurance Policy
+                          </div>
+                          <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
+                        </button>
+                      </a>
                     </div>
-                    <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
-                  </button>
-                  </a>
-                  
-                </div>
-                
                   </>
-                ) : (<></>)}
-
-
+                ) : (
+                  <></>
+                )}
               </div>
 
               <div className=" w-[80%] m-auto">
@@ -577,12 +662,10 @@ function PolicyDetails({
                         </ul>{" "}
                       </>
                     )}
-
-                    
                   </section>
 
                   <section id="twoWheel" className="scroll-mt-[100px]">
-                  {twoWheel ? (
+                    {twoWheel ? (
                       <>
                         <h2 className="text-[#4C8CE7] text-[18px] lg:text-[20px] font-semibold mb-[20px] font-600">
                           {benefit_head}

@@ -1,0 +1,24 @@
+/* custom-carousel.css */
+
+  
+
+  .carousel{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 89%;
+  }
+
+
+  .carousel .control-dots {
+    position: absolute;
+    bottom: -16px;
+    /* background-color: red; */
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.carousel .control-dots  .selected{
+    background-color: #4481E4;
+}
