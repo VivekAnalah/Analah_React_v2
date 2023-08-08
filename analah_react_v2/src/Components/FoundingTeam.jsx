@@ -16,7 +16,7 @@ export const FoundingTeam = () => {
       </div>
 
       <div
-        className={`FoundingTeamGrid 2xl:w-[60%] w-[70%] m-[auto] ${bg} grid grid-cols-[25%,70%] md:grid-cols-[25%,65%] gap-[5%] mt-[50px] foundingBg pr-[2%] relative lg:h-[200px] md:h-[170px]`}
+        className={`FoundingTeamGrid 2xl:w-[60%] w-[70%] m-[auto] ${bg} grid grid-cols-[25%,70%] md:grid-cols-[25%,65%] gap-[5%] mt-[50px] foundingBg  relative lg:h-[200px] md:h-[170px] FoundingHeight1`}
       >
         <div>
           <img
@@ -94,7 +94,7 @@ export const FoundingTeam = () => {
       </div>
 
       <div
-        className={`FoundingTeamGrid 2xl:w-[60%] w-[70%] m-[auto] ${bg} grid grid-cols-[65%] md:grid-cols-[60%] gap-[5%] mt-[50px] foundingBg pl-[2%] relative lg:h-[192px] md:h-[165px] `}
+        className={`FoundingTeamGrid 2xl:w-[60%] w-[70%] m-[auto] ${bg} grid grid-cols-[65%] md:grid-cols-[60%] gap-[5%] mt-[100px] foundingBg pl-[2%] relative lg:h-[192px] md:h-[165px] FoundingHeight2`}
       >
         <div className="mt-[35px] ContentContainer2">
           <Carousel
@@ -116,45 +116,37 @@ export const FoundingTeam = () => {
               </p>
               <p className="textStyleFounding mt-[15px]"></p>
             </div>
-             
 
-             
-            
-             
             <div>
               <p className="textStyleFounding">
-              He is the
-            Co-founder of the Analah group, wherein, he is responsible for
-            performance, strategy & growth of the company.
+                He is the Co-founder of the Analah group, wherein, he is
+                responsible for performance, strategy & growth of the company.
               </p>
               <p className="textStyleFounding mt-[15px]">
-              Hitesh has done his
-            Software Engineering in Systems Management (GNIIT) and B.com (Hons).
+                Hitesh has done his Software Engineering in Systems Management
+                (GNIIT) and B.com (Hons).
               </p>
             </div>
             <div>
               <p className="textStyleFounding">
-              He also holds a Masters in Business, SMP from the Indian Institute
-            of Management (IIM) - Calcutta.
+                He also holds a Masters in Business, SMP from the Indian
+                Institute of Management (IIM) - Calcutta.
               </p>
               <p className="textStyleFounding mt-[15px]">
-              His leadership competence also dives
-            across the Equity sector among leading Asset Management Companies,
-            NBFC’s, and Banks.
+                His leadership competence also dives across the Equity sector
+                among leading Asset Management Companies, NBFC’s, and Banks.
               </p>
             </div>
             <div>
               <p className="textStyleFounding">
-              He possesses a proven entrepreneurial prowess
-            having been a key member of core startup teams responsible for the
-            successful launch of top notch organizations like HDFC Bank, SBI
-            Asset Management, Mirae Asset and Prudential Incorporation
-            (Pramerica AMC).
+                He possesses a proven entrepreneurial prowess having been a key
+                member of core startup teams responsible for the successful
+                launch of top notch organizations like HDFC Bank, SBI Asset
+                Management, Mirae Asset and Prudential Incorporation (Pramerica
+                AMC).
               </p>
               <p className="textStyleFounding mt-[15px]"></p>
             </div>
-
-        
           </Carousel>
 
           <div className="flex mt-[35px] gap-[20px] absolute bottom-[5px]">

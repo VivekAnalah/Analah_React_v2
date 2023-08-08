@@ -31,7 +31,7 @@ export  const Home = () => {
           <img
             alt="Right triangle"
             src={require("../Assets/Images/rightTriangle.png")}
-            className="object-contain aspect-auto h-auto absolute right-0 sm:w-[100px] w-[70px] sm:top-[-3.5%] top-[-1%] "
+            className="object-contain aspect-auto h-auto absolute right-0 sm:w-[100px] w-[70px] sm:top-[-3.5%] sm:block hidden "
           />
          
             <OurPartner />

@@ -215,47 +215,47 @@ export const Header = () => {
                 <img
                   src={require("../Assets/Images/close2.png")}
                   alt="close"
-                  className="w-[20px] absolute top-[20px] right-[25px] hover:cursor-pointer"
+                  className="2xl:w-[30px] sm:w-[20px] w-[15px] absolute top-[20px] right-[25px] 2xl:top-[25px] 2xl:right-[25px] hover:cursor-pointer"
                   onClick={() => setRegisterOpen(!registerOpen)}
                 />
               </h3>
             </div>
 
             <div className="mt-[20px]">
-              <div className="input-text">
-                <label htmlFor="">Full Name</label>
+              <div className="input-text-register">
+                <label htmlFor="" className="sm:text-[16px] text-[14px]">Full Name</label>
                 <input
                   type="text"
-                  className="ml-[15px]"
+                  className="ml-[15px] sm:text-[16px] text-[14px]"
                   placeholder="(Name as per PAN card)"
                   onChange={(e) => setInvestment(e.target.value)}
                 />
               </div>
 
-              <div className="sm:phoneInpt input-text">
-                <label htmlFor="">Mobile No.</label>
+              <div className="sm:phoneInpt input-text-register">
+                <label htmlFor="" className="sm:text-[16px] text-[14px]">Mobile No.</label>
                 <input
                   type="number"
-                  className="ml-[15px]"
+                  className="ml-[15px] sm:text-[16px] text-[14px]"
                   placeholder=""
                   onChange={(e) => validMob(e)}
                   style={Mob_valid ? validStyle : notValidStyle}
                 />
               </div>
 
-              <div className="input-text">
-                <label htmlFor="">Email ID</label>
+              <div className="input-text-register">
+                <label htmlFor="" className="sm:text-[16px] text-[14px]">Email ID</label>
 
                 <input
                   type="email"
-                  className="ml-[15px]"
+                  className="ml-[15px] sm:text-[16px] text-[14px]"
                   placeholder=""
                   onChange={(e) => validEmail(e)}
                   style={Email_valid ? validStyle : notValidStyle}
                 />
               </div>
 
-              <div className="checkbox pt-4">
+              <div className=" checkbox pt-4 2xl:pt-8">
                 <div className="round">
                   <input
                     type="checkbox"
@@ -292,7 +292,7 @@ export const Header = () => {
                   .
                 </p>
               </div>
-              <div className="text-center">
+              <div className="text-center 2xl:mt-[80px]">
                 <button
                   className="divStyles"
                   onMouseEnter={handleMouseEnter}

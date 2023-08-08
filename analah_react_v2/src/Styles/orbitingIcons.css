@@ -14,7 +14,7 @@
   left: 33%;
 }
 .orbit ul {
-  border: 1px dashed #2a44a9;
+  border: 2px dashed #2a44a9;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -92,7 +92,7 @@
   left: -34%;
 }
 .orbit2 ul {
-  border: 1px dashed #2a44a9;
+  border: 2px dashed #2a44a9;
 
   border-radius: 50%;
   display: grid;
@@ -268,12 +268,16 @@
 
 }
 
-/* @media (min-width: 950px) and (max-width: 1365px) {
+
+@media (min-width: 949px) and (max-width: 1350px) {
   .orbit .center-image img {
+    width: 42px;
+    height: 42px;
   position: absolute;
-  top: 75px;
-  left: 115%;
+  top: 65px;
+  left: 25%;
 }
+
   .orbit ul {
   width: 10rem;
   height: 10rem;
@@ -308,65 +312,83 @@
 .orbit2 li:nth-child(4) {
   transform: translate(-10rem, 0rem);
 }
-.orbit{
-  margin-top: 40px;
+
+.orbit2 {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+}
+
+.orbit li > div img {
+  width: 20px;
+  height: 20px;
+}
+
+.orbit2 li > div img {
+  width: 25px;
+  height: 25px;
+}
+
+#bike {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 30%;
+  left: 15%;
+}
+#heart {
+  padding-top: 2%;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 20%;
+  left: 25%;
+}
+#investment {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 20%;
+  left: 38%;
+}
+#guaranteed {
+  padding-top: 2%;
+  position: absolute;
+  width:25px;
+  height: 25px;
+  top: 35%;
+  left: 45%;
+}
+
+.containerOrbit {
+  top: 75px;
+  left: 25%;
+}
+
+.orbit2 li {
+  width: 2rem;
+}
+
+.orbit li {
+  width: 2rem;
 }
 
 .orbit2 {
   position: absolute;
-  top: -48%;
-  left: -48%;
-}
-#bike {
-  position: absolute;
-  top: 35%;
-  left: 25%;
-}
-#heart {
-  position: absolute;
-  top: 23%;
-  left: 35%;
-}
-#investment {
-  position: absolute;
-  top: 23%;
-  left: 49%;
-}
-#guaranteed {
-  position: absolute;
-  top: 35%;
-  left: 60%;
-}
-.orbit .center-image {
-  width: 3rem;
-  
-}
-.orbit li {
- 
-  width: 2rem;
-
-}
-.orbit2 li {
- 
-  width: 4rem;
-
-}
-.orbit li > div img {
-  width: 15px;
-  height: 15px;
-}
-.orbit2 li > div img {
-  width: 30px;
-  height: 30px;
+  top: -52%;
+  left: -31%;
 }
 
-.iconsSize {
-  width: 20px;
-  height: 20px;
- 
- 
+
 }
-} */
+
+@media (min-width: 950px) and (max-width: 1024px) {
+  .containerOrbit {
+    top: 75px;
+    left: 0%;
+  }
+}
+
 
 @media (min-width: 0px) and (max-width: 950px) {
   .containerOrbit {

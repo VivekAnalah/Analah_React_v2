@@ -4,7 +4,7 @@ import "../Styles/ourPartner.css"
 
 function OurPartner() {
   const our_partner = new Array(25).fill(0)
-  const headerText = "text-[#4481e4] text-[32px] font-700 text-center mb-5"
+ 
  
 
 
@@ -18,7 +18,7 @@ function OurPartner() {
       <div className="relative pt-10 lg:py-20">
        
 
-        <div className="grid lg:grid-cols-5 sm:grid-cols-3 grid-cols-2  lg:justify-center lg:items-center  w-[70%]  " style={{ margin: "auto"}}>
+        <div className="grid lg:grid-cols-5 sm:grid-cols-3 grid-cols-2  lg:justify-center lg:items-center  w-[60%]  " style={{ margin: "auto"}}>
 {our_partner && our_partner.map((icons,i) => (
   
  

@@ -4,8 +4,8 @@ import { Icon } from "@mui/material";
 
 export const Choose = () => {
 
-  const IconsProps = "md:w-[40px] md:h-[40px] sm:w-[35px] sm:h-[35px] ";
-  const iconsProps = "lg:w-[50px] lg:h-[50px] md:w-[45px] md:h-[45px] sm:w-[40px] sm:h-[40px] "
+  const IconsProps = "md:w-[40px] md:h-[40px] sm:w-[35px] sm:h-[35px] w-[30px]"
+  const iconsProps = "lg:w-[50px] lg:h-[50px] md:w-[45px] md:h-[45px] sm:w-[40px] sm:h-[40px] w-[35px]"
   return (
    
 <div class=" w-[100%] pt-[50px] bg-[#f6fafe]  ChooseContainer" >
@@ -21,7 +21,7 @@ export const Choose = () => {
         <div class="list ">
           <label for="home" class="home  ">
             <div className="iconsDiv" >
-            <img src={require("../Assets/Images/calculator51.png")} alt="calculation" className={`w-[40px] ${iconsProps} ml-[-6%]`}/>
+            <img src={require("../Assets/Images/calculator51.png")} alt="calculation" className={`${iconsProps} ml-[-6%]`}/>
             </div>
 
             <div className="w-[70%] headingsChooseUs" >
@@ -32,7 +32,7 @@ export const Choose = () => {
           </label>
           <label for="blog" class="blog">
             <div  className="iconsDiv" >
-            <img src={require("../Assets/Images/partnership1.png")} alt="Partners" className={`w-[40px] ${iconsProps}`} />
+            <img src={require("../Assets/Images/partnership1.png")} alt="Partners" className={`${iconsProps}`} />
 
             </div>
 
@@ -44,7 +44,7 @@ export const Choose = () => {
           </label>
           <label for="help" class="help">
             <div className="iconsDiv" >
-            <img src={require("../Assets/Images/insurance81.png")} alt="Get Insured" className={`w-[35px] ${IconsProps}` } />
+            <img src={require("../Assets/Images/insurance81.png")} alt="Get Insured" className={`${IconsProps}` } />
 
             </div>
 
@@ -56,7 +56,7 @@ export const Choose = () => {
          
           <label for="code" class="code">
             <div className="iconsDiv" >
-          <img src={require("../Assets/Images/claim1.png")} alt="claim" className={`w-[35px] ${IconsProps}`}  />
+          <img src={require("../Assets/Images/claim1.png")} alt="claim" className={`${IconsProps}`}  />
 
             </div>
 

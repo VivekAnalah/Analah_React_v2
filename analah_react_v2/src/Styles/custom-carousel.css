@@ -10,6 +10,7 @@
 
 
   .carousel .control-dots {
+    display: none;
     position: absolute;
     bottom: -16px;
     /* background-color: red; */

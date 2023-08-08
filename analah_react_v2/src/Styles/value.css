@@ -42,7 +42,7 @@
   line-height: normal;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .textStyleValue {
     font-size: 14px;
   }
@@ -59,7 +59,7 @@
   }
 }
 
-@media (min-width: 601px) and (max-width: 769px) {
+@media (min-width: 601px) and (max-width: 768px) {
   .topicValue {
     font-size: 26px;
   }

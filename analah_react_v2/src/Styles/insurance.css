@@ -1,3 +1,25 @@
+.topInsuraceDivs{
+  padding: 5px;
+}
+
+.insurance-home-text {
+  background-image: linear-gradient(to right, #57A4FF 10%, blue 100%);
+    background-clip: text;
+    color: transparent;
+
+}
+
+@media only screen and (max-width: 1160px) and (min-width: 951px) {
+  .topInsuraceDivs{
+    padding: 5px;
+  }
+}
+
+
+
+
+
+
 @media only screen and (min-width: 1671px) and (max-width: 3000px) {
 
    .insurance-home-img {

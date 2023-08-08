@@ -5,19 +5,14 @@
   top: 0;
   bottom: 0;
   z-index: 100;
-  background-color: red;
-  background-color: #4C8CE7;
-  background-color:rgba(50,50,50,0.5);
-  
- 
+  background-color: rgba(50, 50, 50, 0.5);
 }
 
-
 .registerContainer {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   width: 367px;
   height: 400px;
@@ -50,15 +45,14 @@
 }
 
 /* 34 */
-.input-text {
+.input-text-register {
   margin: auto;
-  width: 312px;
+  width: 85%;
   padding: 12px 15px;
-
   border-radius: 11px;
   border: 1px solid #e8e9eb;
-  background: #fff;
-  /* border: 1px solid #2A44A9; */
+  background-color: #fff;
+
   margin-bottom: 10px;
   margin-left: 25px;
 
@@ -493,4 +487,50 @@
   .checkbox-booking:not(:checked)
   + label::after {
   background-color: var(--light);
+}
+
+@media (min-width: 1640px) and (max-width: 3000px) {
+  .registerContainer {
+    width: 680px;
+    height: 650px;
+  }
+ 
+  .headingContainer {
+    height: 91px;
+    padding-top: 25px;
+    font-size: 25px;
+  }
+
+
+
+  .input-text-register {
+    padding: 20px 15px;
+    margin-top: 40px;
+ 
+  }
+}
+
+@media (max-width: 640px) and (min-width: 0px) {
+  .registerContainer {
+    width: 280px;
+    height: 450px;
+  }
+
+  .headingContainer {
+    font-size: 16px;
+  }
+
+  .input-text-register {
+    margin: auto;
+    width: 85%;
+    padding: 12px 15px;
+    border-radius: 11px;
+    border: 1px solid #e8e9eb;
+    background-color: #fff;
+  
+    margin-bottom: 10px;
+    margin-left: 25px;
+  
+    color: #595959;
+  }
 }

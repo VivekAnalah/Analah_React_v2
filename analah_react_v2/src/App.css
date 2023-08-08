@@ -41,7 +41,10 @@ html {
 }
 
 .title-border-bottom {
-  border-bottom: 2px solid #4481e4;
+  border-bottom: 2px solid linear-gradient(to right, #fff, #4582e4, #FFF  );
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #fff 10%, #4582e4 50%, #fff 100%);
+  border-image-slice: 1;
   padding-bottom: 5px;
 }
 
@@ -158,9 +161,15 @@ line-height: normal;
   .text_font {
     font-size: 14px;
   }
+  .topic {
+    font-size: 28px;
+  }
+  .topic2 {
+    font-size: 28px;
+  }
 }
 
-@media (min-width: 0px ) and (max-width:768px){
+@media (min-width: 601px ) and (max-width:768px){
   .textHeader2{
     font-size: 24px;
   }
@@ -170,4 +179,50 @@ line-height: normal;
   .text_font {
     font-size: 12px;
   } 
+  .topic {
+    font-size: 26px;
+  }
+  .topic2 {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 441px ) and (max-width:600px){
+  .textHeader2{
+    font-size: 24px;
+  }
+  .textHeader1{
+    font-size: 24px;
+  } 
+  .text_font {
+    font-size: 12px;
+  } 
+
+  .topic {
+    font-size: 26px;
+  }
+  .topic2 {
+    font-size: 26px;
+  }
+
+}
+
+@media (min-width: 0px ) and (max-width:440px){
+  .textHeader2{
+    font-size: 24px;
+  }
+  .textHeader1{
+    font-size: 24px;
+  } 
+  .text_font {
+    font-size: 12px;
+  } 
+
+  .topic {
+    font-size: 24px;
+  }
+  .topic2 {
+    font-size: 24px;
+  }
+
 }
