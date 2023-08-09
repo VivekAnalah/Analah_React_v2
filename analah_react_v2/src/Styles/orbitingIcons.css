@@ -14,7 +14,7 @@
   left: 33%;
 }
 .orbit ul {
-  border: 2px dashed #2a44a9;
+  border: 1px dashed #2a44a9;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -92,7 +92,7 @@
   left: -34%;
 }
 .orbit2 ul {
-  border: 2px dashed #2a44a9;
+  border: 1px dashed #2a44a9;
 
   border-radius: 50%;
   display: grid;

@@ -1,9 +1,6 @@
 .input-text {
     width: 100%;
     padding: 12px 15px;
-    
-    /* border: 1px solid #2A44A9; */
- 
     border-radius: 11px;
     color: #595959;
   }
@@ -197,6 +194,52 @@
 
     .RaiseClaimFormContainer{
       background: linear-gradient(0deg, rgba(241, 246, 253, 0.00) 13.52%, rgba(241, 246, 253, 0.63) 30.11%, rgba(241, 246, 253, 0.63) 63.58%, rgba(255, 255, 255, 0.63) 100%);
+    }
+    .FormHeadText{
+      font-size: 26px;
+    }
+
+    .FormSubText{
+font-size: 20px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .FormHeadText {
+        font-size: 24px;
+      }
+      .FormSubText {
+        font-size: 18px;
+      }
+    
+    
+    
+    }
+    
+    @media (min-width: 640px) and (max-width: 768px) {
+      .FormHeadText {
+        font-size: 22px;
+      }
+      .FormSubText {
+        font-size: 16px;
+      }
+    
+     
+    }
+    
+    @media (min-width: 0px) and (max-width: 639px) {
+      .FormHeadText {
+        font-size: 20px;
+      }
+      .FormSubText {
+        font-size: 14px;
+      }
+      .input-text {
+        width: 80%;
+        padding: 12px 15px;
+        border-radius: 11px;
+        color: #595959;
+      }
+     
     }
 
     

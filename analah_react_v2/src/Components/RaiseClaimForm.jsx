@@ -152,7 +152,7 @@ background: "#FFF"
   return (
     <>
       <div className="relative RaiseClaimFormContainer">
-        <div className="absolute left-0 top-0 lg:block hidden">
+        <div className="absolute right-0 top-0 lg:block hidden">
           <img
             src={require("../Assets/Images/partnerBg.png")}
             className="w-full "
@@ -164,19 +164,19 @@ background: "#FFF"
             className="items-center flex flex-col justify-center mb-14 lg:mb-28 scroll-mt-[100px]"
             id="raiseform"
           >
-            <div className="max-w-[600px] mt-6">
-              <h1 className="text-[32px] font-600 text-[#000000] text-center mb-8">
+            <div className="max-w-[60%] mt-6">
+              <h1 className="text-[32px] font-600 text-[#000000] text-center mb-8 FormHeadText">
                 Please enter the following details for your to raise your claim
                 request
               </h1>
-              <h5 className="text-[20px] font-600 text-[#000000]  text-center ">
+              <h5 className="text-[20px] font-600 text-[#000000]  text-center FormSubText">
                 <span className="text-[#4C8CE7] pb-2">
                 <a href="https://dashboard.analahinsurance.com/customer/login" target="blank">Login</a>{" "}
                 </span>{" "}
                 here if you are an existing user.
               </h5>
             </div>
-            <div className="flex raiseform-wrap w-[45%] mt-8 lg:mt-16 hover:shadow-blue-800 hover:shadow-md" style={{background:'#FFF'}}>
+            <div className="flex raiseform-wrap md:w-[45%] w-[60%] mt-8 lg:mt-16 hover:shadow-blue-800 hover:shadow-md" style={{background:'#FFF'}}>
               <div className="w-[100%] flex flex-col  items-center justify-center">
                 <div className="flex flex-wrap gap-3 lg:w-[100%] justify-between">
 
@@ -209,10 +209,11 @@ background: "#FFF"
 
                   
                 </div>
-                <div className="lg:w-[85%] mt-[50px]">
+                <div className="sm:w-[85%] w-[85%] mt-[50px] sm:text-[14px] text-[10px]">
                   <input
                     type="text"
                     className="input-text mt-[0px]"
+                    
                     placeholder="Name of the Insurer"
                     onChange={(e) => {setClaimantName(e.target.value)}}
                     style={inputBorderStyle}
@@ -244,7 +245,7 @@ background: "#FFF"
 
                   <div className="text-center">
                     <button
-                      className=" mt-[56px] mb-[61px]"
+                      className=" sm:mt-[56px] mt-[36px] sm:mb-[61px] mb-[31px]"
                       style={divStyles}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
@@ -266,13 +267,7 @@ background: "#FFF"
             alt=""
           />
         </div>
-        <div className="absolute right-0 top-30 lg:block hidden ">
-          <img
-            src={require("../Assets/Images/partnerBg.png")}
-            className="w-full "
-            alt=""
-          />
-        </div>
+       
       </div>
     </>
   );

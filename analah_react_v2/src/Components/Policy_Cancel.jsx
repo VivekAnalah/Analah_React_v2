@@ -16,8 +16,8 @@ function PolicyCancel() {
       
         <div className="bg-[linear-gradient(0deg, rgba(241, 246, 253, 0.00) 13.52%, rgba(241, 246, 253, 0.63) 30.11%, rgba(241, 246, 253, 0.63) 63.58%, rgba(255, 255, 255, 0.63) 100%)]  w-[75%] m-auto mx-auto pb-10 lg:pb-20">
           <div className={ "pt-[70px]"}>
-            <h2 className="textHeader1Lite">
-              <span className=" title-border-bottom textHeader1">Policy</span> Cancellation
+            <h2 className="textHeader2">
+              <span className=" sm:title-border-bottom textHeader1">Policy</span> Cancellation
               & Refund{" "}
             </h2>
             <p className="textNormal mt-[40px]">
