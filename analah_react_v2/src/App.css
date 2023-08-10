@@ -175,9 +175,15 @@ line-height: normal;
   .CancelPolicyText{
   font-size: 14px;
   }
+  .textHeader1Lite{
+    font-size: 28px;
+  }
 }
 
 @media (min-width: 601px ) and (max-width:768px){
+  .textHeader1Lite{
+    font-size: 26px;
+  }
   .textHeader2{
     font-size: 26px;
   }
@@ -205,6 +211,9 @@ line-height: normal;
 }
 
 @media (min-width: 441px ) and (max-width:600px){
+  .textHeader1Lite{
+    font-size: 26px;
+  }
   .textHeader2{
     font-size: 26px;
   }
@@ -233,6 +242,9 @@ line-height: normal;
 }
 
 @media (min-width: 0px ) and (max-width:440px){
+  .textHeader1Lite{
+    font-size: 24px;
+  }
   .textHeader2{
     font-size: 24px;
   }
@@ -258,6 +270,27 @@ line-height: normal;
     .CancelPolicyText{
       font-size: 12px;
       }
+
+}
+@media (min-width: 0px ) and (max-width:400px){
+  .textHeader1Lite{
+    font-size: 22px;
+  }
+  .textHeader2{
+    font-size: 22px;
+  }
+  .textHeader1{
+    font-size: 22px;
+  } 
+ 
+
+  .topic {
+    font-size: 22px;
+  }
+  .topic2 {
+    font-size: 22px;
+  }
+ 
 
 }
 

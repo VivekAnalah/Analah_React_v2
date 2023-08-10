@@ -40,11 +40,11 @@ function BecomePosp() {
     <>
       <div className="pb-4">
         <Header raiseClaim={true} />
-        <div className="container-fluid containerStyle">
-          <div className="flex flex-col sm:flex-row gap-[5%]  pt-[50px] relative w-[90%] m-auto pb-[67px]">
-            <div className="flex flex-col sm:w-[50.6%] w-[80%]  ml-[4%]  order-2 sm:order-1 sm:[50%] sm:ml-[8.5%] sm:mt-[0px] mt-[45px]">
+        <div className="container-fluid containerStyle relative">
+          <div className="flex flex-col sm:flex-row  sm:pt-[50px] relative w-[90%] m-auto pb-[67px]">
+            <div className="flex flex-col sm:w-[50%] w-[80%]  ml-[10%] m-auto  order-2 sm:order-1 sm:mt-[0px] mt-[45px] PospContentContainer">
               <div className="">
-                <h2 className="PospHeader ">
+                <h2 className="PospHeader">
                   Become an <br />
                   <span className="textHeader1">
                     {" "}
@@ -52,7 +52,7 @@ function BecomePosp() {
                   </span>{" "}
                   <span className=" pospSubhead">(Point of Salesperson) </span>
                 </h2>
-                <div className="  w-[70%] text-justify mt-[29.47px]">
+                <div className="  w-[70%] text-justify mt-[29.47px] pospSubTextContainer">
                   <h4 className="pospSubText">
                     Join our growing network of Insurance Partners{" "}
                     <span className="dots-text">...</span>
@@ -76,7 +76,7 @@ function BecomePosp() {
                     companies or brokers to sell insurance policies directly to
                     customers.
                   </h4>
-                  <div className="text-center my-6 sm:text-left sm:mt-[30px] sm:mb-[20px] ">
+                  <div className=" my-6 sm:mt-[30px] sm:mb-[20px] ">
                     <a href="https://pos.analahinsurance.com/" target="blank">
                       <button className="justify-center items-center divStyles ">
                         Become a PoSP
@@ -86,68 +86,70 @@ function BecomePosp() {
                 </div>
               </div>
             </div>
-            <div className=" flex flex-col order-1 sm:order-2 w-[70%] sm:w-[50%]">
+            <div className=" flex flex-col order-1 sm:order-2 w-[70%] sm:w-[50%] PospImageContainer">
               <div className="items-center flex justify-center">
-                <div className="">
+                <div className="w-[100%] flex justify-center">
                   <img
                     alt="insurance"
                     src={require("../Assets/Images/Asset 15.png")}
-                    className="w-[100%] "
+                    className=" w-[335px] h-[223px] BecomePospImage"
                   />
                 </div>
               </div>
             </div>
             {/* Left and Right Side Images */}
-            <div className="absolute bottom-[0px] left-[-50px]">
+           
+          </div>
+          <div className="absolute bottom-[0px] left-[0px]">
               <img
                 src={require("../Assets/Images/background_left.png")}
                 alt="left"
+                className="w-[80%] leftPospImage"
               />
             </div>
-            <div className="absolute  right-[-50px] bottom-[0px]">
+            <div className="absolute  right-[0px] bottom-[0px] flex justify-end">
               <img
                 src={require("../Assets/Images/background_right.png")}
                 alt="right"
+                className="w-[60%] RightPospImage"
               />
             </div>
-          </div>
         </div>
 
         {/* Why Become a PoSP Section */}
-        <div
-          className="container-fluid w-12/12   pb-20  relative"
-          style={{
-            background:
-              "linear-gradient(0deg, rgba(241, 246, 253, 0.00) 13.52%, rgba(241, 246, 253, 0.63) 30.11%, rgba(241, 246, 253, 0.63) 63.58%, rgba(255, 255, 255, 0.63) 100%)",
-          }}
-        >
-          <div className="absolute left-0 top-[5%] lg:block hidden">
+        <div className="relative">
+         
             <img
               src={require("../Assets/Images/partnerBg.png")}
-              className="w-full "
+              className="sm:w-[100px] w-[0px] absolute top-[3%]"
               alt=""
             />
-          </div>
-          <div className="absolute right-0  top-[5%] lg:block hidden">
+     
+      
             <img
               src={require("../Assets/Images/partnerBg.png")}
-              className="w-full "
+              className="sm:w-[100px] w-[0px] absolute right-[0px] sm:top-[3%]"
               alt=""
             />
-          </div>
+        
 
-          <div className="my-container flex  flex-col items-center justify-center lg:mt-0 sm:mt-0 mt-0 ">
-            <h2 className="textHeader1Lite mt-[6%]">
-              <span className="   sm:pb-[15px] textHeader1">Why </span>become an
+          <div className="pt-10 sm:ml-[8.5%] sm:mr-[8.5%] ml-[5%] mr-[5%] mx-auto ">
+
+            <div>
+            <h2 className="textHeader1Lite pb-8 lg:pb-11 text-center ">
+              <span className="textHeader1">Why </span>become an
               Analah Insurance PoSP?{" "}
             </h2>
-            <div className="flex w-[85%]  gap-[5%] text-justify mt-[50px]">
-              <div className="w-[18%] h-[fit-content] ml-[5%] rounded-[19px] bg-[#eceff3] pb-[20px] sticky top-[80px]">
+            </div>
+          
+           
+            <div className="flex sm:w-[90%] w-[100%] sm:ml-[50px] ml-[0%] gap-[5%]">
+              <div className="lg:w-[285px] w-[250px] sm:block hidden h-[fit-content] sm:ml-[5%] ml-[0%] rounded-[19px] bg-[#eceff3] pb-[20px] sticky top-[80px]">
                 <div className="anchorParent">
                   <a href="#whyBecome">
-                    <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[8%] relative">
+                    <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
                       <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
-                      <div className="text-[#595959] text-[12px] font-400 text-start">
+                      <div className="text-[#595959] text-[12px] font-400 text-start w-[95%]">
                         Why become an Analah Insurance PoSP?
                       </div>
                       <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
@@ -157,9 +159,9 @@ function BecomePosp() {
 
                 <div className="anchorParent">
                   <a href="#Eligibility">
-                    <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[8%] relative">
+                    <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
                       <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
-                      <div className="text-[#595959] text-[12px] font-400 text-start">
+                      <div className="text-[#595959] text-[12px] font-400 text-start w-[95%]">
                         Eligibility to become a PoSP
                       </div>
                       <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
@@ -169,21 +171,23 @@ function BecomePosp() {
 
                 <div className="anchorParent">
                   <a href="#steps">
-                    <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[8%] relative">
+                    <button className="h-[50px] grid grid-cols-[5%,90%]  gap-[10px] mt-[12%] ml-[5%] relative">
                       <div className="sideDot mt-[4px] bg-[#a3a7a9]"></div>
-                      <div className="text-[#595959] text-[12px] font-400 text-start">
+                      <div className="text-[#595959] text-[12px] font-400 text-start w-[95%]">
                         Simple Steps to Become an IRDAI PoSP
                       </div>
-                      <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]"></div>
+                      <div className="sideLine ml-[4px] mt-[-10px] absolute top-[28px]">
+
+                      </div>
                     </button>
                   </a>
                 </div>
               </div>
 
-              <div className="w-[70%]">
+              <div className="w-[80%] m-auto">
                 <div>
                   <section id="whyBecome" className="scroll-mt-[100px]">
-                    <ul className="posp-content text_font posptext  pb-6">
+                    <ul className="posp-content text_font text-justify  mb-4 lg:mb-6">
                       <li>
                         <b className="pospsubheadingtext">Passive Income:</b>{" "}
                         Earn passive income for each plan that you sell. IRDAI
@@ -235,11 +239,11 @@ function BecomePosp() {
                   </section>
 
                   <section id="Eligibility" className="scroll-mt-[100px]">
-                    <h5 className="eligibleHead w-full text-left ">
+                    <h5 className="text-[#4C8CE7] text-[18px] lg:text-[20px] font-semibold mb-[10px] font-600 ">
                       Eligibility to become a PoSP:
                     </h5>
 
-                    <ul className="posp-content posp-content2 eligibleText text-left mr-[auto]  pt-[14px] gap_issue">
+                    <ul className="list-disc ml-4  text_font text-justify mb-4 lg:mb-6">
                       <li>At least 18 years of age</li>
                       <li>
                         Basic Educational Qualifications (Completed Class 10)
@@ -252,11 +256,11 @@ function BecomePosp() {
                   </section>
 
                   <section id="steps" className="scroll-mt-[100px]">
-                    <h5 className="eligibleHead w-full text-left mt-[15px]">
+                    <h5 className="text-[#4C8CE7] text-[18px] lg:text-[20px] font-semibold mb-[10px] font-600">
                       Simple Steps to Become an IRDAI PoSP:
                     </h5>
 
-                    <ul className="posp-content posp-content2 eligibleText text-left mr-[auto]  lg:pt-3 gap_issue">
+                    <ul className="list-disc ml-4 text_font text-justify mb-4 lg:mb-6">
                       <li>Registration and Complete your KYC</li>
                       <li>Training</li>
                       <li>Examination</li>
@@ -268,7 +272,10 @@ function BecomePosp() {
             </div>
 
             {/* <div className="my-8 flex  flex-col  items-center justify-center text-justify "></div> */}
+          
           </div>
+
+          
         </div>
       </div>
 

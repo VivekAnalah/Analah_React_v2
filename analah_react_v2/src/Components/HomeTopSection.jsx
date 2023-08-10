@@ -90,8 +90,8 @@ export const HomeTopSection = () => {
                       // background: "border-box",
                       // background: "linear-gradient(45deg, #fff 70%, #4582e4)",
                       // Opacity: 0.2,
-                      backdropFilter: "blur(10px)",
-    backgroundColor: "rgba(255, 255, 255, 0.5)",
+                      // backdropFilter: "blur(10px)",
+    // backgroundColor: "rgba(255, 255, 255, 0.5)",
                     }}
                   >
                     <Insurance ins={item.name} item={item} />
