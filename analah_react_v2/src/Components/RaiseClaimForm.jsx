@@ -176,7 +176,7 @@ background: "#FFF"
                 here if you are an existing user.
               </h5>
             </div>
-            <div className="flex raiseform-wrap md:w-[45%] w-[60%] mt-8 lg:mt-16 hover:shadow-blue-800 hover:shadow-md" style={{background:'#FFF'}}>
+            <div className="flex raiseform-wrap md:w-[45%] w-[80%] mt-8 lg:mt-16 hover:shadow-blue-800 hover:shadow-md" style={{background:'#FFF'}}>
               <div className="w-[100%] flex flex-col  items-center justify-center">
                 <div className="flex flex-wrap gap-3 lg:w-[100%] justify-between">
 

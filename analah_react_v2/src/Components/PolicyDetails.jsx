@@ -261,7 +261,9 @@ function PolicyDetails({
           <div className="order-1 md:order-2  items-center xl:ml-[10%] lg:ml-[5%] md:w-[50%] w-[80%] ">
             <div className="relative m-auto w-[fit-content]">
               <div className="w-[50px] h-[50px] bg-[#F2F2F2] absolute top-[-14px] left-[-18px]"></div>
-
+              <img src={require("../Assets/Images/partnerBg.png")} alt="leftDot" className="absolute bottom-[-10%] left-[-10%] w-[120px] h-[43px]"/>
+              <img src={require("../Assets/Images/partnerBg.png")} alt="RightDot" className="absolute top-[-10%] right-[-20%] w-[120px] h-[43px]" />
+              <div className="w-[50px] h-[50px] bg-[#F2F2F2] absolute bottom-[-7%] right-[-7%]"></div>
               <img
                 src={require(`../Assets/Images/${img}.png`)}
                 alt={head}

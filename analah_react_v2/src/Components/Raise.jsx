@@ -10,8 +10,8 @@ function Raise() {
   return (
     <>
       <div  className="relative backgroundStyle">
-        <div className="flex flex-col sm:flex-row gap-[10%]  sm:pt-[50px] relative w-[70%] m-[auto]">
-          <div className="m-auto sm:w-[60%] w-[70%] order-1 sm:order-1 flex flex-col  sm:ml-[8.5%]  xl:pl-0 sm:ml-[9.5%] sm:mt-[0px] mt-[15px] ">
+        <div className="flex flex-col sm:flex-row gap-[10%]  sm:pt-[50px] relative sm:w-[70%] w-[90%] m-[auto]">
+          <div className="m-auto sm:w-[60%] w-[80%] order-1 sm:order-1 flex flex-col  sm:ml-[8.5%]  xl:pl-0 sm:ml-[9.5%] sm:mt-[0px] mt-[15px] ">
             <div className="mt-[30px]">
               <h2 className="textHeader1">
                 <span className="title-border-bottom ">Rais</span>e a Claim
@@ -23,7 +23,7 @@ function Raise() {
                 You may raise a claim request, even if you did not buy your
                 policy with us.
               </h4>
-              <div className="text-center sm:text-left  mt-[45px] sm:relative absolute bottom-[0%] sm:right-[0%] right-[15%] raiseButtonContainer ">
+              <div className="text-center sm:text-left  mt-[45px] sm:relative absolute bottom-[15%] sm:right-[0%] right-[25%] raiseButtonContainer ">
                 <a href="#raiseform">
                   <button className=" md:text-[16px] sm:text-[12px] text-[14px] divStyles" id="raise-button">
                     Raise Claim
@@ -32,7 +32,7 @@ function Raise() {
               </div>
             </div>
           </div>
-          <div className="sm:w-1/2 order-1 sm:order-2 flex flex-col w-[70%]  sm:w-[30%] m-auto sm:mt-[0px] mt-[15px] ml-[20px]">
+          <div className="sm:w-1/2 order-1 sm:order-2 flex flex-col w-[70%]  sm:w-[30%] m-auto sm:mt-[0px] mt-[15px] sm:ml-[0px] ml-[60px]">
             <div className="">
               <div className="ClaimImage">
                 <img
