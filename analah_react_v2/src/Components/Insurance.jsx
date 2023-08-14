@@ -12,12 +12,12 @@ function Insurance({ item, ins }) {
     <Link to={`/${myArr[0]}`} >
       <div
         className={
-         " p-[5px] flex justify-center flex-col items-center topInsuraceDivs"
+         "p-[5px] flex justify-center flex-col items-center topInsuraceDivs"
           }
           
       >
          <img
-        src={require(`../Assets/Images/${item.img}`)}
+        src={require(`../Assets/Insurance_Images/${item.img}`)}
         alt=""
         className={"object-contain  w-[35%] h-[40px] lg:h-[40px] 2xl:h-[60px] mt-[10px] insurance-home-img"}
       /> 

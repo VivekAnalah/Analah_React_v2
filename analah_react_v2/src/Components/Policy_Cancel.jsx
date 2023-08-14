@@ -30,7 +30,7 @@ function PolicyCancel() {
             <h2 className="mt-[47px] CancelPolicy">
               Cancellation Policy
             </h2>
-            <p className="mt-[13px] CancelPolicyText">
+            <p className="mt-[13px] CancelPolicyText text-justify">
               If in case you decide to cancel an insurance product, the
               insurance provider you purchased the product from will refund the
               premium via cheque or direct credit, depending on their policy.

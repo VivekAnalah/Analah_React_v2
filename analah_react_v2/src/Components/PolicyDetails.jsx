@@ -265,7 +265,7 @@ function PolicyDetails({
               <img src={require("../Assets/Images/partnerBg.png")} alt="RightDot" className="absolute top-[-10%] right-[-20%] w-[120px] h-[43px]" />
               <div className="w-[50px] h-[50px] bg-[#F2F2F2] absolute bottom-[-7%] right-[-7%]"></div>
               <img
-                src={require(`../Assets/Images/${img}.png`)}
+                src={require(`../Assets/policy_details/${img}.png`)}
                 alt={head}
                 className=" lg:w-[300.073px] md:w-[200.073px] z-2 relative top-0 rounded-[27px]"
               />

@@ -81,11 +81,11 @@ export const Header = () => {
     );
     try {
       let res = await axios.post(
-        "https://famous-teal-raven.cyclic.app/investment",
+        "https://famous-teal-raven.cyclic.app/signup",
         {
-          Investment_User_Name,
-          Investment_User_Mail,
-          Investment_User_Mob_Num,
+          name:Investment_User_Name,
+          email:Investment_User_Mail,
+          mobile:Investment_User_Mob_Num,
         }
       );
       let data = res.data;
@@ -223,10 +223,10 @@ export const Header = () => {
 
             <div className="mt-[20px]">
               <div className="input-text-register">
-                <label htmlFor="" className="sm:text-[16px] text-[14px]">Full Name</label>
+                <label htmlFor="" className="sm:text-[16px] text-[14px] ">Full Name</label>
                 <input
                   type="text"
-                  className="ml-[15px] sm:text-[16px] text-[14px]"
+                  className="ml-[15px] sm:text-[16px] text-[14px] outline-none"
                   placeholder="(Name as per PAN card)"
                   onChange={(e) => setInvestment(e.target.value)}
                 />
@@ -236,7 +236,7 @@ export const Header = () => {
                 <label htmlFor="" className="sm:text-[16px] text-[14px]">Mobile No.</label>
                 <input
                   type="number"
-                  className="ml-[15px] sm:text-[16px] text-[14px]"
+                  className="ml-[15px] sm:text-[16px] text-[14px] outline-none appearance-none"
                   placeholder=""
                   onChange={(e) => validMob(e)}
                   style={Mob_valid ? validStyle : notValidStyle}
@@ -248,7 +248,7 @@ export const Header = () => {
 
                 <input
                   type="email"
-                  className="ml-[15px] sm:text-[16px] text-[14px]"
+                  className="ml-[15px] sm:text-[16px] text-[14px] outline-none"
                   placeholder=""
                   onChange={(e) => validEmail(e)}
                   style={Email_valid ? validStyle : notValidStyle}

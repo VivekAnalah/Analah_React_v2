@@ -143,8 +143,6 @@ line-height: normal;
 
 .CancelPolicyText{
   color: #595959;
-text-align: justify;
-/* font-family: Roboto; */
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -324,4 +322,14 @@ line-height: normal;
     padding-left: 10px;
     padding-right: 10px;
   }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }

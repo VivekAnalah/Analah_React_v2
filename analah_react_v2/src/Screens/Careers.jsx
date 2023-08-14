@@ -138,14 +138,16 @@ function Careers() {
             </h2>
 
             <div className=" w-[100%] flex justify-center sm:mt-[70px] mt-[40px]" >
-              <img src={require("../Assets/Images/Career_Get_in_touch.png")} alt="Get in touch" className="sm:w-[50%] w-[80%] "/>
+              <img src={require("../Assets/Images/Career_Get_in_touch.png")} alt="Get in touch" className="xl:w-[30%] sm:w-[50%] w-[80%] "/>
             </div>
 
             <h5 className="CurrentOpenings lg:text-[24px] md:text-[22px] sm:text-[20px] text-[18px] text-center sm:mt-[90px] mt-[55px]">
               Current Openings
             </h5>
             <h5 className="CancelPolicyText text-center mt-[20px] sm:w-[50%] w-[80%]">
-              If you're ready to make a difference, come and join us. Send us
+              If you're ready to make a difference, come and join us. 
+              <br />
+              Send us
               your resume at{" "}
               <span className="text-[#4C8CE7]">
                 <b><a href="mailto:contactus@analahinsurance.com" >contactus@analahinsurance.com</a></b>
@@ -158,16 +160,16 @@ function Careers() {
                   Sales Executive
                 </div>
 
-                <div className="divStylesCareer SalesText flex justify-center items-center w-[25%] h-[54px]">
+                <div className="divStylesCareer SalesText flex justify-center items-center lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px] w-[25%] h-[54px]">
                   Sales Manager
                 </div>
               </div>
               <div className="m-auto w-[70%]  mt-[40px]" >
-                <h4 className="CurrentOpenings lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px]">
+                <h4 className="CurrentOpenings text-center lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px]">
                   If you don't see a job opening which interests you, don't
                   worry!
                 </h4>
-                <p className="CancelPolicyText mt-[25px]">
+                <p className="CancelPolicyText text-center mt-[25px]">
                   We accept applications for future positions. Simply send us
                   your resume and we will get in touch if we have a suitable
                   opening for you
