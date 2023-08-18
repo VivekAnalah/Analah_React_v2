@@ -9,6 +9,8 @@ import { About } from '../Components/About';
 import { Value } from '../Components/Value';
 import { FoundingTeam } from '../Components/FoundingTeam';
 import Footer from '../Components/Footer';
+import InvestmentPlans from './Insurances/InvestmentPlans';
+import Guarantee from './Insurances/GuaranteedReturns';
 
 export  const Home = () => {
 
@@ -48,6 +50,9 @@ export  const Home = () => {
 
      <Footer />
     
+    <InvestmentPlans />
+
+    <Guarantee />
 
 
 

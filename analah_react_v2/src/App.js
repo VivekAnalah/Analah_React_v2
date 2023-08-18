@@ -20,7 +20,7 @@ import PolicyCancel from './Components/Policy_Cancel';
 import Careers from './Screens/Careers';
 import { Register } from './Components/Register';
 
-import InvestmentPlans from './Screens/Insurances/InvestmentPlans';
+// import InvestmentPlans from './Screens/Insurances/InvestmentPlans';
 
 function App() {
   return (
@@ -45,9 +45,9 @@ function App() {
       <Route path="/policy-cancel" element={<PolicyCancel />} />
       <Route path="/careers" element={<Careers />} />
       
-      <Route path="/Investment" element={<InvestmentPlans />} />
 
       {/*
+      { <Route path="/Investment" element={<InvestmentPlans />} /> }
       <Route path="/Guaranteed" element={<GuaranteedReturns />} />
       */}
 

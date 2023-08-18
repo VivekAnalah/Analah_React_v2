@@ -94,7 +94,7 @@ export const HomeTopSection = () => {
     // backgroundColor: "rgba(255, 255, 255, 0.5)",
                     }}
                   >
-                    <Insurance ins={item.name} item={item} />
+                    <Insurance ins={item.name} item={item} index={index} />
                   </div>
                 );
               })}

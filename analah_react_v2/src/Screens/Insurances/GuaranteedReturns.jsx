@@ -3,11 +3,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "../../Styles/register.css";
+// import "../../Styles/guaranteeForm.css";
 import { display } from "../../Context/DisplayContext";
 import { useContext } from "react";
 
-function InvestmentPlans() {
-  const { openInvestment, setInvestment } = useContext(display);
+function Guarantee() {
+  const { setGuaranteeModal, openGuarantee } = useContext(display);
 
   const [isHovered, setIsHovered] = useState(false);
   const [Investment_User_Name, setInvestmentUser] = useState("");
@@ -70,11 +71,11 @@ function InvestmentPlans() {
     );
     try {
       let res = await axios.post(
-        "https://famous-teal-raven.cyclic.app/investment",
+        "https://famous-teal-raven.cyclic.app/guarantee",
         {
-          Investment_User_Name,
-          Investment_User_Mail,
-          Investment_User_Mob_Num,
+          Gurantee_User_Name: Investment_User_Name,
+          Gurantee_User_Mail: Investment_User_Mail,
+          Gurantee_User_Mob_Num: Investment_User_Mob_Num,
         }
       );
       let data = res.data;
@@ -99,8 +100,8 @@ function InvestmentPlans() {
 
   return (
     <div>
-      <div className={openInvestment ? "bgContainerRegister" : "hidden"}>
-        <div className="registerContainer">
+      <div className={openGuarantee ? "bgContainerRegister" : "hidden"}>
+        <div className="registerContainer GuaranteeImage">
           <div className="headingContainer relative">
             <h3>
               Get the right plan Today!{" "}
@@ -109,7 +110,7 @@ function InvestmentPlans() {
                   src={require("../../Assets/Images/close2.png")}
                   alt="close"
                   className="2xl:w-[30px] sm:w-[20px] w-[15px] absolute top-[20px] right-[25px] 2xl:top-[25px] 2xl:right-[25px] hover:cursor-pointer"
-                  onClick={() => setInvestment()}
+                  onClick={() => setGuaranteeModal()}
                 />
               </Link>
             </h3>
@@ -155,7 +156,7 @@ function InvestmentPlans() {
               />
             </div>
 
-            <div className=" checkbox pt-4 2xl:pt-8">
+            <div className="checkbox pt-4 2xl:pt-8">
               <div className="round">
                 <input
                   type="checkbox"
@@ -217,4 +218,4 @@ function InvestmentPlans() {
   );
 }
 
-export default InvestmentPlans;
+export default Guarantee;

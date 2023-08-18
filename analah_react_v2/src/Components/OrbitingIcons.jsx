@@ -6,7 +6,7 @@ export const OrbitingIcons = () => {
     <div class="containerOrbit">
 <div class="orbit">
     <div class="center-image">
-      <img src={require("./Assets/Center.png")} alt="" />
+      <img src={require("../Assets/Insurance_Images/Center_ins_img.png")} alt="Center" />
     
     </div>
     <ul>
