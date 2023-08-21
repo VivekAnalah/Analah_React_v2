@@ -3,11 +3,19 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "../../Styles/register.css";
-// import "../../Styles/guaranteeForm.css";
+import "../../Styles/guaranteeForm.css";
 import { display } from "../../Context/DisplayContext";
 import { useContext } from "react";
+import AlertTag from "../../Components/AlertTag";
 
 function Guarantee() {
+
+  const [alertVisible, setAlertVisible] = useState(false);
+  const [alertType, setAlertType] = useState('');
+  const [alertMessage, setAlertMessage] = useState('');
+  const [alertTitle, setAlertTitle] = useState('');
+
+
   const { setGuaranteeModal, openGuarantee } = useContext(display);
 
   const [isHovered, setIsHovered] = useState(false);
@@ -80,10 +88,21 @@ function Guarantee() {
       );
       let data = res.data;
       if (data.Status === "Ok") {
-        alert(data.msg);
-        // window.location.href = "https://dashboard.analahinsurance.com/customer/login"
+        document.getElementById("GuaranteeName").value = ""; 
+        document.getElementById("GuaranteeMail").value = "";
+        document.getElementById("GuaranteeMob").value = "";
+
+        setAlertType(false);
+        setAlertMessage(data.msg);
+        setAlertVisible(true);
+        setAlertTitle("Success!")
+        
       } else {
-        alert("Sorry!!  Getting Internal Error to Upload your request");
+        setAlertType(true);
+        setAlertMessage(data.msg);
+        setAlertVisible(true);
+        setAlertTitle("Error:")
+       
       }
       console.log(data);
     } catch (e) {
@@ -126,6 +145,7 @@ function Guarantee() {
                 className="ml-[15px] sm:text-[16px] text-[14px] outline-none"
                 placeholder="(Name as per PAN card)"
                 onChange={(e) => setInvestmentUser(e.target.value)}
+                id="GuaranteeName"
               />
             </div>
 
@@ -139,6 +159,7 @@ function Guarantee() {
                 placeholder=""
                 onChange={(e) => validMob(e)}
                 style={Mob_valid ? validStyle : notValidStyle}
+                id="GuaranteeMob"
               />
             </div>
 
@@ -153,18 +174,19 @@ function Guarantee() {
                 placeholder=""
                 onChange={(e) => validEmail(e)}
                 style={Email_valid ? validStyle : notValidStyle}
+                id="GuaranteeMail"
               />
             </div>
 
-            <div className="checkbox pt-4 2xl:pt-8">
-              <div className="round">
+            <div className="checkboxGuarantee pt-4 2xl:pt-8">
+              <div className="roundGuarantee">
                 <input
                   type="checkbox"
                   name=""
-                  id="checkBox"
+                  id="checkBoxGuarantee"  
                   onClick={() => setInvestmentChecked(!Investment_Checked)}
                 />
-                <label htmlFor="checkBox"></label>
+                <label htmlFor="checkBoxGuarantee"></label>
               </div>
 
               <p className="text-[12px] font-400 text-[#595959]	px-5">
@@ -213,7 +235,13 @@ function Guarantee() {
             </div>
           </div>
         </div>
+        {alertVisible && <AlertTag type={alertType} message={alertMessage} title={alertTitle}  />}
+
+        <div>
+         
+        </div>
       </div>
+      
     </div>
   );
 }

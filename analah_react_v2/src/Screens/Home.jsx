@@ -43,6 +43,8 @@ export  const Home = () => {
         </div>
      </div>
      <About />
+    <InvestmentPlans />
+    <Guarantee />
 
      <Value />
 
@@ -50,9 +52,7 @@ export  const Home = () => {
 
      <Footer />
     
-    <InvestmentPlans />
 
-    <Guarantee />
 
 
 

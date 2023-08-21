@@ -3,10 +3,18 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "../../Styles/register.css";
+import "../../Styles/investForm.css";
 import { display } from "../../Context/DisplayContext";
 import { useContext } from "react";
+import { Alert } from "../../Components/Alert";
 
 function InvestmentPlans() {
+
+  const [alertVisible, setAlertVisible] = useState(false);
+  const [alertType, setAlertType] = useState('');
+  const [alertMessage, setAlertMessage] = useState('');
+  const [alertTitle, setAlertTitle] = useState('');
+
   const { openInvestment, setInvestment } = useContext(display);
 
   const [isHovered, setIsHovered] = useState(false);
@@ -79,10 +87,30 @@ function InvestmentPlans() {
       );
       let data = res.data;
       if (data.Status === "Ok") {
-        alert(data.msg);
-        // window.location.href = "https://dashboard.analahinsurance.com/customer/login"
+        document.getElementById("InvestName").value = ""; 
+        document.getElementById("InvestMail").value = "";
+        document.getElementById("InvestMob").value = "";
+
+        setAlertType('success');
+        setAlertMessage(data.msg);
+        setAlertVisible(true);
+        setAlertTitle("Success!")
+        setTimeout(() => {
+          setAlertVisible(false);
+          
+        }, 2000);
+
       } else {
-        alert("Sorry!!  Getting Internal Error to Upload your request");
+    
+        setAlertType('error');
+        setAlertMessage(data.msg);
+        setAlertVisible(true);
+        setAlertTitle("Error:")
+        setTimeout(() => {
+          setAlertVisible(false);
+         
+        }, 5000);
+     
       }
       console.log(data);
     } catch (e) {
@@ -125,6 +153,7 @@ function InvestmentPlans() {
                 className="ml-[15px] sm:text-[16px] text-[14px] outline-none"
                 placeholder="(Name as per PAN card)"
                 onChange={(e) => setInvestmentUser(e.target.value)}
+                id="InvestName"
               />
             </div>
 
@@ -138,6 +167,7 @@ function InvestmentPlans() {
                 placeholder=""
                 onChange={(e) => validMob(e)}
                 style={Mob_valid ? validStyle : notValidStyle}
+                id="InvestMob"
               />
             </div>
 
@@ -152,18 +182,19 @@ function InvestmentPlans() {
                 placeholder=""
                 onChange={(e) => validEmail(e)}
                 style={Email_valid ? validStyle : notValidStyle}
+                id="InvestMail"
               />
             </div>
 
-            <div className=" checkbox pt-4 2xl:pt-8">
-              <div className="round">
+            <div className=" checkboxInvest pt-4 2xl:pt-8">
+              <div className="roundInvest">
                 <input
                   type="checkbox"
                   name=""
-                  id="checkBox"
+                  id="checkBoxInvest"
                   onClick={() => setInvestmentChecked(!Investment_Checked)}
                 />
-                <label htmlFor="checkBox"></label>
+                <label htmlFor="checkBoxInvest"></label>
               </div>
 
               <p className="text-[12px] font-400 text-[#595959]	px-5">
@@ -212,7 +243,10 @@ function InvestmentPlans() {
             </div>
           </div>
         </div>
+        {alertVisible && <Alert type={alertType} message={alertMessage} title={alertTitle} />}
       </div>
+     
+
     </div>
   );
 }

@@ -4,8 +4,16 @@ import "../App.css";
 import "../Styles/header.css";
 import axios from "axios";
 import "../Styles/register.css";
+import { Alert } from "./Alert";
 
 export const Header = () => {
+
+  const [alertVisible, setAlertVisible] = useState(false);
+  const [alertType, setAlertType] = useState('');
+  const [alertMessage, setAlertMessage] = useState('');
+  const [alertTitle, setAlertTitle] = useState('');
+
+
   const location = useLocation();
   const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -90,10 +98,27 @@ export const Header = () => {
       );
       let data = res.data;
       if (data.Status === "Ok") {
-        alert(data.msg);
-        // window.location.href = "https://dashboard.analahinsurance.com/customer/login"
+        document.getElementById("RegisterName").value = ""; 
+        document.getElementById("RegisterMail").value = "";
+        document.getElementById("RegisterMob").value = "";
+
+        setAlertType('success');
+        setAlertMessage(data.msg);
+        setAlertVisible(true);
+        setAlertTitle("Success!")
+        setTimeout(() => {
+          setAlertVisible(false);
+          window.open('https://dashboard.analahinsurance.com/customer/login', '_blank');
+        }, 2000);
       } else {
-        alert("Sorry!!  Getting Internal Error to Upload your request");
+        setAlertType('error');
+        setAlertMessage(data.msg);
+        setAlertVisible(true);
+        setAlertTitle("Error:")
+        setTimeout(() => {
+          setAlertVisible(false);
+         
+        }, 5000);
       }
       console.log(data);
     } catch (e) {
@@ -229,6 +254,7 @@ export const Header = () => {
                   className="ml-[15px] sm:text-[16px] text-[14px] outline-none"
                   placeholder="(Name as per PAN card)"
                   onChange={(e) => setInvestment(e.target.value)}
+                  id="RegisterName"
                 />
               </div>
 
@@ -240,6 +266,7 @@ export const Header = () => {
                   placeholder=""
                   onChange={(e) => validMob(e)}
                   style={Mob_valid ? validStyle : notValidStyle}
+                  id="RegisterMob"
                 />
               </div>
 
@@ -252,6 +279,7 @@ export const Header = () => {
                   placeholder=""
                   onChange={(e) => validEmail(e)}
                   style={Email_valid ? validStyle : notValidStyle}
+                  id="RegisterMail"
                 />
               </div>
 
@@ -312,7 +340,10 @@ export const Header = () => {
               </div>
             </div>
           </div>
+
+          {alertVisible && <Alert type={alertType} message={alertMessage} title={alertTitle} />}
         </div>
+
       </nav>
     </>
   );

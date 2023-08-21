@@ -1,5 +1,5 @@
 /* 429 */
-.checkboxGuarantee {
+.checkboxInvest {
   gap: 15px;
   display: flex;
   align-items: baseline;
@@ -8,11 +8,11 @@
 }
 
 /* 600 */
-.roundGuarantee {
+.roundInvest {
   position: relative;
 }
 
-.roundGuarantee label {
+.roundInvest label {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 50%;
@@ -24,7 +24,7 @@
   width: 20px;
 }
 
-.roundGuarantee label:after {
+.roundInvest label:after {
   border: 2px solid #fff;
   border-top: none;
   border-right: none;
@@ -38,15 +38,15 @@
   width: 12px;
 }
 
-.roundGuarantee input[type="checkbox"] {
+.roundInvest input[type="checkbox"] {
   visibility: hidden;
 }
 
-.roundGuarantee input[type="checkbox"]:checked + label {
+.roundInvest input[type="checkbox"]:checked + label {
   background-color: #66bb6a;
   border-color: #66bb6a;
 }
 
-.roundGuarantee input[type="checkbox"]:checked + label:after {
+.roundInvest input[type="checkbox"]:checked + label:after {
   opacity: 1;
 }
