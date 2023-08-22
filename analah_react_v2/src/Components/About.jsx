@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import "../Styles/about.css"
+import { useLocation } from 'react-router-dom';
 
 
 export const About = () => {
 
-
+    const targetDivRef = useRef(null);
+    const location = useLocation();
+    
+    useEffect(() => {
+      console.log(location)
+      if (location.hash === "#about") {
+        targetDivRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, []);
 
     const aboutUs_detials = [
 
@@ -41,7 +50,7 @@ export const About = () => {
     ] 
 
   return (
-    <div className='w-[100%] aboutContainer'>
+    <div className='w-[100%] aboutContainer mt-[0px] scroll-mt-[50px]' id="about" ref={targetDivRef}>
         <div className='m-[auto]'>
         <div class="topicAbout ">About <sapn class="topic2About">Us</sapn></div>
         <p className='textStyleAbout'>Analah Insurance is an IRDAI regulated Insurance Broking Firm, with headquarters in Mumbai's prestigious BKC area.</p>

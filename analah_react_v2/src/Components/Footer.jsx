@@ -1,9 +1,15 @@
 import { Grid, useMediaQuery } from "@mui/material";
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { display } from "../Context/DisplayContext";
 
 export let sectionRef;
 function Footer() {
+
+  const location = useLocation();
+
+  const {setInvestment, setGuaranteeModal} = useContext(display);
+
   const matches = useMediaQuery("(max-width:900px)");
   const [phoneImage, setPhoneImage] = useState("phone1");
   const [emailImage, setEmailImage] = useState("email1");
@@ -22,6 +28,18 @@ function Footer() {
 
   const handleMouseLeaveEmail = () =>{
     setEmailImage("email1")
+  }
+
+  const pageScroll = (id) =>{
+
+    if(id==="about"&& location.hash === "#about" || id==="about"&& location.pathname === "/"){
+
+    
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+          
+
+
+    }
   }
 
   return (
@@ -66,11 +84,11 @@ function Footer() {
                   <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to="/Retirement">Retirement Plans</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
-                    <Link to="/Investment">Investment Plans</Link>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5] hover:cursor-pointer" onClick={() => setInvestment()}>
+                    Investment Plans
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
-                    <Link to="/Guaranteed">Guaranteed Returns Plans</Link>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5] hover:cursor-pointer" onClick={() => setGuaranteeModal()}>
+                    Guaranteed Returns Plans
                   </h5>
 
                   <div className="bg-[#ffffff] w-[120px] h-auto flex flex-row rounded-[20px] p-2 space-x-2 items-center justify-center">
@@ -133,7 +151,7 @@ function Footer() {
                   <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to={"/"}>Home</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white scroll-mt-[-20px] hover:text-[#9ad3f5]">
+                  <h5 className="font-[300] text-[16px] text-white scroll-mt-[-20px] hover:text-[#9ad3f5]" onClick={()=>pageScroll("about")}>
                     <Link to={"/#about"}>About us </Link>
                   </h5>
                   <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
@@ -260,11 +278,11 @@ function Footer() {
                   <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to="/Retirement">Retirement Plans</Link>
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
-                    <Link to="/Investment">Investment Plans</Link>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5] hover:cursor-pointer" onClick={() => setInvestment()}>
+                   Investment Plans
                   </h5>
-                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5]">
-                    <Link to="/Guaranteed">Guaranteed Returns Plans</Link>
+                  <h5 className="font-[300] text-[12px] sm:text-[16px] text-white hover:text-[#9ad3f5] hover:cursor-pointer" onClick={() => setGuaranteeModal()}>
+                    Guaranteed Returns Plans
                   </h5>
                 </div>
                 <div className="space-y-5">
@@ -272,7 +290,7 @@ function Footer() {
                   <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">
                     <Link to={"/"}>Home</Link>
                   </h5>
-                  <h5 className="font-[300] text-[16px] text-white scroll-mt-[-20px] hover:text-[#9ad3f5]">
+                  <h5 className="font-[300] text-[16px] text-white scroll-mt-[-20px] hover:text-[#9ad3f5]" onClick={()=>pageScroll("about")}>
                     <Link to={"/#about"}>About us </Link>
                   </h5>
                   <h5 className="font-[300] text-[16px] text-white hover:text-[#9ad3f5]">

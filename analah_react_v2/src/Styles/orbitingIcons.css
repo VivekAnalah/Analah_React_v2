@@ -266,7 +266,13 @@
   }
 }
 
-@media (min-width: 949px) and (max-width: 1350px) {
+@media (min-width: 949px) and (max-width: 1024px) {
+
+  .containerOrbit {
+    position: relative;
+    top: 25px;
+  }
+
   .orbit .center-image {
     width: 2.5rem;
   }
@@ -377,7 +383,7 @@
 @media (min-width: 950px) and (max-width: 1024px) {
   .containerOrbit {
     top: 75px;
-    left: 0%;
+    left: -50%;
   }
 }
 

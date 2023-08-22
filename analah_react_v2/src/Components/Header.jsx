@@ -4,7 +4,7 @@ import "../App.css";
 import "../Styles/header.css";
 import axios from "axios";
 import "../Styles/register.css";
-import { Alert } from "./Alert";
+import AlertTag from "./AlertTag";
 
 export const Header = () => {
 
@@ -102,7 +102,7 @@ export const Header = () => {
         document.getElementById("RegisterMail").value = "";
         document.getElementById("RegisterMob").value = "";
 
-        setAlertType('success');
+        setAlertType(false);
         setAlertMessage(data.msg);
         setAlertVisible(true);
         setAlertTitle("Success!")
@@ -111,14 +111,14 @@ export const Header = () => {
           window.open('https://dashboard.analahinsurance.com/customer/login', '_blank');
         }, 2000);
       } else {
-        setAlertType('error');
-        setAlertMessage(data.msg);
+        setAlertType(true);
+        setAlertMessage("You're already a registered user! 🎉 Kindly log in for further access 🚀");
         setAlertVisible(true);
         setAlertTitle("Error:")
         setTimeout(() => {
           setAlertVisible(false);
-         
-        }, 5000);
+          window.open('https://dashboard.analahinsurance.com/customer/login', '_blank');
+        }, 3000);
       }
       console.log(data);
     } catch (e) {
@@ -341,7 +341,7 @@ export const Header = () => {
             </div>
           </div>
 
-          {alertVisible && <Alert type={alertType} message={alertMessage} title={alertTitle} />}
+          {alertVisible && <AlertTag type={alertType} message={alertMessage} title={alertTitle} />}
         </div>
 
       </nav>

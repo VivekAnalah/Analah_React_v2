@@ -7,8 +7,7 @@ import { display } from "../Context/DisplayContext";
 
 function Insurance({ item, ins, index}) {
 
-  const {setInvestment, setGuaranteeModal} = useContext(display)
-  console.log(index)
+  const {setInvestment, setGuaranteeModal} = useContext(display);
   let insuranceName = ins;
   const myArr = insuranceName.split(" ");
   console.log("insuranceName ", myArr[0]);

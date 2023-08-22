@@ -9,12 +9,10 @@ import { useContext } from "react";
 import AlertTag from "../../Components/AlertTag";
 
 function Guarantee() {
-
   const [alertVisible, setAlertVisible] = useState(false);
-  const [alertType, setAlertType] = useState('');
-  const [alertMessage, setAlertMessage] = useState('');
-  const [alertTitle, setAlertTitle] = useState('');
-
+  const [alertType, setAlertType] = useState("");
+  const [alertMessage, setAlertMessage] = useState("");
+  const [alertTitle, setAlertTitle] = useState("");
 
   const { setGuaranteeModal, openGuarantee } = useContext(display);
 
@@ -88,21 +86,19 @@ function Guarantee() {
       );
       let data = res.data;
       if (data.Status === "Ok") {
-        document.getElementById("GuaranteeName").value = ""; 
+        document.getElementById("GuaranteeName").value = "";
         document.getElementById("GuaranteeMail").value = "";
         document.getElementById("GuaranteeMob").value = "";
 
         setAlertType(false);
         setAlertMessage(data.msg);
         setAlertVisible(true);
-        setAlertTitle("Success!")
-        
+        setAlertTitle("Success!");
       } else {
         setAlertType(true);
         setAlertMessage(data.msg);
         setAlertVisible(true);
-        setAlertTitle("Error:")
-       
+        setAlertTitle("Error:");
       }
       console.log(data);
     } catch (e) {
@@ -183,7 +179,7 @@ function Guarantee() {
                 <input
                   type="checkbox"
                   name=""
-                  id="checkBoxGuarantee"  
+                  id="checkBoxGuarantee"
                   onClick={() => setInvestmentChecked(!Investment_Checked)}
                 />
                 <label htmlFor="checkBoxGuarantee"></label>
@@ -235,13 +231,16 @@ function Guarantee() {
             </div>
           </div>
         </div>
-        {alertVisible && <AlertTag type={alertType} message={alertMessage} title={alertTitle}  />}
+        {alertVisible && (
+          <AlertTag
+            type={alertType}
+            message={alertMessage}
+            title={alertTitle}
+          />
+        )}
 
-        <div>
-         
-        </div>
+        <div></div>
       </div>
-      
     </div>
   );
 }

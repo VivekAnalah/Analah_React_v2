@@ -6,14 +6,13 @@ import "../../Styles/register.css";
 import "../../Styles/investForm.css";
 import { display } from "../../Context/DisplayContext";
 import { useContext } from "react";
-import { Alert } from "../../Components/Alert";
+import AlertTag from "../../Components/AlertTag";
 
 function InvestmentPlans() {
-
   const [alertVisible, setAlertVisible] = useState(false);
-  const [alertType, setAlertType] = useState('');
-  const [alertMessage, setAlertMessage] = useState('');
-  const [alertTitle, setAlertTitle] = useState('');
+  const [alertType, setAlertType] = useState("");
+  const [alertMessage, setAlertMessage] = useState("");
+  const [alertTitle, setAlertTitle] = useState("");
 
   const { openInvestment, setInvestment } = useContext(display);
 
@@ -87,30 +86,25 @@ function InvestmentPlans() {
       );
       let data = res.data;
       if (data.Status === "Ok") {
-        document.getElementById("InvestName").value = ""; 
+        document.getElementById("InvestName").value = "";
         document.getElementById("InvestMail").value = "";
         document.getElementById("InvestMob").value = "";
 
-        setAlertType('success');
+        setAlertType(false);
         setAlertMessage(data.msg);
         setAlertVisible(true);
-        setAlertTitle("Success!")
+        setAlertTitle("Success!");
         setTimeout(() => {
           setAlertVisible(false);
-          
         }, 2000);
-
       } else {
-    
-        setAlertType('error');
+        setAlertType(true);
         setAlertMessage(data.msg);
         setAlertVisible(true);
-        setAlertTitle("Error:")
+        setAlertTitle("Error:");
         setTimeout(() => {
           setAlertVisible(false);
-         
         }, 5000);
-     
       }
       console.log(data);
     } catch (e) {
@@ -243,10 +237,15 @@ function InvestmentPlans() {
             </div>
           </div>
         </div>
-        {alertVisible && <Alert type={alertType} message={alertMessage} title={alertTitle} />}
-      </div>
-     
 
+        {alertVisible && (
+          <AlertTag
+            type={alertType}
+            message={alertMessage}
+            title={alertTitle}
+          />
+        )}
+      </div>
     </div>
   );
 }

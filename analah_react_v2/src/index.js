@@ -5,11 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import DisplayProvider from './Context/DisplayContext';
+import ScrollToTop from './Components/ScrollTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <DisplayProvider>
 <BrowserRouter>
+<ScrollToTop />
   <React.StrictMode>
     <App />
   </React.StrictMode>
