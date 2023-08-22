@@ -246,24 +246,24 @@ export const Header = () => {
               </h3>
             </div>
 
-            <div className="mt-[20px]">
+            <div className="mt-[20px] FormContainer">
               <div className="input-text-register">
-                <label htmlFor="" className="sm:text-[16px] text-[14px] ">Full Name</label>
+                {/* <label htmlFor="" className="sm:text-[16px] text-[14px] ">Full Name</label> */}
                 <input
                   type="text"
-                  className="ml-[15px] sm:text-[16px] text-[14px] outline-none"
-                  placeholder="(Name as per PAN card)"
+                  className="ml-[15px] sm:text-[16px] text-[14px] outline-none w-[100%]"
+                  placeholder="Name as per PAN card"
                   onChange={(e) => setInvestment(e.target.value)}
                   id="RegisterName"
                 />
               </div>
 
               <div className="sm:phoneInpt input-text-register">
-                <label htmlFor="" className="sm:text-[16px] text-[14px]">Mobile No.</label>
+                {/* <label htmlFor="" className="sm:text-[16px] text-[14px]">Mobile No.</label> */}
                 <input
                   type="number"
-                  className="ml-[15px] sm:text-[16px] text-[14px] outline-none appearance-none"
-                  placeholder=""
+                  className="ml-[15px] sm:text-[16px] text-[14px] outline-none appearance-none w-[100%]"
+                  placeholder="Mobile No."
                   onChange={(e) => validMob(e)}
                   style={Mob_valid ? validStyle : notValidStyle}
                   id="RegisterMob"
@@ -271,12 +271,12 @@ export const Header = () => {
               </div>
 
               <div className="input-text-register">
-                <label htmlFor="" className="sm:text-[16px] text-[14px]">Email ID</label>
+                {/* <label htmlFor="" className="sm:text-[16px] text-[14px]">Email ID</label> */}
 
                 <input
                   type="email"
-                  className="ml-[15px] sm:text-[16px] text-[14px] outline-none"
-                  placeholder=""
+                  className="ml-[15px] sm:text-[16px] text-[14px] outline-none w-[100%]"
+                  placeholder="Email ID"
                   onChange={(e) => validEmail(e)}
                   style={Email_valid ? validStyle : notValidStyle}
                   id="RegisterMail"

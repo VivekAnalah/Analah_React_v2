@@ -54,7 +54,7 @@ export const Value = () => {
 
   return (
     <div>
-         <div className="bg-[#FAFFFF]">
+         <div className="bg-[#FAFFFF] pb-[50px]">
       <div className="flex md:space-y-5 flex-col justify-center items-center ">
 
       <div className='m-[auto] mt-[114px] '>

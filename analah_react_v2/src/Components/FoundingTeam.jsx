@@ -10,7 +10,7 @@ export const FoundingTeam = () => {
   };
 
   return (
-    <div className="w-[100%] mt-[55px] bg-[#FFFFFF]">
+    <div className="w-[100%] pt-[80px] pb-[50px] bg-[#f6fafe]">
       <div class="topic pb-[5px]">
         Founding <sapn class="topic2">Team</sapn>
       </div>

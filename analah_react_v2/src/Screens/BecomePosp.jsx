@@ -40,7 +40,7 @@ function BecomePosp() {
     <>
       <div className="pb-4">
         <Header raiseClaim={true} />
-        <div className="container-fluid containerStyle relative">
+        <div className="container-fluid containerStyle relative backgroundStylePosp">
           <div className="flex flex-col sm:flex-row  sm:pt-[50px] relative w-[90%] m-auto pb-[67px]">
             <div className="flex flex-col sm:w-[50%] w-[80%]  ml-[10%] m-auto  order-2 sm:order-1 sm:mt-[0px] mt-[45px] PospContentContainer">
               <div className="">

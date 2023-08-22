@@ -3,7 +3,14 @@ import React, { useState } from "react";
 import "../Styles/raiseClaimForm.css"
 import axios from "axios";
 
+import AlertTagClaim from "./AlertTagClaim";
+
 function RaiseClaimForm() {
+
+  const [alertVisible, setAlertVisible] = useState(false);
+  const [alertType, setAlertType] = useState("");
+  const [alertMessage, setAlertMessage] = useState("");
+
   const [isHovered, setIsHovered] = useState(false);
   const [insurance_type , setInsuranceType] = useState("");
   const [Claimant_name, setClaimantName] = useState("");
@@ -100,14 +107,18 @@ try{
   );
   let data = res.data;
   if(data.Status === "Ok"){
-    alert(data.msg)
+    // alert(data.msg)
     // window.location.href = "https://dashboard.analahinsurance.com/customer/login"
-   
+    setAlertType(false);
+    setAlertMessage(data.msg);
+    setAlertVisible(true);
 
 
   }else{
-    alert("Sorry!!  Getting Internal Error to Upload your request")
-
+    // alert("Sorry!!  Getting Internal Error to Upload your request")
+    setAlertType(true);
+    setAlertMessage("Sorry!!  Getting Internal Error to Upload your request");
+    setAlertVisible(true);
 
   }
  console.log(data)
@@ -267,8 +278,15 @@ background: "#FFF"
             alt=""
           />
         </div>
-       
+        {alertVisible && (
+          <AlertTagClaim
+            type={alertType}
+            message={alertMessage}
+            
+          />
+        )}
       </div>
+     
     </>
   );
 }

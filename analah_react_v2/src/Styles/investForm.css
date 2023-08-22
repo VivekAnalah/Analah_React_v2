@@ -5,6 +5,8 @@
   align-items: baseline;
   margin-bottom: 28px;
   padding-left: 25px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 600 */
@@ -20,7 +22,7 @@
   height: 20px;
   left: 0px;
   position: absolute;
-  top: -13px;
+  top: -8px;
   width: 20px;
 }
 
