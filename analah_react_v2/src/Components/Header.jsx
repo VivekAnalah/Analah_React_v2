@@ -258,19 +258,19 @@ export const Header = () => {
                 />
               </div>
 
-              <div className="sm:phoneInpt input-text-register">
+              <div className="sm:phoneInpt input-text-register" style={Mob_valid ? validStyle : notValidStyle}>
                 {/* <label htmlFor="" className="sm:text-[16px] text-[14px]">Mobile No.</label> */}
                 <input
                   type="number"
                   className="ml-[15px] sm:text-[16px] text-[14px] outline-none appearance-none w-[100%]"
                   placeholder="Mobile No."
                   onChange={(e) => validMob(e)}
-                  style={Mob_valid ? validStyle : notValidStyle}
+                  
                   id="RegisterMob"
                 />
               </div>
 
-              <div className="input-text-register">
+              <div className="input-text-register" style={Email_valid ? validStyle : notValidStyle}>
                 {/* <label htmlFor="" className="sm:text-[16px] text-[14px]">Email ID</label> */}
 
                 <input
@@ -278,7 +278,7 @@ export const Header = () => {
                   className="ml-[15px] sm:text-[16px] text-[14px] outline-none w-[100%]"
                   placeholder="Email ID"
                   onChange={(e) => validEmail(e)}
-                  style={Email_valid ? validStyle : notValidStyle}
+                  
                   id="RegisterMail"
                 />
               </div>

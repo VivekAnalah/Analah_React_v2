@@ -11,6 +11,12 @@
     
     height: 284.4px;
     background-color: #FFF;
+    background: linear-gradient(
+      2deg,
+      rgb(237 244 251) 0%,
+      rgba(247, 242, 242, 0.06) 59.9%
+    );
+    
   }
   /* 538 */
   /* .bred h2 {

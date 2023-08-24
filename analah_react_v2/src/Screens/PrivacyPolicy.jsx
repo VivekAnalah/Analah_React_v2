@@ -2,7 +2,6 @@ import {  useMediaQuery } from "@mui/material";
 
 import Footer from "../Components/Footer";
 import {Header} from "../Components/Header";
-import { Link,  } from "react-router-dom";
 import "../Styles/privacy-policy.css";
 
 
@@ -370,8 +369,9 @@ function PrivacyPolicy() {
             <b>Last updated on: 26th December 2022</b>
           </section>
 
-          <section id="content2" className="tab-content text-justify">
-            <p>
+          <section id="content2" className="tab-content ">
+           <p className="text-justify">
+           <p>
               Analah Insurance aims to offer transparent and unbiased
               information regarding our insurance products and services. All the
               information provided is generic in nature. We strive to provide
@@ -379,6 +379,7 @@ function PrivacyPolicy() {
               ability. We disclaim all liability for any discrepancies or
               omissions in the data published or presented on our website or
               platform.
+            </p>
             </p>
             <p>
               We do not intend to violate any ancillary or intellectual property
@@ -402,6 +403,7 @@ function PrivacyPolicy() {
               independent professional third-party advisor prior to making any
               decisions.
             </p>
+           
             <p>
               Insurance products are subject matter of solicitation and market
               risks. It is solely the responsibility of the customer to
@@ -442,9 +444,11 @@ function PrivacyPolicy() {
               for the consequences of his/her decision.
             </p>
             <p> <b>Last updated on: 26th December 2022</b> </p>
+           
           </section>
 
           <section id="content3" className="tab-content text-justify">
+            <p>
             <p>
               Welcome to www.analahinsurance.com website (the "Website"). Analah
               Insurance provides its products and services to you subject to the
@@ -452,6 +456,7 @@ function PrivacyPolicy() {
               read and accept all of the terms and conditions in, and linked to,
               these Terms & Conditions, the linked Privacy Policy and other
               Legal and Admin Policies.
+            </p>
             </p>
             <p>
               All users should read the Terms & Conditions and also access and
@@ -488,6 +493,8 @@ function PrivacyPolicy() {
             <p>
               <b>1. Products & Services</b>{" "}
             </p>
+           
+            <p>
             Analah Insurance provides users with access to information primarily
             regarding Financial and Insurance products and services, including
             but not limited to General Insurance, Life Insurance products and
@@ -497,7 +504,7 @@ function PrivacyPolicy() {
             service provider or airtime charges). Additionally, you are in
             charge of providing and maintaining all equipment needed to access
             the Website.
-            <p></p>
+            </p>
             <p>
               You hereby agree that you are interested in using and/or
               purchasing the Service(s) that you have chosen by using this
@@ -1337,6 +1344,7 @@ function PrivacyPolicy() {
               Insurance with regard to the Website and sets forth the terms and
               conditions for your use of the Website.
             </p>
+           
           </section>
         </div>
 

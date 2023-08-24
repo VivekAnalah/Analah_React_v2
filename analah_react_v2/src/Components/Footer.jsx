@@ -43,7 +43,7 @@ function Footer() {
   }
 
   return (
-    <div className="mt-[60px]">
+    <div className="">
       <Grid
         container
         spacing={2}
@@ -397,13 +397,16 @@ function Footer() {
                     />
                   </div>
 
-                  <div className="w-[170px] h-[90] flex p-2 space-x-3 items-center justify-center bg-[#ffffff] rounded-[20px]">
+                  <div className="bg_social w-[170px] h-[90] flex p-2 space-x-3 items-center justify-center bg-[#ffffff] bg-opacity-70 rounded-[20px]" style={{borderRadius: "32px",
+border: "1px solid rgba(255, 255, 255, 0.30)",
+
+}}>
                     <a
                       href="https://twitter.com/analahinsurance"
                       target="_blank"
                     >
                       <img
-                        src={require("../Assets/Images/twitter.png")}
+                        src={require("../Assets/Images/twitter2.png")}
                         alt="twitter"
                         className="object-contain w-[25px] h-[25px] grayscale hover:grayscale-0 "
                       />
@@ -413,7 +416,7 @@ function Footer() {
                       target="_blank"
                     >
                       <img
-                        src={require("../Assets/Images/instagram.png")}
+                        src={require("../Assets/Images/Instagram1.png")}
                         alt="instagram"
                         className="object-contain w-[25px] h-[25px] grayscale hover:grayscale-0 "
                       />
@@ -423,7 +426,7 @@ function Footer() {
                       target="_blank"
                     >
                       <img
-                        src={require("../Assets/Images/facebook.png")}
+                        src={require("../Assets/Footer/facebook1.png")}
                         alt="facebook"
                         className="object-contain w-[25px] h-[25px] grayscale hover:grayscale-0 "
                       />
@@ -433,7 +436,7 @@ function Footer() {
                       target="_blank"
                     >
                       <img
-                        src={require("../Assets/Images/linkedin.png")}
+                        src={require("../Assets/Footer/linkedin1.png")}
                         alt="linkedin"
                         className="object-contain w-[25px] h-[25px] grayscale hover:grayscale-0 "
                       />

@@ -39,8 +39,8 @@ function PolicyCancel() {
               We request you to contact the toll free number of your Insurance
               Company or refer the respective section of your Policy’s terms and
               conditions in order to cancel a policy. Additionally, you may get
-              in touch with us on <span class = "text-[#4C8CE7] font-semibold" >+91-9920878181</span> or write to us at
-               <span class = "text-[#4C8CE7]  underline-offset-[1px]" style={{textDecoration : "underline"}} > contactus@analahinsurance.com,</span> and we will be happy to assist you.
+              in touch with us on <span class = "text-[#4C8CE7] font-semibold" > <a href="tel:+91 99208 78181">+91 99208 78181</a> </span> or write to us at
+               <span class = "text-[#4C8CE7]  underline-offset-[1px]" style={{textDecoration : "underline"}} > <a href="mailto:contactus@analahinsurance.com">contactus@analahinsurance.com</a> ,</span> and we will be happy to assist you.
             </p>
             <h2 className="CancelPolicy mt-[15px]">
               Refund Policy

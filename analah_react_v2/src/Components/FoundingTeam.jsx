@@ -10,22 +10,22 @@ export const FoundingTeam = () => {
   };
 
   return (
-    <div className="w-[100%] pt-[80px] pb-[50px] bg-[#f6fafe]">
+    <div className="w-[100%] pt-[80px] pb-[100px] bg-[#F2F9FF]">
       <div class="topic pb-[5px]">
         Founding <sapn class="topic2">Team</sapn>
       </div>
 
       <div
-        className={`FoundingTeamGrid 2xl:w-[60%] w-[70%] m-[auto] ${bg} grid grid-cols-[25%,70%] md:grid-cols-[25%,65%] gap-[5%] mt-[50px] foundingBg  relative lg:h-[200px] md:h-[170px] FoundingHeight1`}
+        className={`FoundingTeamGrid 2xl:w-[40%] lg:w-[60%] w-[75%] m-[auto] ${bg} grid grid-cols-[32%,65%]  gap-[3%] mt-[50px] foundingBg  relative h-[auto] `}
       >
-        <div>
+        <div className="">
           <img
             src={require("../Assets/Images/Vaishali_Dhankani2.png")}
             alt="Vaishali Dhankani"
-            className=" mt-[-35px] absolute left-[0px] bottom-[0px] foundingImagesWidth"
+            className="   foundingImagesWidth mt-[-35px]"
           />
         </div>
-        <div className="mt-[35px] ContentContainer">
+        <div className="mt-[20px] ContentContainer mr-[5%]" >
           <Carousel
             className="carousel"
             infiniteLoop
@@ -70,7 +70,7 @@ export const FoundingTeam = () => {
               </p>
             </div>
 
-            <div>
+            <div className="last_Carousel1">
               <p className="textStyleFounding">
                 Vaishali is a Chartered Accountant by profession, along with a
                 Diploma in Systems Management (DNIIT).
@@ -81,12 +81,39 @@ export const FoundingTeam = () => {
                 Corporation of India (set up by the Reserve Bank of India &
                 Indian Banking Association).
               </p>
+              
             </div>
+
+            {/* <div className="last_Carousel2">
+              <p className="textStyleFounding">
+                Vaishali is a Chartered Accountant by profession, along with a
+                Diploma in Systems Management (DNIIT).
+              </p>
+             
+              
+            </div>
+
+
+            <div className="last_Carousel3">
+             
+              <p className="textStyleFounding">
+                She has also held various senior positions in leading
+                organizations such as ICICI Bank and National Payments
+                Corporation of India (set up by the Reserve Bank of India &
+                Indian Banking Association).
+              </p>
+              
+            </div> */}
+
+
+           
+
+           
           </Carousel>
-          <div className="flex mt-[35px] gap-[20px] absolute bottom-[5px] NameDIv">
+          <div className="flex gap-[20px] absolute bottom-[40px] NameDIv">
             <h3 className="name">Vaishali Dhankani</h3>
 
-            <p className="text-[16px] md:text-[14px] mt-[4px] designation">
+            <p className="text-[16px] text-[#4481E4] font-400 md:text-[14px] mt-[4px] designation">
               CEO
             </p>
           </div>
@@ -94,9 +121,9 @@ export const FoundingTeam = () => {
       </div>
 
       <div
-        className={`FoundingTeamGrid 2xl:w-[60%] w-[70%] m-[auto] ${bg} grid grid-cols-[65%] md:grid-cols-[60%] gap-[5%] mt-[100px] foundingBg pl-[2%] relative lg:h-[192px] md:h-[165px] FoundingHeight2`}
+        className={`FoundingTeamGrid 2xl:w-[40%] lg:w-[60%] w-[75%]  m-[auto] ${bg} grid grid-cols-[65%, 32%]  gap-[3%] mt-[50px] foundingBg pl-[2%] relative h-[auto] `}
       >
-        <div className="mt-[35px] ContentContainer2">
+        <div className="mt-[35px] ContentContainer2 ">
           <Carousel
             className="carousel"
             infiniteLoop
@@ -149,7 +176,7 @@ export const FoundingTeam = () => {
             </div>
           </Carousel>
 
-          <div className="flex mt-[35px] gap-[20px] absolute bottom-[5px]">
+          <div className="flex mt-[25px] gap-[20px] absolute bottom-[12px]">
             <h3 className="name">Hitesh Dhankani</h3>
 
             <p className="text-[16px] md:text-[14px] mt-[4px] designation">
@@ -162,7 +189,7 @@ export const FoundingTeam = () => {
           <img
             src={require("../Assets/Images/hitesh_dhankani4.png")}
             alt="Hitesh Dhankani"
-            className="mt-[-35px] absolute bottom-[0px] right-[20px] foundingImagesWidth2"
+            className="mt-[-35px] foundingImagesWidth2"
           />
         </div>
       </div>

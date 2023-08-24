@@ -139,43 +139,43 @@ function InvestmentPlans() {
 
           <div className="mt-[20px]">
             <div className="input-text-register">
-              <label htmlFor="" className="sm:text-[16px] text-[14px] ">
+              {/* <label htmlFor="" className="sm:text-[16px] text-[14px] ">
                 Full Name
-              </label>
+              </label> */}
               <input
                 type="text"
-                className="ml-[15px] sm:text-[16px] text-[14px] outline-none"
-                placeholder="(Name as per PAN card)"
+                className="sm:text-[16px] text-[14px] outline-none w-[100%]"
+                placeholder="Name as per PAN card"
                 onChange={(e) => setInvestmentUser(e.target.value)}
                 id="InvestName"
               />
             </div>
 
-            <div className="sm:phoneInpt input-text-register">
-              <label htmlFor="" className="sm:text-[16px] text-[14px]">
+            <div className="sm:phoneInpt input-text-register"  style={Mob_valid ? validStyle : notValidStyle}>
+              {/* <label htmlFor="" className="sm:text-[16px] text-[14px]">
                 Mobile No.
-              </label>
+              </label> */}
               <input
                 type="number"
-                className="ml-[15px] sm:text-[16px] text-[14px] outline-none appearance-none"
-                placeholder=""
+                className="sm:text-[16px] text-[14px] outline-none appearance-none w-[100%]"
+                placeholder="Mobile No."
                 onChange={(e) => validMob(e)}
-                style={Mob_valid ? validStyle : notValidStyle}
+               
                 id="InvestMob"
               />
             </div>
 
-            <div className="input-text-register">
-              <label htmlFor="" className="sm:text-[16px] text-[14px]">
+            <div className="input-text-register" style={Email_valid ? validStyle : notValidStyle}>
+              {/* <label htmlFor="" className="sm:text-[16px] text-[14px]">
                 Email ID
-              </label>
+              </label> */}
 
               <input
                 type="email"
-                className="ml-[15px] sm:text-[16px] text-[14px] outline-none"
-                placeholder=""
+                className="sm:text-[16px] text-[14px] outline-none w-[100%]"
+                placeholder="Email ID"
                 onChange={(e) => validEmail(e)}
-                style={Email_valid ? validStyle : notValidStyle}
+                
                 id="InvestMail"
               />
             </div>

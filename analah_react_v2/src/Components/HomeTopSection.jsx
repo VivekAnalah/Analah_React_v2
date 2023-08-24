@@ -7,58 +7,58 @@ export const HomeTopSection = () => {
     {
       id: 1,
       name: "Term-Life Insurance",
-      img: "Term_ins_logo.png",
+      img: "Term_ins_logo1.png",
     },
     {
       id: 2,
       name: "Health Insurance",
-      img: "Health_ins_logo.png",
+      img: "Orbit_1_4.png",
     },
     {
       id: 3,
       name: "Family Health Insurance",
-      img: "Family_ins_logo.png",
+      img: "Orbit_2_1.png",
     },
     {
       id: 4,
       name: "Group Health Insurance",
-      img: "Group_ins_logo.png",
+      img: "Group_ins_logo1.png",
     },
     {
       id: 5,
       name: "Car Insurance",
-      img: "Car_ins_logo.png",
+      img: "Orbit_1_1.png",
     },
     {
       id: 6,
       name: "2-Wheeler Insurance",
-      img: "Bike_ins_logo.png",
+      img: "Bike_ins_logo1.png",
     },
 
     {
       id: 7,
       name: "Travel Insurance",
-      img: "Travel_ins_logo.png",
+      img: "Orbit_2_2.png",
     },
     {
       id: 8,
       name: "Home Insurance",
-      img: "Home_ins_logo.png",
+      img: "Orbit_1_3.png",
     },
     {
       id: 9,
       name: "Retirement Plans",
-      img: "Retirement_ins_logo.png",
+      img: "Orbit_2_4.png",
     },
     {
       id: 10,
       name: "Investment Plans",
-      img: "Investment_ins_logo.png",
+      img: "Inner_logo_3.png",
     },
     {
       id: 11,
       name: "Guaranteed Return Plans",
-      img: "Guaranteed_ins.png",
+      img: "Guaranteed_ins1.png",
     },
   ];
 

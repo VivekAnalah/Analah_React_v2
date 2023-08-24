@@ -372,6 +372,7 @@ function Disclaimer() {
 
           <section id="content2" className="tab-content text-justify">
             <p>
+            <p>
               Analah Insurance aims to offer transparent and unbiased
               information regarding our insurance products and services. All the
               information provided is generic in nature. We strive to provide
@@ -379,6 +380,7 @@ function Disclaimer() {
               ability. We disclaim all liability for any discrepancies or
               omissions in the data published or presented on our website or
               platform.
+            </p>
             </p>
             <p>
               We do not intend to violate any ancillary or intellectual property
@@ -446,12 +448,14 @@ function Disclaimer() {
 
           <section id="content3" className="tab-content text-justify">
             <p>
+            <p>
               Welcome to www.analahinsurance.com website (the "Website"). Analah
               Insurance provides its products and services to you subject to the
               following conditions. Before you may use the Website, you must
               read and accept all of the terms and conditions in, and linked to,
               these Terms & Conditions, the linked Privacy Policy and other
               Legal and Admin Policies.
+            </p>
             </p>
             <p>
               All users should read the Terms & Conditions and also access and
@@ -488,6 +492,8 @@ function Disclaimer() {
             <p>
               <b>1. Products & Services</b>{" "}
             </p>
+            
+            <p>
             Analah Insurance provides users with access to information primarily
             regarding Financial and Insurance products and services, including
             but not limited to General Insurance, Life Insurance products and
@@ -497,7 +503,7 @@ function Disclaimer() {
             service provider or airtime charges). Additionally, you are in
             charge of providing and maintaining all equipment needed to access
             the Website.
-            <p></p>
+            </p>
             <p>
               You hereby agree that you are interested in using and/or
               purchasing the Service(s) that you have chosen by using this

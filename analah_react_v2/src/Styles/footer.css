@@ -77,3 +77,9 @@ background: linear-gradient(180deg, #3970DE 0%, #6BB9F6 100%);
   background-image: url("../Assets//Images/phone.png");
 
 }
+
+.bg_social{
+  background-image: url("../Assets/Footer/bg_social.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}

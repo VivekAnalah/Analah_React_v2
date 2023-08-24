@@ -22,7 +22,7 @@ function AlertTagClaim({type,message}) {
   };
 
   return (
-    <div className="w-[250px] lg:w-[350px] 2xl:w-[450px] absolute bottom-[10%] right-[0%]" >
+    <div className="w-[250px] lg:w-[350px] 2xl:w-[450px] fixed lg:top-[10%] top-[15%] right-[0%]" >
        
       <div className={`relative p-6 ${hideAlert ? 'hidden' : ''}`}>
         <div className="relative alert bg-gray-200 p-4 rounded-lg shadow-md">

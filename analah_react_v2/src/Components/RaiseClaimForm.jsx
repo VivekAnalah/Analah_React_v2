@@ -113,6 +113,13 @@ try{
     setAlertMessage(data.msg);
     setAlertVisible(true);
 
+    document.getElementById("nameClient").value = "";
+        document.getElementById("clientPolicy").value = "";
+        document.getElementById("clientMob").value = "";
+        document.getElementById("clientMail").value = "";
+        document.getElementById("query").value = "";
+        
+
 
   }else{
     // alert("Sorry!!  Getting Internal Error to Upload your request")
@@ -224,7 +231,7 @@ background: "#FFF"
                   <input
                     type="text"
                     className="input-text mt-[0px]"
-                    
+                    id="nameClient"
                     placeholder="Name of the Insurer"
                     onChange={(e) => {setClaimantName(e.target.value)}}
                     style={inputBorderStyle}
@@ -233,6 +240,7 @@ background: "#FFF"
                     type="text"
                     className="input-text mt-[18.5px]"
                     placeholder="Policy Number "
+                    id="clientPolicy"
                     onChange={(e) => SetPolicyNum(e.target.value)}
                     style={inputBorderStyle}
                   />
@@ -240,6 +248,7 @@ background: "#FFF"
                     type="number"
                     className="input-text mt-[18.5px]"
                     placeholder="Mobile Number"
+                    id="clientMob"
                     onChange={(e) => validMob(e)}
                     style={Mob_valid ? validStyle : notValidStyle}
                    
@@ -248,11 +257,12 @@ background: "#FFF"
                     type="text"
                     className="input-text mt-[18.5px]"
                     placeholder="Email ID"
+                    id="clientMail"
                     onChange={(e) => validEmail(e)}
                     style={Email_valid ? validStyle : notValidStyle}
                     
                   />
-                  <textarea className="input-text mt-[18.5px] h-[127.5px]" placeholder="Tell us what happened"  onChange={(e)=> SetClaimantQuery(e.target.value)} style={inputBorderStyle} ></textarea>
+                  <textarea className="input-text mt-[18.5px] h-[127.5px]" id="query" placeholder="Tell us what happened"  onChange={(e)=> SetClaimantQuery(e.target.value)} style={inputBorderStyle} ></textarea>
 
                   <div className="text-center">
                     <button

@@ -92,7 +92,7 @@ function BecomePosp() {
                   <img
                     alt="insurance"
                     src={require("../Assets/Images/Asset 15.png")}
-                    className=" w-[335px] h-[223px] BecomePospImage"
+                    className="2xl:w-[448px] 2xl:h-[310px] w-[335px] h-[223px] BecomePospImage"
                   />
                 </div>
               </div>

@@ -18,13 +18,16 @@ import PrivacyPolicy from "./Screens/PrivacyPolicy"
 import TermCondition from './Screens/TermCondition';
 import PolicyCancel from './Components/Policy_Cancel';
 import Careers from './Screens/Careers';
+import Guarantee from './Screens/Insurances/GuaranteedReturns';
+import InvestmentPlans from './Screens/Insurances/InvestmentPlans';
 
 
 // import InvestmentPlans from './Screens/Insurances/InvestmentPlans';
 
 function App() {
   return (
-    <Routes>
+    <>
+     <Routes>
        <Route path="/" element={<Home />} />
       
         
@@ -55,6 +58,11 @@ function App() {
 
 
     </Routes>
+
+    <Guarantee />
+    <InvestmentPlans />
+    </>
+   
   );
 }
 
