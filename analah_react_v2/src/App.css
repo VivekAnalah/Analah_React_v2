@@ -40,10 +40,13 @@ html {
 }
 
 .title-border-bottom {
-  border-bottom: 2px solid linear-gradient(to right, #fff, #4582e4, #FFF  );
-  border-bottom: 2px solid;
-  border-image: linear-gradient(to right, #fff 10%, #4582e4 50%, #fff 100%);
-  border-image-slice: 1;
+  /* border-bottom: 2px solid linear-gradient(to right, #fff, #4582e4, #FFF  ); */
+  /* border-bottom: 2px solid; */
+  /* border-image: linear-gradient(to right, #fff 10%, #4582e4 50%, #fff 100%); */
+  /* border-image-slice: 1; */
+  /* padding-bottom: 5px; */
+
+  border-bottom: 3px solid #4582e4;
   padding-bottom: 5px;
 }
 

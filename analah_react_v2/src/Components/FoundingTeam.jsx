@@ -10,19 +10,20 @@ export const FoundingTeam = () => {
   };
 
   return (
-    <div className="w-[100%] pt-[80px] pb-[100px] bg-[#F2F9FF]">
-      <div class="topic pb-[5px]">
-        Founding <sapn class="topic2">Team</sapn>
+    <div className="w-[100%] lg:pt-[80px] md:pt-[60px] pt-[40px] pb-[100px] bg-[#F2F9FF]">
+      <div class="topic pb-[5px] ">
+        <span className="title-border-bottom">  Founding </span> <sapn class="topic2">Team</sapn>
+      
       </div>
 
       <div
-        className={`FoundingTeamGrid 2xl:w-[40%] lg:w-[60%] w-[75%] m-[auto] ${bg} grid grid-cols-[32%,65%]  gap-[3%] mt-[50px] foundingBg  relative h-[auto] `}
+        className={`FoundingTeamGrid 2xl:w-[40%] lg:w-[70%] w-[75%] m-[auto] ${bg} grid grid-cols-[32%,65%]  gap-[3%] mt-[50px] foundingBg  relative h-[auto] `}
       >
         <div className="">
           <img
             src={require("../Assets/Images/Vaishali_Dhankani2.png")}
             alt="Vaishali Dhankani"
-            className="   foundingImagesWidth mt-[-35px]"
+            className="   foundingImagesWidth "
           />
         </div>
         <div className="mt-[20px] ContentContainer mr-[5%]" >
@@ -110,7 +111,7 @@ export const FoundingTeam = () => {
 
            
           </Carousel>
-          <div className="flex gap-[20px] absolute bottom-[40px] NameDIv">
+          <div className="flex gap-[20px]  NameDIv">
             <h3 className="name">Vaishali Dhankani</h3>
 
             <p className="text-[16px] text-[#4481E4] font-400 md:text-[14px] mt-[4px] designation">
@@ -121,11 +122,11 @@ export const FoundingTeam = () => {
       </div>
 
       <div
-        className={`FoundingTeamGrid 2xl:w-[40%] lg:w-[60%] w-[75%]  m-[auto] ${bg} grid grid-cols-[65%, 32%]  gap-[3%] mt-[50px] foundingBg pl-[2%] relative h-[auto] `}
+        className={`FoundingTeamGrid 2xl:w-[40%] lg:w-[70%] w-[75%]  m-[auto] ${bg} grid grid-cols-[65%,32%]  gap-[3%] mt-[50px] foundingBg pl-[2%] relative h-[auto] `}
       >
-        <div className="mt-[35px] ContentContainer2 ">
+        <div className="mt-[20px] ContentContainer2 ">
           <Carousel
-            className="carousel"
+            className="carousel carousel_2"
             infiniteLoop
             autoPlay
             interval={2000}
@@ -176,10 +177,10 @@ export const FoundingTeam = () => {
             </div>
           </Carousel>
 
-          <div className="flex mt-[25px] gap-[20px] absolute bottom-[12px]">
+          <div className="flex gap-[20px]  NameDIv_2">
             <h3 className="name">Hitesh Dhankani</h3>
 
-            <p className="text-[16px] md:text-[14px] mt-[4px] designation">
+            <p className="text-[16px] text-[#4481E4] font-400 md:text-[14px] mt-[4px] designation">
               Co-Founder
             </p>
           </div>
@@ -189,7 +190,7 @@ export const FoundingTeam = () => {
           <img
             src={require("../Assets/Images/hitesh_dhankani4.png")}
             alt="Hitesh Dhankani"
-            className="mt-[-35px] foundingImagesWidth2"
+            className=" foundingImagesWidth2"
           />
         </div>
       </div>
