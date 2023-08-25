@@ -17,7 +17,7 @@ export const FoundingTeam = () => {
       </div>
 
       <div
-        className={`FoundingTeamGrid 2xl:w-[40%] lg:w-[70%] w-[75%] m-[auto] ${bg} grid grid-cols-[32%,65%]  gap-[3%] mt-[50px] foundingBg  relative h-[auto] `}
+        className={`FoundingTeamGrid 2xl:w-[60%] lg:w-[70%] w-[75%] m-[auto] ${bg} grid grid-cols-[28%,65%]  gap-[3%] mt-[50px] foundingBg  relative h-[auto] `}
       >
         <div className="">
           <img
@@ -26,7 +26,7 @@ export const FoundingTeam = () => {
             className="   foundingImagesWidth "
           />
         </div>
-        <div className="mt-[20px] ContentContainer mr-[5%]" >
+        <div className="mt-[20px] ContentContainer " >
           <Carousel
             className="carousel"
             infiniteLoop
@@ -119,11 +119,26 @@ export const FoundingTeam = () => {
             </p>
           </div>
         </div>
+
+        {/* Comma Image */}
+
+        <div className="absolute top-[3%] 2xl:left-[25%] lg:left-[24%] md:left-[23%]  CommaImage">
+          <img src={require("../Assets/Images/Comma.png")} alt="Comma" className="2xl:w-[15%] xl:w-[14%]  lg:w-[13%] w-[12%]" />
+        </div>
       </div>
 
       <div
-        className={`FoundingTeamGrid 2xl:w-[40%] lg:w-[70%] w-[75%]  m-[auto] ${bg} grid grid-cols-[65%,32%]  gap-[3%] mt-[50px] foundingBg pl-[2%] relative h-[auto] `}
+        className={`FoundingTeamGrid 2xl:w-[60%] lg:w-[70%] w-[75%]  m-[auto] ${bg} grid grid-cols-[28%,65%]  gap-[3%] mt-[50px] foundingBg  relative h-[auto] `}
       >
+          <div>
+          <img
+            src={require("../Assets/Images/hitesh_dhankani4.png")}
+            alt="Hitesh Dhankani"
+            className=" foundingImagesWidth2"
+          />
+        </div>
+
+
         <div className="mt-[20px] ContentContainer2 ">
           <Carousel
             className="carousel carousel_2"
@@ -186,12 +201,12 @@ export const FoundingTeam = () => {
           </div>
         </div>
 
-        <div>
-          <img
-            src={require("../Assets/Images/hitesh_dhankani4.png")}
-            alt="Hitesh Dhankani"
-            className=" foundingImagesWidth2"
-          />
+      
+
+        {/* Comma Image */}
+
+        <div className="absolute top-[3%] 2xl:left-[25%] lg:left-[24%] md:left-[23%]  CommaImage">
+          <img src={require("../Assets/Images/Comma.png")} alt="Comma" className="2xl:w-[15%] xl:w-[14%]  lg:w-[13%] w-[12%]" />
         </div>
       </div>
     </div>

@@ -43,8 +43,8 @@ export  const Home = () => {
         </div>
      </div>
      <About />
-    <InvestmentPlans />
-    <Guarantee />
+    {/* <InvestmentPlans /> */}
+    {/* <Guarantee /> */}
 
      <Value />
 
