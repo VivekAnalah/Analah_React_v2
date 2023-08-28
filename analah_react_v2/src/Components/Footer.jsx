@@ -97,7 +97,7 @@ function Footer() {
                       target="_blank"
                     >
                       <img
-                        src={require("../Assets/Images/twitter.png")}
+                        src={require("../Assets/Images/twitter2.png")}
                         alt="twitter"
                         className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0 "
                       />
@@ -107,7 +107,7 @@ function Footer() {
                       target="_blank"
                     >
                       <img
-                        src={require("../Assets/Images/instagram.png")}
+                        src={require("../Assets/Images/Instagram1.png")}
                         alt="instagram"
                         className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0 "
                       />
@@ -117,7 +117,7 @@ function Footer() {
                       target="_blank"
                     >
                       <img
-                        src={require("../Assets/Images/facebook.png")}
+                        src={require("../Assets/Footer/facebook1.png")}
                         alt="facebook"
                         className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0 "
                       />
@@ -128,7 +128,7 @@ function Footer() {
                       target="_blank"
                     >
                       <img
-                        src={require("../Assets/Images/linkedin.png")}
+                        src={require("../Assets/Footer/linkedin1.png")}
                         alt="linkedin"
                         className="object-contain w-[15px] h-[15px] grayscale hover:grayscale-0 "
                       />
