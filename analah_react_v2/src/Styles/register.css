@@ -136,6 +136,16 @@
     margin-top: 20px;
 
   }
+
+  .checkbox {
+    gap: 11px;
+    display: flex;
+    margin-bottom: 28px;
+    padding-left: 35px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border: 1px solid red; */
+  }
   
 }
 

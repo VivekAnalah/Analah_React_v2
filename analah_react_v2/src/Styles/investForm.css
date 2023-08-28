@@ -53,3 +53,15 @@
 .roundInvest input[type="checkbox"]:checked + label:after {
   opacity: 1;
 }
+
+@media (min-width: 1640px) and (max-width: 3000px) {
+ 
+  .checkboxInvest {
+      gap: 11px;
+      display: flex;
+      margin-bottom: 28px;
+      padding-left: 35px;
+    
+    }
+    
+  }
