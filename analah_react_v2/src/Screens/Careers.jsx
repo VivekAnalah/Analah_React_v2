@@ -22,7 +22,7 @@ function Careers() {
           <div>
           <img
               src={require("../Assets/Images/partnerBg.png")}
-              className="w-[94px] h-[34px] absolute lg:left-[19%] sm:left-[10%] left-[0%] top-[26.56px] "
+              className="w-[94px] h-[34px] absolute lg:left-[19%] sm:left-[10%] left-[0%] top-[26.56px]"
               alt=""
             />
           </div>
