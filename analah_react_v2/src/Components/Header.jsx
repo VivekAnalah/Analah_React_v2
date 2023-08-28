@@ -283,7 +283,7 @@ export const Header = () => {
               </div>
 
               <div className=" checkbox pt-4 2xl:pt-8">
-                <div className="round">
+                <div className="round" >
                   <input
                     type="checkbox"
                     name=""
@@ -293,7 +293,7 @@ export const Header = () => {
                   <label htmlFor="checkBox"></label>
                 </div>
 
-                <p className="text-[12px] font-400 text-[#595959]	px-5">
+                <p className="text-[12px] font-400 text-[#595959]	pr-5">
                   {" "}
                   I hereby agree to the{" "}
                   <Link

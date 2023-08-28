@@ -60,16 +60,21 @@
 .checkbox {
   gap: 15px;
   display: flex;
-  align-items: baseline;
   margin-bottom: 28px;
   padding-left: 25px;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* border: 1px solid red; */
 }
 
 /* 600 */
 .round {
   position: relative;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: start; */
+/* margin-left: 10px; */
+  
 }
 
 .round label {
@@ -77,11 +82,11 @@
   border: 1px solid #ccc;
   border-radius: 50%;
   cursor: pointer;
-  height: 20px;
-  left: 0;
-  position: absolute;
-  top: -8px;  
-  width: 20px;
+  height: 17px;
+  /* left: 4px; */
+  /* position: absolute; */
+  /* top: -16px;   */
+  width: 17px;
 }
 
 .round label:after {
