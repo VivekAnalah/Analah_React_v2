@@ -122,6 +122,7 @@ export const FoundingTeam = () => {
 
         {/* Comma Image */}
 
+
         <div className="absolute top-[3%] 2xl:left-[25%] lg:left-[24%] md:left-[23%]  CommaImage">
           <img src={require("../Assets/Images/Comma.png")} alt="Comma" className="2xl:w-[15%] xl:w-[14%]  lg:w-[13%] w-[12%]" />
         </div>
@@ -141,7 +142,7 @@ export const FoundingTeam = () => {
 
         <div className="mt-[20px] ContentContainer2 ">
           <Carousel
-            className="carousel carousel_2"
+            className="carousel"
             infiniteLoop
             autoPlay
             interval={2000}
