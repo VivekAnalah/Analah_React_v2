@@ -124,14 +124,14 @@ function Guarantee() {
                 <img
                   src={require("../../Assets/Images/close2.png")}
                   alt="close"
-                  className="2xl:w-[30px] sm:w-[20px] w-[15px] absolute top-[20px] right-[25px] 2xl:top-[25px] 2xl:right-[25px] hover:cursor-pointer"
+                  className="close_Button  sm:w-[20px] w-[15px] absolute top-[20px] right-[25px]  hover:cursor-pointer"
                   onClick={() => setGuaranteeModal()}
                 />
               </Link>
             </h3>
           </div>
 
-          <div className="mt-[20px] 2xl:mt-[10px]">
+          <div className="FormContainer">
             <div className="input-text-register">
               {/* <label htmlFor="" className="sm:text-[16px] text-[14px] ">
                 Full Name
@@ -211,7 +211,7 @@ function Guarantee() {
                 .
               </p>
             </div>
-            <div className="text-center 2xl:mt-[40px]">
+            <div className="text-center button_bottom">
               <button
                 className="divStyles"
                 onMouseEnter={handleMouseEnter}
