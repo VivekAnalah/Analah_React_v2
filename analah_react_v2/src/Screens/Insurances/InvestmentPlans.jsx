@@ -137,7 +137,7 @@ function InvestmentPlans() {
             </h3>
           </div>
 
-          <div className="mt-[20px]">
+          <div className="mt-[20px] 2xl:mt-[10px]">
             <div className="input-text-register">
               {/* <label htmlFor="" className="sm:text-[16px] text-[14px] ">
                 Full Name
@@ -180,7 +180,7 @@ function InvestmentPlans() {
               />
             </div>
 
-            <div className=" checkboxInvest pt-4 2xl:pt-8">
+            <div className=" checkboxInvest pt-4 2xl:pt-8 2xl:mt-[10px]">
               <div className="roundInvest">
                 <input
                   type="checkbox"
@@ -191,7 +191,7 @@ function InvestmentPlans() {
                 <label htmlFor="checkBoxInvest"></label>
               </div>
 
-              <p className="text-[12px] font-400 text-[#595959]	px-5">
+              <p className="text-[12px] font-400 text-[#595959]	pr-5">
                 {" "}
                 I hereby agree to the{" "}
                 <Link
@@ -217,7 +217,7 @@ function InvestmentPlans() {
                 .
               </p>
             </div>
-            <div className="text-center 2xl:mt-[80px]">
+            <div className="text-center 2xl:mt-[40px]">
               <button
                 className="divStyles"
                 onMouseEnter={handleMouseEnter}

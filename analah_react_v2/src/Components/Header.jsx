@@ -245,7 +245,7 @@ export const Header = () => {
               </h3>
             </div>
 
-            <div className="mt-[20px] FormContainer">
+            <div className="mt-[20px] 2xl:mt-[10px] FormContainer">
               <div className="input-text-register">
                 {/* <label htmlFor="" className="sm:text-[16px] text-[14px] ">Full Name</label> */}
                 <input
@@ -282,7 +282,7 @@ export const Header = () => {
                 />
               </div>
 
-              <div className=" checkbox pt-4 2xl:pt-8">
+              <div className=" checkbox pt-4 2xl:pt-8 2xl:mt-[10px]">
                 <div className="round" >
                   <input
                     type="checkbox"
@@ -319,7 +319,7 @@ export const Header = () => {
                   .
                 </p>
               </div>
-              <div className="text-center 2xl:mt-[80px]">
+              <div className="text-center 2xl:mt-[40px]">
                 <button
                   className="divStyles"
                   onMouseEnter={handleMouseEnter}
