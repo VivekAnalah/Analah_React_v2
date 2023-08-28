@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/foundingTeam.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../Styles/custom-carousel.css";
 
 export const FoundingTeam = () => {
+
+  const [read, setRead] = useState(false); 
+  const [read_v, setRead_V] = useState(false); 
   const bg = {
     background: "linear-gradient(180deg, #F5F5F5 0%, #F6FAFE 100%)",
   };
@@ -19,23 +22,15 @@ export const FoundingTeam = () => {
       <div
         className={`FoundingTeamGrid 2xl:w-[60%] lg:w-[70%] w-[75%] m-[auto] ${bg} grid grid-cols-[28%,65%]  gap-[3%] mt-[50px] foundingBg  relative h-[auto] `}
       >
-        <div className="">
+        <div className="flex">
           <img
             src={require("../Assets/Images/Vaishali_Dhankani2.png")}
             alt="Vaishali Dhankani"
-            className="   foundingImagesWidth "
+            className="foundingImagesWidth mb-[0px]"
           />
         </div>
         <div className="mt-[20px] ContentContainer " >
-          <Carousel
-            className="carousel"
-            infiniteLoop
-            autoPlay
-            interval={2000}
-            stopOnHover={true}
-            showArrows={false}
-            showStatus={false}
-          >
+          
             <div>
               <p className="textStyleFounding">
                 Vaishali holds over two decades of expertise in the Finance,
@@ -47,9 +42,17 @@ export const FoundingTeam = () => {
                 900 million.
               </p>
             </div>
+{/* ----------- Read More Section --------- */}
+<div  className={` ${read_v ? ` hidden` : `read_more mt-[15px] flex justify-end `} `} onClick={() => setRead_V(true)}>
+       <span className=" hover:cursor-pointer hover:text-[#595959] textStyleFounding_read border-b-[2px]">
+        Read More 
+       </span>
 
-            <div>
-              <p className="textStyleFounding">
+        </div>
+
+{/* ---------------------  Hidden Text -------------------- */}
+            <div className={` ${read_v ? `founding_hidden block` : `hidden`} `}>
+              <p className="textStyleFounding mt-[15px]">
                 She leads investments for the group's Financial Services and
                 Insurance sectors.
               </p>
@@ -57,10 +60,7 @@ export const FoundingTeam = () => {
                 She has been majorly focusing on Pre-IPO, venture capital and
                 early-stage investments.
               </p>
-            </div>
-
-            <div>
-              <p className="textStyleFounding">
+              <p className="textStyleFounding mt-[15px]">
                 Her recommendations have generated multi-bagger returns for
                 onshore and offshore investors.
               </p>
@@ -69,10 +69,8 @@ export const FoundingTeam = () => {
                 helped investors and institutions diversify their portfolio, in
                 turn generating high returns.
               </p>
-            </div>
 
-            <div className="last_Carousel1">
-              <p className="textStyleFounding">
+              <p className="textStyleFounding mt-[15px]">
                 Vaishali is a Chartered Accountant by profession, along with a
                 Diploma in Systems Management (DNIIT).
               </p>
@@ -82,36 +80,18 @@ export const FoundingTeam = () => {
                 Corporation of India (set up by the Reserve Bank of India &
                 Indian Banking Association).
               </p>
-              
             </div>
 
-            {/* <div className="last_Carousel2">
-              <p className="textStyleFounding">
-                Vaishali is a Chartered Accountant by profession, along with a
-                Diploma in Systems Management (DNIIT).
-              </p>
-             
-              
-            </div>
+  {/* ----------- Less Section --------- */}
+  <div className={` ${read_v ? ` less mt-[15px] flex justify-end` : `hidden`} `} onClick={() => setRead_V(false)}>
+       <span className="hover:cursor-pointer  hover:text-[#595959] textStyleFounding_read border-b-[2px] ">
+        Less 
+       </span>
 
+        </div>
+         
 
-            <div className="last_Carousel3">
-             
-              <p className="textStyleFounding">
-                She has also held various senior positions in leading
-                organizations such as ICICI Bank and National Payments
-                Corporation of India (set up by the Reserve Bank of India &
-                Indian Banking Association).
-              </p>
-              
-            </div> */}
-
-
-           
-
-           
-          </Carousel>
-          <div className="flex gap-[20px]  NameDIv">
+          <div className="flex gap-[20px] mt-[15px] pb-[15px] ">
             <h3 className="name">Vaishali Dhankani</h3>
 
             <p className="text-[16px] text-[#4481E4] font-400 md:text-[14px] mt-[4px] designation">
@@ -128,28 +108,22 @@ export const FoundingTeam = () => {
         </div>
       </div>
 
+      {/* ----------- Hitesh Dhankani (Co-Founder) --------------*/}
+
       <div
         className={`FoundingTeamGrid 2xl:w-[60%] lg:w-[70%] w-[75%]  m-[auto] ${bg} grid grid-cols-[28%,65%]  gap-[3%] mt-[50px] foundingBg  relative h-[auto] `}
       >
-          <div>
+          <div className="flex">
           <img
             src={require("../Assets/Images/hitesh_dhankani4.png")}
             alt="Hitesh Dhankani"
-            className=" foundingImagesWidth2"
+            className=" foundingImagesWidth2 mb-[0px]"
           />
         </div>
 
 
         <div className="mt-[20px] ContentContainer2 ">
-          <Carousel
-            className="carousel"
-            infiniteLoop
-            autoPlay
-            interval={2000}
-            stopOnHover={true}
-            showArrows={false}
-            showStatus={false}
-          >
+         
             <div>
               <p className="textStyleFounding">
                 Hitesh is reckoned as a reputable, thoughtful & an action
@@ -158,21 +132,30 @@ export const FoundingTeam = () => {
                 Advisory across Financial Services, Insurance, Real Estate and
                 Technology.
               </p>
-              <p className="textStyleFounding mt-[15px]"></p>
-            </div>
 
-            <div>
-              <p className="textStyleFounding">
+              <p className="textStyleFounding mt-[15px]">
                 He is the Co-founder of the Analah group, wherein, he is
                 responsible for performance, strategy & growth of the company.
               </p>
+             
+            </div>
+
+{/* ----------- Read More Section --------- */}
+        <div  className={` ${read ? ` hidden` : `read_more mt-[15px] flex justify-end `} `} onClick={() => setRead(true)}>
+       <span className=" hover:cursor-pointer hover:text-[#595959] textStyleFounding_read border-b-[2px]">
+        Read More 
+       </span>
+
+        </div>
+
+        {/* ---------------------  Hidden Text -------------------- */}
+            <div className={` ${read ? `founding_hidden block` : `hidden`} `} >
+             
               <p className="textStyleFounding mt-[15px]">
                 Hitesh has done his Software Engineering in Systems Management
                 (GNIIT) and B.com (Hons).
               </p>
-            </div>
-            <div>
-              <p className="textStyleFounding">
+              <p className="textStyleFounding mt-[15px]">
                 He also holds a Masters in Business, SMP from the Indian
                 Institute of Management (IIM) - Calcutta.
               </p>
@@ -180,20 +163,27 @@ export const FoundingTeam = () => {
                 His leadership competence also dives across the Equity sector
                 among leading Asset Management Companies, NBFC’s, and Banks.
               </p>
-            </div>
-            <div>
-              <p className="textStyleFounding">
+
+              <p className="textStyleFounding mt-[15px]">
                 He possesses a proven entrepreneurial prowess having been a key
                 member of core startup teams responsible for the successful
                 launch of top notch organizations like HDFC Bank, SBI Asset
                 Management, Mirae Asset and Prudential Incorporation (Pramerica
                 AMC).
               </p>
-              <p className="textStyleFounding mt-[15px]"></p>
-            </div>
-          </Carousel>
 
-          <div className="flex gap-[20px]  NameDIv_2">
+            </div>
+           
+           {/* ----------- Less Section --------- */}
+        <div className={` ${read ? ` less mt-[15px] flex justify-end` : `hidden`} `} onClick={() => setRead(false)}>
+       <span className="hover:cursor-pointer  hover:text-[#595959] textStyleFounding_read border-b-[2px] ">
+        Less 
+       </span>
+
+        </div>
+         
+
+          <div className="flex gap-[20px] mt-[15px] pb-[15px]">
             <h3 className="name">Hitesh Dhankani</h3>
 
             <p className="text-[16px] text-[#4481E4] font-400 md:text-[14px] mt-[4px] designation">

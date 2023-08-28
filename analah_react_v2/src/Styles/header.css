@@ -48,3 +48,15 @@
     padding: 0 10px !important;
   }
 } */
+
+.register_text{
+ border-radius: 12.482px;
+ background-color: #4C8CE7;
+ transition: 0.5s;
+}
+
+.register_text:hover{
+  background-color: #fff;
+  color: #4C8CE7;
+
+}

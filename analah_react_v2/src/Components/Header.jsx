@@ -207,9 +207,9 @@ export const Header = () => {
                   </h2>
                 </Link>
               </li>
-              <li className="nav-item w-[120px]">
-                <div className={"mt-[4px] flex gap-[5px] "}>
-                  <button className={"text-[#4c8ce7] text-[14px] font-600"}>
+              <li className="nav-item w-[140px]">
+                <div className={"mt-[7px] flex gap-[20px] "}>
+                  <button className={"text-[#4c8ce7] text-[14px] font-600 hover:text-[#000] "}>
                     <a
                       href="https://dashboard.analahinsurance.com/customer/login"
                       target="blank"
@@ -219,8 +219,7 @@ export const Header = () => {
                   </button>
 
                   <button
-                    className="w-[60%] text-[#FFF] text-[14px] font-600  "
-                    style={{ borderRadius: "12.482px", background: "#4C8CE7" }}
+                    className="w-[60%] text-[#FFF] text-[14px] font-600 register_text"
                     onClick={() => setRegisterOpen(!registerOpen)}
                   >
                     Register
@@ -335,7 +334,7 @@ export const Header = () => {
                     !Investment_User_Mob_Num
                   }
                 >
-                  Get Plan
+                  Sign Up
                 </button>
               </div>
             </div>
