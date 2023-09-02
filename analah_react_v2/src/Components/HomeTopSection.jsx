@@ -6,53 +6,63 @@ export const HomeTopSection = () => {
   const insurance_data = [
     {
       id: 1,
-      name: "Term-Life Insurance",
+      name: "Term-Life",
+      insurance : "Insurance",
       img: "Term_ins_logo1.png",
     },
     {
       id: 2,
-      name: "Health Insurance",
+      name: "Health",
+      insurance : "Insurance",
       img: "Orbit_1_4.png",
     },
     {
       id: 3,
-      name: "Family Health Insurance",
+      name: "Family Health",
+      insurance : "Insurance",
       img: "Orbit_2_1.png",
     },
     {
       id: 4,
-      name: "Group Health Insurance",
+      name: "Group Health",
+      insurance : "Insurance",
       img: "Group_ins_logo1.png",
     },
     {
       id: 5,
-      name: "Car Insurance",
+      name: "Car",
+      insurance : "Insurance",
       img: "Orbit_1_1.png",
     },
     {
       id: 6,
-      name: "2-Wheeler Insurance",
+      name: "2-Wheeler",
+      insurance : "Insurance",
       img: "Bike_ins_logo1.png",
     },
 
     {
       id: 7,
-      name: "Travel Insurance",
+      name: "Travel",
+      insurance : "Insurance",
       img: "Orbit_2_2.png",
     },
     {
       id: 8,
-      name: "Home Insurance",
+      name: "Home",
+      insurance : "Insurance",
       img: "Orbit_1_3.png",
     },
     {
       id: 9,
-      name: "Retirement Plans",
+      name: "Retirement",
+      insurance : "Plans",
       img: "Orbit_2_4.png",
     },
     {
       id: 10,
-      name: "Investment Plans",
+      name: "Investment",
+      insurance : "Plans",
       img: "Inner_logo_3.png",
     },
     {
@@ -86,6 +96,10 @@ export const HomeTopSection = () => {
                     style={{
                       boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
                       borderRadius:"25px",
+                      // boxShadow : "0px 1px 4px 0px rgba(0, 0, 0, 0.25)",
+                      boxShadow: "rgba(67, 71, 85, 0.2) 0px 0px 5.6px 0px, rgba(90, 125, 188, 0.05) 0px 5.6px 8px 0px"
+                     
+                
                 
                     }}
                   >

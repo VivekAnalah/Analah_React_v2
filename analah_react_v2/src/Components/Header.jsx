@@ -13,7 +13,6 @@ export const Header = () => {
   const [alertMessage, setAlertMessage] = useState('');
   const [alertTitle, setAlertTitle] = useState('');
 
-
   const location = useLocation();
   const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -21,7 +20,6 @@ export const Header = () => {
 
   const divStyles = {
     boxShadow: "0px 2px 4px 0 rgb(0 0 0 / 20%)",
-
     marginRight: "0",
   };
 
