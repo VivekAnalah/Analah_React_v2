@@ -3,7 +3,7 @@ import React, { useContext, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { display } from "../Context/DisplayContext";
 
-export let sectionRef;
+
 function Footer() {
 
   const location = useLocation();
@@ -206,7 +206,7 @@ function Footer() {
                     </a>
                   </h5>
                   <h5 className="font-[600] text-[12px] sm:text-[16px] flex gap-2 text-justify text-white hover:text-[#9ad3f5]">
-                    {/* <img src={require("../Assets/Images/mail.png")}  className="sm:w-[24px] sm:h-[24px] mt-[4px] ml-[-4px] " alt="mail"/> */}
+                   
                     <a
                       href="mailto:contactus@analahinsurance.com"
                       className="flex gap-[6px] mailImageAnchor"
@@ -336,7 +336,7 @@ function Footer() {
                   <br />
 
                   <h5 className="font-[600] text-[16px] text-white mt-[112px]">
-                    {/* <img src={require("../Assets/Images/phone.png")} className="w-[32px] h-[32px]" alt="Phone"/> */}
+                    
                     <a
                       href="tel:+91 99208 78181"
                       className="flex gap-[6px] hover:text-[#9ad3f5] phoneImageAnchor"
@@ -352,7 +352,7 @@ function Footer() {
                       <span>+91 99208 78181</span>
                     </a>
                     <br />
-                    {/* <img src={require("../Assets/Images/mail.png")}  className="w-[32px] h-[32px]" alt="mail"/> */}
+                  
                     <a
                       href="mailto:contactus@analahinsurance.com"
                       className="flex gap-[6px] hover:text-[#9ad3f5] mailImageAnchor"
@@ -398,7 +398,7 @@ function Footer() {
                   </div>
 
                   <div className="bg_social w-[170px] h-[90] flex p-2 space-x-3 items-center justify-center bg-[#ffffff] bg-opacity-70 rounded-[20px]" style={{borderRadius: "32px",
-border: "1px solid rgba(255, 255, 255, 0.30)",
+border: "1px solid rgba(255, 255, 255, 0.30)"
 
 }}>
                     <a
